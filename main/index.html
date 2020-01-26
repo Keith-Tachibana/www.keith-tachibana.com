@@ -79,15 +79,21 @@
               <img id="image01-01-26-20" class="float-right img-fluid rounded img-thumbnail" src="../assets/images/01-26-20-image001.png"
                 alt="bash-aliases" />
             </figure>
-            <p>One of very first things I do when I set up a Linux server is to set up my Bash aliases which increases productivity since I end up being able to do more by typing less and with much more speed. As an example, instead of typing <code>sudo apt update</code> everytime you want to update your software repositories, imagine being able to run the same command by just typing <code>update</code>. That's where bash aliases come into play. Here's how to set them up: on your Linux server, first type <code>cd</code> to ensure that you are in your home directory. Then type <code>ls -lah</code> to reveal all your hidden files (these are files whose names begin with a period, such as ".bashrc"). In fact, we are going to be opening the ".bashrc" file to make sure the option for bash aliases is enabled, so fire up the nano text editor by typing <code>nano .bashrc</code>. Scroll down to the bottom of the file and make sure the second to last code block with the declaration
-            <code>
-              if [ -f ~/.bash_aliases ]; then
-              . ~/.bash_aliases
-              fi
-            </code> is uncommented (meaning there are no "#" to the left of it). By default, Ubuntu Server has this block of code uncommented, so if this is the case for you, just exit nano by pressing <kbd>Ctrl+X</kbd>.</p>
+            <p>One of very first things I do when I set up a Linux server is to set up my Bash aliases which increases productivity since I end up being able to do more by typing less and with much more speed. As an example, instead of typing <code>sudo apt update</code> everytime you want to update your software repositories, imagine being able to run the same command by just typing <code>update</code>. That's where bash aliases come into play. Here's how to set them up: on your Linux server, first type <code>cd</code> to ensure that you are in your home directory. Then type <code>ls -lah</code> to reveal all your hidden files (these are files whose names begin with a period, such as ".bashrc"). In fact, we are going to be opening the ".bashrc" file to make sure the option for bash aliases is enabled, so fire up the nano text editor by typing <code>nano .bashrc</code>. Scroll down to the bottom of the file and make sure the second to last code block with the declaration shown in the image below
+            <pre id="alias-code" class="float-left">
+              <code>
+if [ -f ~/.bash_aliases ]; then
+. ~/.bash_aliases
+fi
+              </code>
+            </pre>
+            is uncommented (meaning there are no "&#35;" to the left of it). By default, Ubuntu Server has this block of code uncommented, so if this is the case for you, just exit nano by pressing <kbd>Ctrl+X</kbd>; otherwise delete the strip of '&#35;'s to the left of it, type <kbd>Ctrl+O</kbd> to save, followed by <kbd>Ctrl+X</kbd> to exit nano.</p>
 
-            <p>Now, let's create the bash aliases file by typing <code>nano .bash_aliases</code>. Inside, this file will contain your alias definitions. The syntax for this is: alias &lt;<em>your-alias</em>&gt;="&lt;<em>actual-command</em>&gt;". In the provided image, I have included some examples of my alias definitions. The first two are aliases for the same command, namely, <code>cd ..</code>. With these aliases, I can now type <code>..</code> or <code>cd..</code> (without the space between "cd" and "..") to go up one directory, or if I need to reboot the server, I can now just type <code>reboot</code> instead of <code>sudo shutdown -r now</code>. Once you have your definitions set, type <kbd>Ctrl+O</kbd> to save your changes and <kbd>Ctrl+X</kbd> to exit nano. In order to have your alias definitions take effect without rebooting your machine or logging out and back in, type <code>source .bash_aliases</code>. This command will tell the bash shell to parse your alias definitions so that you can start using them right away!</p>
+            <p>Now, let's create the bash aliases file by typing <code>nano .bash_aliases</code>. Inside, this file will contain your alias definitions. The syntax for this is: alias &lt;<em>your-alias</em>&gt;="&lt;<em>actual-command</em>&gt;". In the provided image above, I have included some examples of my alias definitions. The first two are aliases for the same command, namely, <code>cd ..</code>. With these aliases, I can now type <code>..</code> or <code>cd..</code> (without the space between "cd" and "..") to go up one directory, or if I need to reboot the server, I can now just type <code>reboot</code> instead of <code>sudo shutdown -r now</code>. Once you have your definitions set, type <kbd>Ctrl+O</kbd> to save your changes and <kbd>Ctrl+X</kbd> to exit nano. In order to have your alias definitions take effect without rebooting your machine or logging out and back in, type <code>source .bash_aliases</code>. This command will tell the bash shell to parse your alias definitions so that you can start using them right away!</p>
           </section>
+          <br />
+          <br />
+          <br />
           <section id="article01-01-25-20">
             <h3 class="text-warning"><em>1/25/20: How to use nginx to rapidly deploy other pages of your website</em></h3>
             <figure>
@@ -103,6 +109,7 @@
         <div class="col-2"></div>
       </div>
     </main>
+    <script type="text/javascript" src="//counter.websiteout.net/js/6/9/0/0"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
