@@ -1,0 +1,78 @@
+main {
+  background-image: url('../images/entrance.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+body {
+  font-family: 'Metal Mania', cursive;
+}
+
+#demon1 {
+  position: absolute;
+  height: 540px;
+  width: 960px;
+  background-image: url('../images/demon2.png');
+  background-repeat: cover;
+}
+
+#demon2 {
+  position: absolute;
+  height: 540px;
+  width: 960px;
+  background-image: url('../images/demon2.png');
+  background-repeat: cover;
+}
+
+#imp1 {
+  position: absolute;
+  height: 512px;
+  width: 512px;
+  background-image: url('../images/imp1.png');
+  background-repeat: cover;
+}
+
+#imp2 {
+  position: absolute;
+  height: 512px;
+  width: 512px;
+  background-image: url('../images/imp1.png');
+  background-repeat: cover;
+}
+
+#flames1 {
+  position: absolute;
+  height: 518px;
+  width: 921px;
+  background-image: url('../images/flames1.png');
+  background-repeat: cover;
+}
+
+#flames2 {
+  position: absolute;
+  height: 518px;
+  width: 921px;
+  background-image: url('../images/flames1.png');
+  background-repeat: cover;
+}
+
+#flames3 {
+  position: absolute;
+  height: 518px;
+  width: 921px;
+  background-image: url('../images/flames1.png');
+  background-repeat: cover;
+}
+
+#sun {
+  position: absolute;
+  height: 1024px;
+  width: 1024px;
+  background-image: url('../images/sun.png');
+  background-repeat: cover;
+}
+
+#enter {
+  position: absolute;
+}

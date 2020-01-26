@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Keith Tachibana: Main</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Righteous|Metal+Mania&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style-main.css">
+  </head>
+  <body style="height:5500px">
+    <nav class="bg-dark sticky-top">
+      <ul class="nav nav-tabs">
+        <a class="navbar-brand pt-2" href="http://www.keith-tachibana.com/"><h3>Keith Tachibana &gt;&gt;&gt;</h3></a>
+        <li class="nav-item pt-1">
+          <a class="nav-link bg-dark text-warning" href="/main/">Home</a>
+        </li>
+        <li class="nav-item dropdown pt-1">
+          <a class="nav-link dropdown-toggle bg-dark text-success" data-toggle="dropdown" href="#">About Me</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item text-body" href="/about/index.html">About Me</a>
+            <a class="dropdown-item text-body" href="/about/contact.html">Contact Info</a>
+            <a class="dropdown-item text-body" href="/about/cv.html">Curriculum Vitae (C.V.)</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown pt-1">
+          <a class="nav-link dropdown-toggle bg-dark text-danger" data-toggle="dropdown" href="#">Media</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item text-body" href="/media/photos.html">Photos</a>
+            <a class="dropdown-item text-body" href="/media/videos.html">Videos</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown pt-1">
+          <a class="nav-link dropdown-toggle bg-dark text-light" data-toggle="dropdown" href="#">Portfolio</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item text-body" href="/portfolio/index.html">Portfolio Index</a>
+            <a class="dropdown-item text-body" href="/portfolio/ezfit.html">EZ-FIT: FitBit Workout Suggestions</a>
+            <a class="dropdown-item text-body" href="/portfolio/memorymatch/">Star Wars Memory Match Game</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <header>
+      <div class="row">
+        <div class="col"></div>
+        <div class="col">
+          <div id="header-bg" class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <p class="text-white display-2" id="name">Keith Tachibana &gt;</p>
+              <p class="text-white display-3" id="welcome">Welcome to my website!</p>
+              <h3 class="text-white" id="description">Inside, you'll find my portfolio, showcasing some examples of my work as a full-stack web developer.</h3>
+              <button type="button" id="contact-button" class="btn btn-primary" data-toggle="collapse" data-target="#contact">Connect With Me</button>
+              <div id="contact" class="collapse">
+                <br />
+                <a class="p-4" href="mailto:Keith.Tachibana@gmail.com" target="_blank"><i class="fas fa-envelope fa-2x"></i></a>
+                <a class="p-4" href="https://www.facebook.com/keith.tachibana/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                <a class="p-4" href="https://github.com/Keith-Tachibana/" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                <a class="p-4" href="https://www.instagram.com/keithjf1/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                <a class="p-4" href="https://www.linkedin.com/in/keithtachibana/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a class="p-4" href="https://twitter.com/Keith_Tachibana/" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col"></div>
+      </div>
+    </header>
+    <main class="bg-secondary">
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col">
+          <section>
+            <h3><em>1/25/20: How to use nginx to rapidly deploy other pages of your website</em></h3>
+            <p>For first time web developers, once you have a web server up and running for the first time ever, it can be very exciting. It's important, however, to make sure you have it configured properly before you jump right into development. While there are many ways in setting up nginx (the same goes for Apache2), one method I have always found very convenient and easy to execute is enabling multiple locations in the nginx configuration file for the different areas of my website. What this means is, if I add, for example, location "/photos" to my config file, then users will then be able to navigate to "www.mywebsite.com/photos/". I have seen other people preach creating C-NAME DNS records in order to create sub-domains that point to other areas of your website (in this case, using the previous example, it would point to "photos.mywebsite.com"), but I feel that this is unnecessary work, not to mention that sub-domains were not meant to be used in that way.</p>
+            <p>In order to add these locations to your nginx configuration file, do the following: in your web server on the command line, type in<br />
+            <code>cd /etc/nginx/sites-available/</code> then press enter.<br/>
+            Then locate whichever website configuration file you wish to edit, and type<br />
+            <code>sudo nano &lt;<em>your-config-file-name-here</em>&gt;</code> then press enter.<br/>
+            Locate the block of code in which the word <q>location</q> followed by a forward-slash appears for the first time (highlighted yellow in the image), and add underneath that declaration another block of code starting with the word <q>location</q> as well (refer to the example in the image).
+            <img id="img001" src="../assets/images/01-25-20-image001.png" alt="nginx-config-location" />
+            As you can see, I have added two location entries, with each location value preceeded by a forward-slash (in this case, "/memorymatch" and "/main"). <em>Make sure you do not forget to add the forward-slash in front of your location value as well!</em> Now, simply copy what I have done in the image, by typing the left curly brace, inside of which you will type the property "autoindex" followed by a value of "on" and a semicolon, then close it with a right curly brace. Of course, proper indentation is recommended. In case you were wondering, autoindex tells nginx to automatically locate any files named index.* and to serve up that file when users navigate to that location of your website.</p>
+            <p>Once you have finished adding all your locations, type <kbd>CTRL+O</kbd> to save your changes, followed by <kbd>CTRL+X</kbd> to exit nano. You will need to restart nginx by typing<br />
+            <code>sudo service nginx restart</code> and pressing enter.<br />Now users will be able to navigate to other pages of your website by appending those location names to the end of your website name (just make sure you have index.html files in those folders on your webserver!)</p>
+          </section>
+        </div>
+        <div class="col-2"></div>
+      </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/3ccb874c3d.js" crossorigin="anonymous"></script>
+  </body>
+</html>
