@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/style-main.css">
   </head>
-  <body style="height:5500px">
+  <body>
     <nav class="bg-dark sticky-top">
       <ul class="nav nav-tabs">
         <a class="navbar-brand pt-2" href="http://www.keith-tachibana.com/"><h3>Keith Tachibana &gt;&gt;&gt;</h3></a>
@@ -66,11 +66,14 @@
       </div>
     </header>
     <main class="bg-secondary">
+      <div class="row justify-content-center">
+        <p class="display-4 text-warning">Tech Advice, Tips, &amp; Tutorials</p>
+      </div>
       <div class="row">
         <div class="col-2"></div>
         <div class="col">
           <section>
-            <h3><em>1/25/20: How to use nginx to rapidly deploy other pages of your website</em></h3>
+            <h3 class="text-warning"><em>1/25/20: How to use nginx to rapidly deploy other pages of your website</em></h3>
             <p>For first time web developers, once you have a web server up and running for the first time ever, it can be very exciting. It's important, however, to make sure you have it configured properly before you jump right into development. While there are many ways in setting up nginx (the same goes for Apache2), one method I have always found very convenient and easy to execute is enabling multiple locations in the nginx configuration file for the different areas of my website. What this means is, if I add, for example, location "/photos" to my config file, then users will then be able to navigate to "www.mywebsite.com/photos/". I have seen other people preach creating C-NAME DNS records in order to create sub-domains that point to other areas of your website (in this case, using the previous example, it would point to "photos.mywebsite.com"), but I feel that this is unnecessary work, not to mention that sub-domains were not meant to be used in that way.</p>
             <p>In order to add these locations to your nginx configuration file, do the following: in your web server on the command line, type in<br />
             <code>cd /etc/nginx/sites-available/</code> then press enter.<br/>
@@ -80,7 +83,7 @@
             <img id="img001" src="../assets/images/01-25-20-image001.png" alt="nginx-config-location" />
             As you can see, I have added two location entries, with each location value preceeded by a forward-slash (in this case, "/memorymatch" and "/main"). <em>Make sure you do not forget to add the forward-slash in front of your location value as well!</em> Now, simply copy what I have done in the image, by typing the left curly brace, inside of which you will type the property "autoindex" followed by a value of "on" and a semicolon, then close it with a right curly brace. Of course, proper indentation is recommended. In case you were wondering, autoindex tells nginx to automatically locate any files named index.* and to serve up that file when users navigate to that location of your website.</p>
             <p>Once you have finished adding all your locations, type <kbd>CTRL+O</kbd> to save your changes, followed by <kbd>CTRL+X</kbd> to exit nano. You will need to restart nginx by typing<br />
-            <code>sudo service nginx restart</code> and pressing enter.<br />Now users will be able to navigate to other pages of your website by appending those location names to the end of your website name (just make sure you have index.html files in those folders on your webserver!)</p>
+            <code>sudo service nginx restart</code> and pressing enter.<br />Now users will be able to navigate to other pages of your website by appending those location names to the end of your website name (just make sure you have index.html files in those folders on your webserver!).</p>
           </section>
         </div>
         <div class="col-2"></div>
