@@ -73,18 +73,31 @@
       <div class="row">
         <div class="col-2"></div>
         <div class="col">
-          <section>
+          <section id="article01-01-26-20">
+            <h3 class="text-warning"><em>1/26/20: Use bash aliases to speed things up in the Linux terminal!</em></h3>
+            <figure>
+              <img id="image01-01-26-20" class="float-right img-fluid rounded img-thumbnail" src="../assets/images/01-26-20-image001.png"
+                alt="bash-aliases" />
+            </figure>
+            <p>One of very first things I do when I set up a Linux server is to set up my Bash aliases which increases productivity since I end up being able to do more by typing less and with much more speed. As an example, instead of typing <code>sudo apt update</code> everytime you want to update your software repositories, imagine being able to run the same command by just typing <code>update</code>. That's where bash aliases come into play. Here's how to set them up: on your Linux server, first type <code>cd</code> to ensure that you are in your home directory. Then type <code>ls -lah</code> to reveal all your hidden files (these are files whose names begin with a period, such as ".bashrc"). In fact, we are going to be opening the ".bashrc" file to make sure the option for bash aliases is enabled, so fire up the nano text editor by typing <code>nano .bashrc</code>. Scroll down to the bottom of the file and make sure the second to last code block with the declaration
+            <code>
+              if [ -f ~/.bash_aliases ]; then
+              . ~/.bash_aliases
+              fi
+            </code> is uncommented (meaning there are no "#" to the left of it). By default, Ubuntu Server has this block of code uncommented, so if this is the case for you, just exit nano by pressing <kbd>Ctrl+X</kbd>.</p>
+
+            <p>Now, let's create the bash aliases file by typing <code>nano .bash_aliases</code>. Inside, this file will contain your alias definitions. The syntax for this is: alias &lt;<em>your-alias</em>&gt;="&lt;<em>actual-command</em>&gt;". In the provided image, I have included some examples of my alias definitions. The first two are aliases for the same command, namely, <code>cd ..</code>. With these aliases, I can now type <code>..</code> or <code>cd..</code> (without the space between "cd" and "..") to go up one directory, or if I need to reboot the server, I can now just type <code>reboot</code> instead of <code>sudo shutdown -r now</code>. Once you have your definitions set, type <kbd>Ctrl+O</kbd> to save your changes and <kbd>Ctrl+X</kbd> to exit nano. In order to have your alias definitions take effect without rebooting your machine or logging out and back in, type <code>source .bash_aliases</code>. This command will tell the bash shell to parse your alias definitions so that you can start using them right away!</p>
+          </section>
+          <section id="article01-01-25-20">
             <h3 class="text-warning"><em>1/25/20: How to use nginx to rapidly deploy other pages of your website</em></h3>
+            <figure>
+              <img id="image01-01-25-20" class="float-left img-fluid rounded img-thumbnail"
+                src="../assets/images/01-25-20-image001.png" alt="nginx-config-location" />
+            </figure>
             <p>For first time web developers, once you have a web server up and running for the first time ever, it can be very exciting. It's important, however, to make sure you have it configured properly before you jump right into development. While there are many ways in setting up nginx (the same goes for Apache2), one method I have always found very convenient and easy to execute is enabling multiple locations in the nginx configuration file for the different areas of my website. What this means is, if I add, for example, location "/photos" to my config file, then users will then be able to navigate to "www.mywebsite.com/photos/". I have seen other people preach creating C-NAME DNS records in order to create sub-domains that point to other areas of your website (in this case, using the previous example, it would point to "photos.mywebsite.com"), but I feel that this is unnecessary work, not to mention that sub-domains were not meant to be used in that way.</p>
-            <p>In order to add these locations to your nginx configuration file, do the following: in your web server on the command line, type in<br />
-            <code>cd /etc/nginx/sites-available/</code> then press enter.<br/>
-            Then locate whichever website configuration file you wish to edit, and type<br />
-            <code>sudo nano &lt;<em>your-config-file-name-here</em>&gt;</code> then press enter.<br/>
-            Locate the block of code in which the word <q>location</q> followed by a forward-slash appears for the first time (highlighted yellow in the image), and add underneath that declaration another block of code starting with the word <q>location</q> as well (refer to the example in the image).
-            <img id="img001" src="../assets/images/01-25-20-image001.png" alt="nginx-config-location" />
-            As you can see, I have added two location entries, with each location value preceeded by a forward-slash (in this case, "/memorymatch" and "/main"). <em>Make sure you do not forget to add the forward-slash in front of your location value as well!</em> Now, simply copy what I have done in the image, by typing the left curly brace, inside of which you will type the property "autoindex" followed by a value of "on" and a semicolon, then close it with a right curly brace. Of course, proper indentation is recommended. In case you were wondering, autoindex tells nginx to automatically locate any files named index.* and to serve up that file when users navigate to that location of your website.</p>
-            <p>Once you have finished adding all your locations, type <kbd>CTRL+O</kbd> to save your changes, followed by <kbd>CTRL+X</kbd> to exit nano. You will need to restart nginx by typing<br />
-            <code>sudo service nginx restart</code> and pressing enter.<br />Now users will be able to navigate to other pages of your website by appending those location names to the end of your website name (just make sure you have index.html files in those folders on your webserver!).</p>
+            <p>In order to add these locations to your nginx configuration file, do the following: in your web server on the command line, type in <code>cd /etc/nginx/sites-available/</code> then press enter.
+            Then locate whichever website configuration file you wish to edit, and type <code>sudo nano &lt;<em>your-config-file-name-here</em>&gt;</code> then press enter. Locate the block of code in which the word <q>location</q> followed by a forward-slash appears for the first time (highlighted yellow in the image), and add underneath that declaration another block of code starting with the word <q>location</q> as well (refer to the example in the image). As you can see, I have added two location entries, with each location value preceeded by a forward-slash (in this case, "/memorymatch" and "/main"). <em>Make sure you do not forget to add the forward-slash in front of your location value as well!</em> Now, simply copy what I have done in the image, by typing the left curly brace, inside of which you will type the property "autoindex" followed by a value of "on" and a semicolon, then close it with a right curly brace. Of course, proper indentation is recommended. In case you were wondering, autoindex tells nginx to automatically locate any files named index.* and to serve up that file when users navigate to that location of your website.</p>
+            <p>Once you have finished adding all your locations, type <kbd>CTRL+O</kbd> to save your changes, followed by <kbd>CTRL+X</kbd> to exit nano. You will need to restart nginx by typing <code>sudo service nginx restart</code> and pressing enter. Now users will be able to navigate to other pages of your website by appending those location names to the end of your website name (just make sure you have index.html files in those folders on your webserver!).</p>
           </section>
         </div>
         <div class="col-2"></div>
