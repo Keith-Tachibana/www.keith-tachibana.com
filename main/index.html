@@ -22,6 +22,8 @@
             <a class="dropdown-item text-body" href="/about/index.html">About Me</a>
             <a class="dropdown-item text-body" href="/about/contact.html">Contact Info</a>
             <a class="dropdown-item text-body" href="/about/cv.html">Curriculum Vitae (C.V.)</a>
+            <a class="dropdown-item text-body" href="/about/developer.html">My Developer's Story</a>
+            <a class="dropdown-item text-body" href="/about/tech.html">Technology Used</a>
           </div>
         </li>
         <li class="nav-item dropdown pt-1">
@@ -32,10 +34,9 @@
           </div>
         </li>
         <li class="nav-item dropdown pt-1">
-          <a class="nav-link dropdown-toggle bg-dark text-light" data-toggle="dropdown" href="#">Portfolio</a>
+          <a class="nav-link dropdown-toggle bg-dark text-info" data-toggle="dropdown" href="#">Portfolio</a>
           <div class="dropdown-menu">
-            <a class="dropdown-item text-body" href="/portfolio/index.html">Portfolio Index</a>
-            <a class="dropdown-item text-body" href="/portfolio/ezfit.html">EZ-FIT: FitBit Workout Suggestions</a>
+            <a class="dropdown-item text-body" href="https://ezfit.rocks/" target="_blank">EZ-FIT: FitBit Workout Suggestions</a>
             <a class="dropdown-item text-body" href="/portfolio/memory_match/">Star Wars Memory Match Game</a>
           </div>
         </li>
@@ -73,13 +74,55 @@
       <div class="row">
         <div class="col-2"></div>
         <div class="col">
+          <section id="article01-01-27-20">
+            <h3 class="text-warning"><em>1/27/20: Learn to setup Putty for easier remote Linux server administration (Windows users only)</em></h3>
+            <figure class="figure float-right">
+              <img id="img0004-01-27-20" class="figure-image img-fluid rounded img-thumbnail"
+                src="../assets/images/main/img0004-01-27-20.png" alt="Screenshot of the PuTTY interface" />
+              <figcaption class="figure-caption text-warning"><h4><em>The PuTTY interface upon opening it</em></h4></figcaption>
+            </figure>
+            <p>If you use Windows and are administering a remote Linux server on Amazon Web Services (AWS) using Windows' shitty command-line shell (yes, that includes PowerShell), it's time you learned to switch to the most popular SSH/Telnet client called PuTTY (<a href="https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-0.73-installer.msi" target="_blank">download the 64-bit version here</a>). This will save you from having to type in that long-ass command to SSH into your remote server every time (you know the one I'm talking about: <code>ssh -i &lt;<em>the-location-of-my-pem-file</em>&gt; &lt;<em>my-user-name</em>&gt;&#64;&lt;<em>ip-address-of-server</em>&gt;</code>). After you have installed PuTTY, open the program and type in the IP address of your server in the "Host Name (or IP address)" field, followed by a convenient name to remember this login by in the "Saved Sessions" field. Now click the "Save" button (I've highlighted all those areas yellow in the image to the right).</p>
+            <figure class="figure float-left">
+              <img id="img0005-01-27-20" class="figure-image img-fluid rounded img-thumbnail"
+                src="../assets/images/main/img0005-01-27-20.png" alt="Screenshot of the PuTTY key generator" />
+              <figcaption class="figure-caption text-warning">
+                <h4><em>The PuTTY key generator</em></h4>
+              </figcaption>
+            </figure>
+            <p>The next step is to convert the .pem key file that you got from AWS into a format that PuTTY can understand. If you right click on the open PuTTY program from the Windows task bar at the bottom, it will pull up a sub-menu list, which includes an entry entitled "Run PuTTYgen". Click on that to open up the PuTTY key generator. Once open, click on the "Conversions" menu at the top, then "Import key". Locate your .pem file to load it into the program, then click on the "Save private key" button (all these areas have been highlighted yellow for you in the image to the left). If it warns you about not setting a password, that is your choice to ignore or not. If you do set a password on the key, then you'll always be prompted to type it in every time you log into your remote server; otherwise you'll just be logged in automatically instead. Whichever option you choose, you now have to save your new private key for PuTTY in a safe location on your computer (this key file will end with the extension .ppk).</p>
+            <p>The final step is to configure PuTTY to use this new key file. Hopefully you still have your PuTTY client open from the first step. Refer back to the image on the right: you'll notice I have also highlighted yellow 3 sub-menus on the left-hand side of the image (namely, "Connection", "SSH", and "Auth"). Expand all 3 of those menus, and select the "Auth" sub-menu. You'll now notice a "Browse" button, which you will click on in order to select the .ppk key file you created in the previous step. Once you have selected that file, go back to the "Session" sub-menu of PuTTY, make sure the name you picked for this session is in the box under "Saved Sessions", and click on the "Save" button again so that it will associate that key file with this particular session. Now simply double-click on the name of your saved session in the box to launch the session, click "Yes" on the popup warning, and you should be in!</p>
+          </section>
+        </div>
+        <div class="col-2"></div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col">
+          <section id="article02-01-26-20">
+            <h3 class="text-warning"><em>1/26/20: My idol, Kobe Bryant, has passed away today <i class="far fa-sad-tear fa-lg pl-4"></i> </em></h3>
+            <div class="container float-left">
+              <figure class="figure">
+                <img id="img0003-01-26-20" class="figure-image img-fluid rounded img-thumbnail"
+                  src="../assets/images/main/img0003-01-26-20.jpg" alt="Kobe Bryant dunking" />
+                <figcaption class="figure-caption text-warning"><h4><em>The Black Mamba: Kobe Bryant</em></h4></figcaption>
+              </figure>
+            </div>
+            <p>Absolutely stunned and shocked. I am devastated by the news report coming out of ESPN today that reported Kobe Bryant was among one of the dead in a helicopter crash in Calabasas, California. I grew up a die-hard Lakers fan, idolizing Kobe as he won us 5 NBA championships. I was watching live on TV that fateful night against the Toronto Raptors when he dropped a whopping 81 points against them, quite possibly the greatest feat of scoring I have ever seen and will ever see in my lifetime, especially against modern NBA defenses, and coming from the guard position most of all. The pain and anguish I am feeling right now is almost as if I lost someone close to me in my family, because that's how much time I spent watching him on TV. when I say it hits close to home, I literally mean that because despite being in Los Angeles for work, he made his home with his family right here in Orange County, in the Newport Coast section of Newport Beach, less than 5 minutes away from where I live. Many times he was spotted working out at the Anteater Recreation Center (or the "Arc") on the campus of the University of California, Irvine (UCI), where I went for graduate school. He was family and I will miss him sorely. Thanks for the memories Kobe, your accomplishments will continue to endure until the end of time.</p>
+          </section>
+        </div>
+        <div class="col-2"></div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col">
           <section id="article01-01-26-20">
             <h3 class="text-warning"><em>1/26/20: Use bash aliases to speed things up in the Linux terminal!</em></h3>
-            <figure>
-              <img id="image01-01-26-20" class="float-right img-fluid rounded img-thumbnail" src="../assets/images/01-26-20-image001.png"
-                alt="bash-aliases" />
+            <figure class="figure float-right">
+              <img id="img0002-01-26-20" class="figure-image img-fluid rounded img-thumbnail" src="../assets/images/main/img0002-01-26-20.png" alt="Screenshot of bash aliases file" />
             </figure>
-            <p>One of very first things I do when I set up a Linux server is to set up my Bash aliases which increases productivity since I end up being able to do more by typing less and with much more speed. As an example, instead of typing <code>sudo apt update</code> everytime you want to update your software repositories, imagine being able to run the same command by just typing <code>update</code>. That's where bash aliases come into play. Here's how to set them up: on your Linux server, first type <code>cd</code> to ensure that you are in your home directory. Then type <code>ls -lah</code> to reveal all your hidden files (these are files whose names begin with a period, such as ".bashrc"). In fact, we are going to be opening the ".bashrc" file to make sure the option for bash aliases is enabled, so fire up the nano text editor by typing <code>nano .bashrc</code>. Scroll down to the bottom of the file and make sure the second to last code block with the declaration shown in the image below
+             <p>One of very first things I do when I set up a Linux server is to set up my Bash aliases which increases productivity since I end up being able to do more by typing less and with much more speed. As an example, instead of typing <code>sudo apt update</code> everytime you want to update your software repositories, imagine being able to run the same command by just typing <code>update</code>. That's where bash aliases come into play. Here's how to set them up: on your Linux server, first type <code>cd</code> to ensure that you are in your home directory. Then type <code>ls -lah</code> to reveal all your hidden files (these are files whose names begin with a period, such as ".bashrc"). In fact, we are going to be opening the ".bashrc" file to make sure the option for bash aliases is enabled, so fire up the nano text editor by typing <code>nano .bashrc</code>. Scroll down to the bottom of the file and make sure the second to last code block with the declaration shown in the image below
             <pre id="alias-code" class="float-left">
               <code>
 if [ -f ~/.bash_aliases ]; then
@@ -91,14 +134,18 @@ fi
 
             <p>Now, let's create the bash aliases file by typing <code>nano .bash_aliases</code>. Inside, this file will contain your alias definitions. The syntax for this is: alias &lt;<em>your-alias</em>&gt;="&lt;<em>actual-command</em>&gt;". In the provided image above, I have included some examples of my alias definitions. The first two are aliases for the same command, namely, <code>cd ..</code>. With these aliases, I can now type <code>..</code> or <code>cd..</code> (without the space between "cd" and "..") to go up one directory, or if I need to reboot the server, I can now just type <code>reboot</code> instead of <code>sudo shutdown -r now</code>. Once you have your definitions set, type <kbd>Ctrl+O</kbd> to save your changes and <kbd>Ctrl+X</kbd> to exit nano. In order to have your alias definitions take effect without rebooting your machine or logging out and back in, type <code>source .bash_aliases</code>. This command will tell the bash shell to parse your alias definitions so that you can start using them right away!</p>
           </section>
-          <br />
-          <br />
-          <br />
+        </div>
+        <div class="col-2"></div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col">
           <section id="article01-01-25-20">
             <h3 class="text-warning"><em>1/25/20: How to use nginx to rapidly deploy other pages of your website</em></h3>
             <figure>
-              <img id="image01-01-25-20" class="float-left img-fluid rounded img-thumbnail"
-                src="../assets/images/01-25-20-image001.png" alt="nginx-config-location" />
+              <img id="img0001-01-25-20" class="float-left img-fluid rounded img-thumbnail"
+                src="../assets/images/main/img0001-01-25-20.png" alt="Screenshot of nginx site configuration file" />
             </figure>
             <p>For first time web developers, once you have a web server up and running for the first time ever, it can be very exciting. It's important, however, to make sure you have it configured properly before you jump right into development. While there are many ways in setting up nginx (the same goes for Apache2), one method I have always found very convenient and easy to execute is enabling multiple locations in the nginx configuration file for the different areas of my website. What this means is, if I add, for example, location "/photos" to my config file, then users will then be able to navigate to "www.mywebsite.com/photos/". I have seen other people preach creating C-NAME DNS records in order to create sub-domains that point to other areas of your website (in this case, using the previous example, it would point to "photos.mywebsite.com"), but I feel that this is unnecessary work, not to mention that sub-domains were not meant to be used in that way.</p>
             <p>In order to add these locations to your nginx configuration file, do the following: in your web server on the command line, type in <code>cd /etc/nginx/sites-available/</code> then press enter.
@@ -109,7 +156,6 @@ fi
         <div class="col-2"></div>
       </div>
     </main>
-    <script type="text/javascript" src="//counter.websiteout.net/js/6/9/0/0"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>

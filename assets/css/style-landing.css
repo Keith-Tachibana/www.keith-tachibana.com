@@ -1,5 +1,5 @@
 main {
-  background-image: url('../images/entrance.jpg');
+  background-image: url('../images/landing/entrance.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -13,7 +13,7 @@ body {
   position: absolute;
   height: 540px;
   width: 960px;
-  background-image: url('../images/demon2.png');
+  background-image: url('../images/landing/demon2.png');
   background-repeat: cover;
 }
 
@@ -21,7 +21,7 @@ body {
   position: absolute;
   height: 540px;
   width: 960px;
-  background-image: url('../images/demon2.png');
+  background-image: url('../images/landing/demon2.png');
   background-repeat: cover;
 }
 
@@ -29,7 +29,7 @@ body {
   position: absolute;
   height: 512px;
   width: 512px;
-  background-image: url('../images/imp1.png');
+  background-image: url('../images/landing/imp1.png');
   background-repeat: cover;
 }
 
@@ -37,7 +37,7 @@ body {
   position: absolute;
   height: 512px;
   width: 512px;
-  background-image: url('../images/imp1.png');
+  background-image: url('../images/landing/imp1.png');
   background-repeat: cover;
 }
 
@@ -45,7 +45,7 @@ body {
   position: absolute;
   height: 518px;
   width: 921px;
-  background-image: url('../images/flames1.png');
+  background-image: url('../images/landing/flames1.png');
   background-repeat: cover;
 }
 
@@ -53,7 +53,7 @@ body {
   position: absolute;
   height: 518px;
   width: 921px;
-  background-image: url('../images/flames1.png');
+  background-image: url('../images/landing/flames1.png');
   background-repeat: cover;
 }
 
@@ -61,7 +61,7 @@ body {
   position: absolute;
   height: 518px;
   width: 921px;
-  background-image: url('../images/flames1.png');
+  background-image: url('../images/landing/flames1.png');
   background-repeat: cover;
 }
 
@@ -69,7 +69,7 @@ body {
   position: absolute;
   height: 1024px;
   width: 1024px;
-  background-image: url('../images/sun.png');
+  background-image: url('../images/landing/sun.png');
   background-repeat: cover;
 }
 

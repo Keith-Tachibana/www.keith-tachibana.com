@@ -1,5 +1,5 @@
 body {
-  background-image: url("../../assets/images/background.gif");
+  background-image: url("../../assets/images/memory_match/background.gif");
   background-size: 100% 150%;
   background-repeat: no-repeat;
   height: 97vh;
@@ -154,7 +154,7 @@ body {
 }
 
 .card-back {
-  background-image: url("../../assets/images/storm-trooper.gif");
+  background-image: url("../../assets/images/memory_match/storm-trooper.gif");
   transition: transform .2s;
   /*opacity: 0.5;*/
 }
@@ -167,44 +167,44 @@ body {
 }
 
 .chewbacca {
-  background-image: url("../../assets/images/chewbacca.jpg");
+  background-image: url("../../assets/images/memory_match/chewbacca.jpg");
 }
 
 .emperor {
-  background-image: url("../../assets/images/emperor.jpg");
+  background-image: url("../../assets/images/memory_match/emperor.jpg");
 }
 
 .hansolo {
-  background-image: url("../../assets/images/hansolo.webp");
+  background-image: url("../../assets/images/memory_match/hansolo.webp");
 }
 
 .leia {
-  background-image: url("../../assets/images/leia.jpg");
+  background-image: url("../../assets/images/memory_match/leia.jpg");
 }
 
 .luke {
-  background-image: url("../../assets/images/luke.png");
+  background-image: url("../../assets/images/memory_match/luke.png");
 }
 
 .obiwan {
-  background-image: url("../../assets/images/obiwan.webp");
+  background-image: url("../../assets/images/memory_match/obiwan.webp");
 }
 
 .padme {
-  background-image: url("../../assets/images/padme.jpg");
+  background-image: url("../../assets/images/memory_match/padme.jpg");
 }
 
 .vader {
-  background-image: url("../../assets/images/vader.jpg");
+  background-image: url("../../assets/images/memory_match/vader.jpg");
 }
 
 .yoda {
-  background-image: url("../../assets/images/yoda.jpg");
+  background-image: url("../../assets/images/memory_match/yoda.jpg");
 }
 
 .modal {
   position: fixed;
-  background-image: url("../../assets/images/fireworks.gif");
+  background-image: url("../../assets/images/memory_match/fireworks.gif");
   background-repeat: no-repeat;
   background-size: cover;
   color: black;
@@ -611,10 +611,6 @@ body {
 
   .shuffle-button {
     font-size: 1.5rem;
-  }
-
-  .card-item {
-    height: 30%;
   }
 
   .modal {
