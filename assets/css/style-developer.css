@@ -36,6 +36,10 @@ header {
   font-family: 'Righteous', cursive;
 }
 
+figcaption {
+  font-family: 'Righteous', cursive;
+}
+
 #server_room_29prime {
   width: 95%;
 }

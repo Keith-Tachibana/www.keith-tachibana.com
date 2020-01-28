@@ -36,6 +36,10 @@ header {
   font-family: 'Righteous', cursive;
 }
 
+.carousel-caption h3 {
+  font-family: 'Righteous', cursive;
+}
+
 #img0002-greenpoint-tattoo {
   transform: rotate(180deg);
 }

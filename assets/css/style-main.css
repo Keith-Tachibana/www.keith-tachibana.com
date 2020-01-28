@@ -36,6 +36,14 @@ header {
   font-family: 'Righteous', cursive;
 }
 
+.article-name {
+  font-family: 'Righteous', cursive;
+}
+
+figcaption {
+  font-family: 'Righteous', cursive;
+}
+
 pre code {
   background-color: darkgrey;
   border: 5px solid #fff;
