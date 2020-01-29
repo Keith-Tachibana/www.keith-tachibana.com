@@ -4,6 +4,7 @@ main {
   background-size: cover;
   background-position: center;
   min-width: 2500px;
+  min-height: 3333.33px;
 }
 
 body {
@@ -73,7 +74,7 @@ body {
   background-image: url('../images/landing/flames1.png');
   background-repeat: cover;
 }
-/*
+
 #flames3 {
   position: absolute;
   height: 518px;
@@ -81,7 +82,7 @@ body {
   background-image: url('../images/landing/flames1.png');
   background-repeat: cover;
 }
-*/
+
 #sun {
   position: absolute;
   height: 1024px;
