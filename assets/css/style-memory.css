@@ -160,9 +160,12 @@ body {
 }
 
 .card-back:hover {
-  border: 3px groove red;
+  border: 1px groove #f0f;
   transform: scale(1.1);
-  box-shadow: 5px 5px #EA2B1F;
+  box-shadow:
+        0 0 30px 15px #fff,
+        0 0 50px 30px #f0f,
+        0 0 70px 45px #0ff;
   z-index: 10;
 }
 
