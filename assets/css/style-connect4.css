@@ -1,0 +1,384 @@
+body {
+  max-width: 1250px;
+  margin: 0;
+  text-align: center;
+  background-image: url('../images/connect_4/pablo-garcia-saldana-6WysHvxpQEQ-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: whitesmoke;
+}
+
+table {
+  margin: .5rem 3rem;
+}
+
+tr, td, tbody {
+  border: 1px solid #000;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+#gameInfo {
+  font-size: 1.75rem;
+}
+
+.tdElement {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+th:hover {
+  background-image: url('../images/connect_4/arrow.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#startGame {
+  font-size: 1rem;
+  font-weight: bold;
+  height: 35px;
+  width: 125px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(60, 103, 58);
+  color: rgb(224, 233, 66);
+}
+
+#startGame:hover {
+  cursor: pointer;
+  background-color: rgb(36, 58, 35);
+}
+
+#startGame:active {
+  transform: translateY(5px);
+}
+
+#startGame:disabled {
+  color: grey;
+  cursor: initial;
+}
+
+#startGame:disabled:hover {
+  background-color: rgb(60, 103, 58);
+  cursor: initial;
+}
+
+#resetGame {
+  font-size: 1rem;
+  height: 35px;
+  width: 125px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(224, 233, 66);
+  color: rgb(60, 103, 58);
+}
+
+#resetGame:hover {
+  cursor: pointer;
+  background-color: rgb(126, 131, 35);
+}
+
+#resetGame:active {
+  transform: translateY(5px);
+}
+
+#music {
+  height: 25px;
+  width: 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(6, 94, 54);
+  color: white;
+}
+
+#music:hover {
+  cursor: pointer;
+  background-color: rgb(188, 194, 191);
+}
+
+#music:active {
+  transform: translateY(5px);
+}
+
+#p1Wins, #p2Wins {
+  font-style: italic;
+}
+
+.modal, .modal-draw {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(27, 29, 25, 0.637)
+}
+
+.modal-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.modal-text>div {
+  text-align: center;
+  font-size: 3rem;
+  position: relative;
+  top: 50px;
+}
+
+.close {
+  font-size: 5rem;
+  font-weight: bolder;
+  color: #fff;
+}
+
+.close:hover {
+  cursor: pointer;
+  color: #aaa;
+}
+
+.close:active {
+  transform: translateY(5px);
+}
+
+.restart, .restart-draw {
+  height: 25px;
+  width: 100px;
+  border-radius: 10px;
+  border: none;
+  background-color: dodgerblue;
+  color: white;
+}
+
+.restart:hover {
+  cursor: pointer;
+  background-color: blue;
+}
+
+.restart:active {
+  transform: translateY(5px);
+}
+
+.fall-5 {
+  animation-name: fall-animation-5;
+  animation-duration: 500ms;
+}
+
+.fall-4 {
+  animation-name: fall-animation-4;
+  animation-duration: 500ms;
+}
+
+.fall-3 {
+  animation-name: fall-animation-3;
+  animation-duration: 500ms;
+}
+
+.fall-2 {
+  animation-name: fall-animation-2;
+  animation-duration: 500ms;
+}
+
+.fall-1 {
+  animation-name: fall-animation-1;
+  animation-duration: 500ms;
+}
+
+.fall-0 {
+  animation-name: fall-animation-0;
+  animation-duration: 500ms;
+}
+
+@keyframes fall-animation-5 {
+  from {
+    transform: translateY(-500px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fall-animation-4 {
+  from {
+    transform: translateY(-400px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fall-animation-3 {
+  from {
+    transform: translateY(-300px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fall-animation-2 {
+  from {
+    transform: translateY(-200px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fall-animation-1 {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fall-animation-0 {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.player1 {
+  background-color: rgb(66, 151, 62);
+}
+
+.player2 {
+  background-color: rgb(224, 233, 66);
+}
+
+.theme-title {
+  display: flex;
+  height: 120px;
+  justify-content: center;
+}
+
+.theme-title p {
+  color: whitesmoke;
+  font-size: 3rem;
+  margin-top: 2.5rem;
+}
+
+.title-1 {
+  background-image: url('../images/connect_4/co.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90px;
+  width: 100px;
+  margin: 1rem;
+  margin-right: .3rem;
+}
+
+.title-2 {
+  background-image: url('../images/connect_4/F.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90px;
+  width: 100px;
+  margin: 1rem;
+  margin-right: .3rem;
+}
+
+.gameStats {
+  display: flex;
+  width: 100%;
+}
+
+main {
+  display: flex;
+}
+
+.choose-token {
+  /* margin: auto; */
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  margin-top: .5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 5rem;
+  border-radius: 50%;
+  background-color: rgba(136, 194, 88, 0.842)
+}
+
+.icon-1 {
+  background-image: url('../images/connect_4/beaker.png');
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-2 {
+  background-image: url('../images/connect_4/icons8-camper-80.png');
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-3 {
+  background-image: url('../images/connect_4/icons8-hat-80.png');
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-4 {
+  background-image: url('../images/connect_4/icons8-skull-crossbones-100.png');
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-5 {
+  background-image: url('../images/connect_4/money.png');
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#token1, #token2 {
+  color: black;
+  font-weight: bold;
+}
+
+.choose-token:hover {
+  background-color: rgb(7, 7, 7);
+  cursor: pointer;
+}
+
+.choose-token:active {
+  transform: translateY(5px);
+}
+
+#p1Wins, #p2Wins {
+  margin-top: 2rem;
+  color: whitesmoke;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  line-height: 0.5rem;
+}
+
+aside {
+  margin: 1.5rem;
+  margin-right: 0;
+}
+
+.hidden {
+  display: none;
+}

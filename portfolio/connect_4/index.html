@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../../assets/css/style-connect4.css" rel="stylesheet" />
+    <title>Keith Tachibana: Connect 4</title>
+  </head>
+  <body>
+    <div class="modal hidden">
+      <div class="modal-text">
+        <span class="close">&times;</span>
+        <button class="restart">Play Again</button>
+        <div class="congrats"></div>
+      </div>
+    </div>
+    <div class="modal-draw hidden">
+      <div class="modal-text">
+        <span class="close">&times;</span>
+        <button class="restart-draw">Play Again</button>
+        <div class="draw"></div>
+      </div>
+    </div>
+    <header>
+      <div class="theme-title">
+        <div class="title-1"></div>
+        <p>nnect</p>
+        <div class="title-2"></div>
+        <p>our</p>
+      </div>
+      <h3>Press "Start Game" to begin!</h3>
+      <button id="startGame">Start Game</button>
+      <button id="resetGame">Reset Game</button>
+      <button id="music">&#128361;</button>
+    </header>
+    <main>
+      <aside class="game-stats">
+        <div id="gameInfo"></div>
+        <div id="p1Wins">Player 1 Number of Wins:</div>
+        <div id="p2Wins">Player 2 Number of Wins:</div>
+        <p id="token1">Choose Your Token:</p>
+        <p id="token2">(Theme will apply after your first drop)</p>
+        <div class="choose-token icon-1"></div>
+        <div class="choose-token icon-2"></div>
+        <div class="choose-token icon-3"></div>
+        <div class="choose-token icon-4"></div>
+        <div class="choose-token icon-5"></div>
+      </aside>
+        <audio loop id="theme">
+          <source src="../../assets/audio/Breaking_Bad_Theme.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      <table>
+      <thead>
+            <th class="col-0"></th>
+            <th class="col-1"></th>
+            <th class="col-2"></th>
+            <th class="col-3"></th>
+            <th class="col-4"></th>
+            <th class="col-5"></th>
+            <th class="col-6"></th>
+          </thead>
+        <tbody>
+          <!--Row #1-->
+          <tr>
+            <td id="td00"></td>
+            <td id="td01"></td>
+            <td id="td02"></td>
+            <td id="td03"></td>
+            <td id="td04"></td>
+            <td id="td05"></td>
+            <td id="td06"></td>
+          </tr>
+          <!--Row #2-->
+          <tr>
+            <td id="td10"></td>
+            <td id="td11"></td>
+            <td id="td12"></td>
+            <td id="td13"></td>
+            <td id="td14"></td>
+            <td id="td15"></td>
+            <td id="td16"></td>
+          </tr>
+          <!--Row #3-->
+          <tr>
+            <td id="td20"></td>
+            <td id="td21"></td>
+            <td id="td22"></td>
+            <td id="td23"></td>
+            <td id="td24"></td>
+            <td id="td25"></td>
+            <td id="td26"></td>
+          </tr>
+          <!--Row #4-->
+          <tr>
+            <td id="td30"></td>
+            <td id="td31"></td>
+            <td id="td32"></td>
+            <td id="td33"></td>
+            <td id="td34"></td>
+            <td id="td35"></td>
+            <td id="td36"></td>
+          </tr>
+          <!--Row #5-->
+          <tr>
+            <td id="td40"></td>
+            <td id="td41"></td>
+            <td id="td42"></td>
+            <td id="td43"></td>
+            <td id="td44"></td>
+            <td id="td45"></td>
+            <td id="td46"></td>
+          </tr>
+          <!--Row #6-->
+          <tr>
+            <td id="td50"></td>
+            <td id="td51"></td>
+            <td id="td52"></td>
+            <td id="td53"></td>
+            <td id="td54"></td>
+            <td id="td55"></td>
+            <td id="td56"></td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <script src="../../assets/js/connect4.js"></script>
+  </body>
+</html>
