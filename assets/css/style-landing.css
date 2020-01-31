@@ -3,12 +3,12 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-width: 2500px;
-  min-height: 3333.33px;
+  min-width: 98vw;
+  min-height: 100vh;
 }
 
 body {
-  font-family: 'Metal Mania', cursive;
+  font-family: 'Metal Mania', cursive
 }
 
 #demon1 {

@@ -1,25 +1,18 @@
 body {
-  font-family: "Metal Mania", sans-serif;
+  font-family: Tahoma, sans-serif;
   font-size: 1.25rem;
+  max-width: 98vw;
 }
 
 #name {
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   line-height: 100px;
-  font-family: 'Righteous', cursive;
-}
-
-#welcome {
-  font-family: 'Righteous', cursive;
+  font-family: 'Metal Mania', sans-serif;
 }
 
 #description {
   padding-top: 5%;
   padding-bottom: 5%;
-}
-
-.dropdown-item {
-  font-family: 'Righteous', cursive;
 }
 
 header {
@@ -32,10 +25,6 @@ header {
   background-color: rgba(233, 233, 233, 0.0)
 }
 
-#contact-button {
-  font-family: 'Righteous', cursive;
-}
-
-figcaption {
-  font-family: 'Righteous', cursive;
+.page-title {
+  font-family: 'Metal Mania', sans-serif;
 }

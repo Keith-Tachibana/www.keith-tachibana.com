@@ -66,10 +66,12 @@ close.addEventListener('click', function () {
 })
 restart.addEventListener('click', function () {
   modal.classList.add('hidden');
+  counter = -1;
   startGame();
 })
 restartDraw.addEventListener('click', function () {
   modalDraw.classList.add('hidden');
+  counter = -1;
   startGame();
 })
 reset.addEventListener('click', resetGame);
@@ -110,9 +112,9 @@ function startGame() {
   } else {
     gameActive = true;
   }
-  for (row = 0; row <= 5; row++) {
+  for (var row = 0; row <= 5; row++) {
     gameBoard[row] = [];
-    for (col = 0; col <= 6; col++) {
+    for (var col = 0; col <= 6; col++) {
       gameBoard[row][col] = 0;
     }
   }
@@ -133,7 +135,7 @@ function startGame() {
 }
 
 function resetGame() {
-  counter = -1;
+  counter = 0;
   p1GamesWon = 0;
   p2GamesWon = 0;
   p1Wins.textContent = "Player 1 Number of Wins: " + p1GamesWon;

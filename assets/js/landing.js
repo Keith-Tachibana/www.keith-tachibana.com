@@ -21,39 +21,39 @@ positionDivs();
 function fillObjectArray() {
   var demon1Div = document.getElementById("demon1");
   var demon1X = 500; //position div from half width of the page
-  var demon1Y = 1850;
+  var demon1Y = 50;
   var demon1Factor = 0.4 //parallax shift factor, the bigger the value, the more it shift for parallax movement
   var demon1Array = new Array();
   demon1Array.push(demon1Div, demon1X, demon1Y, demon1Factor);
   objectArray.push(demon1Array);
 
   var demon2Div = document.getElementById("demon2");
-  var demon2X = 1000; //position div from half width of the page
-  var demon2Y = 2250;
+  var demon2X = 1200; //position div from half width of the page
+  var demon2Y = 250;
   var demon2Factor = 0.35; //parallax shift factor, the bigger the value, the more it shift for parallax movement
   var demon2Array = new Array();
   demon2Array.push(demon2Div, demon2X, demon2Y, demon2Factor);
   objectArray.push(demon2Array);
 
   var imp1Div = document.getElementById("imp1");
-  var imp1X = 600; //position div from half width of the page
-  var imp1Y = 2700;
+  var imp1X = 825; //position div from half width of the page
+  var imp1Y = 710;
   var imp1Factor = 0.25; //parallax shift factor, the bigger the value, the more it shift for parallax movement
   var imp1Array = new Array();
   imp1Array.push(imp1Div, imp1X, imp1Y, imp1Factor);
   objectArray.push(imp1Array);
 
   var imp2Div = document.getElementById("imp2");
-  var imp2X = 1200; //position div from half width of the page
-  var imp2Y = 2700;
+  var imp2X = 1500; //position div from half width of the page
+  var imp2Y = 710;
   var imp2Factor = 0.2; //parallax shift factor, the bigger the value, the more it shift for parallax movement
   var imp2Array = new Array();
   imp2Array.push(imp2Div, imp2X, imp2Y, imp2Factor);
   objectArray.push(imp2Array);
 
   var succubus1Div = document.getElementById("succubus1");
-  var succubus1X = 600; //position div from half width of the page
-  var succubus1Y = 1300;
+  var succubus1X = 300; //position div from half width of the page
+  var succubus1Y = 500;
   var succubus1Factor = 0.12; //parallax shift factor, the bigger the value, the more it shift for parallax movement
   var succubus1Array = new Array();
   succubus1Array.push(succubus1Div, succubus1X, succubus1Y, succubus1Factor);
@@ -61,7 +61,7 @@ function fillObjectArray() {
 
   var succubus2Div = document.getElementById("succubus2");
   var succubus2X = 890; //position div from half width of the page
-  var succubus2Y = 1300;
+  var succubus2Y = 500;
   var succubus2Factor = 0.18; //parallax shift factor, the bigger the value, the more it shift for parallax movement
   var succubus2Array = new Array();
   succubus2Array.push(succubus2Div, succubus2X, succubus2Y, succubus2Factor);
@@ -69,7 +69,7 @@ function fillObjectArray() {
 
   var flames1Div = document.getElementById("flames1");
   var flames1X = 405; //position div from half width of the page
-  var flames1Y = 2815;
+  var flames1Y = 779;
   var flames1Factor = 0.05; //parallax shift factor, the bigger the value, the more it shift for parallax movement
   var flames1Array = new Array();
   flames1Array.push(flames1Div, flames1X, flames1Y, flames1Factor);
@@ -77,7 +77,7 @@ function fillObjectArray() {
 
   var flames2Div = document.getElementById("flames2");
   var flames2X = 811; //position div from half width of the page
-  var flames2Y = 2815;
+  var flames2Y = 779;
   var flames2Factor = 0.1; //parallax shift factor, the bigger the value, the more it shift for parallax movement
   var flames2Array = new Array();
   flames2Array.push(flames2Div, flames2X, flames2Y, flames2Factor);
@@ -85,7 +85,7 @@ function fillObjectArray() {
 
   var flames3Div = document.getElementById("flames3");
   var flames3X = 1216; //position div from half width of the page
-  var flames3Y = 2815;
+  var flames3Y = 779;
   var flames3Factor = 0.15; //parallax shift factor, the bigger the value, the more it shift for parallax movement
   var flames3Array = new Array();
   flames3Array.push(flames3Div, flames3X, flames3Y, flames3Factor);
@@ -93,7 +93,7 @@ function fillObjectArray() {
 
   var sunDiv = document.getElementById("sun");
   var sunX = 800; //position div from half width of the page
-  var sunY = 1500;
+  var sunY = -100;
   var sunFactor = 0.07; //parallax shift factor, the bigger the value, the more it shift for parallax movement
   var sunArray = new Array();
   sunArray.push(sunDiv, sunX, sunY, sunFactor);
@@ -101,7 +101,7 @@ function fillObjectArray() {
 
   var enterDiv = document.getElementById("enter");
   var enterX = 1240; //position div from half width of the page
-  var enterY = 2270;
+  var enterY = 670;
   var enterFactor = 0.07; //parallax shift factor, the bigger the value, the more it shift for parallax movement
   var enterArray = new Array();
   enterArray.push(enterDiv, enterX, enterY, enterFactor);
