@@ -4,51 +4,55 @@
     <title>Keith Tachibana: Main</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" type="image/png" href="../assets/images/icon.png">
     <link href="https://fonts.googleapis.com/css?family=Metal+Mania&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/style-main.css">
   </head>
   <body>
-    <nav class="bg-dark sticky-top">
-      <ul class="nav nav-tabs">
-        <a class="navbar-brand pt-2" href="http://www.keith-tachibana.com/"><h3>Keith Tachibana &gt;&gt;&gt;</h3></a>
-        <li class="nav-item pt-1">
-          <a class="nav-link bg-dark text-warning" href="/main/">Home</a>
-        </li>
-        <li class="nav-item dropdown pt-1">
-          <a class="nav-link dropdown-toggle bg-dark text-success" data-toggle="dropdown" href="#">About Me</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item text-body" href="/about/index.html">About Me</a>
-            <a class="dropdown-item text-body" href="/about/contact.html">Contact Info</a>
-            <a class="dropdown-item text-body" href="/about/cv.html">Curriculum Vitae (C.V.)</a>
-            <a class="dropdown-item text-body" href="/about/developer.html">My Developer's Story</a>
-            <a class="dropdown-item text-body" href="/about/tech.html">Technology Used</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown pt-1">
-          <a class="nav-link dropdown-toggle bg-dark text-danger" data-toggle="dropdown" href="#">Media</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item text-body" href="/media/images/index.html">Photos</a>
-            <a class="dropdown-item text-body" href="/media/videos/index.html">Videos</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown pt-1">
-          <a class="nav-link dropdown-toggle bg-dark text-info" data-toggle="dropdown" href="#">Portfolio</a>
-          <div class="dropdown-menu">
-            <a class="dropdown-item text-body" href="/portfolio/connect_4/">Breaking Bad Connect 4 Game</a>
-            <a class="dropdown-item text-body" href="https://ezfit.rocks/" target="_blank">EZ-FIT: FitBit Workout Suggestions</a>
-            <a class="dropdown-item text-body" href="/portfolio/memory_match/">Star Wars Memory Match Game</a>
-          </div>
-        </li>
-      </ul>
-    </nav>
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <nav class="bg-dark sticky-top">
+          <ul class="nav nav-tabs">
+            <a class="navbar-brand pt-2 pl-2" href="http://www.keith-tachibana.com/"><h3>Keith Tachibana &gt;&gt;&gt;</h3></a>
+            <li class="nav-item">
+              <a class="nav-link bg-dark text-warning" href="/main/">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle bg-dark text-success" data-toggle="dropdown" href="#">About Me</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item text-body" href="/about/index.html">About Me</a>
+                <a class="dropdown-item text-body" href="/about/contact.html">Contact Info</a>
+                <a class="dropdown-item text-body" href="/about/cv.html">Curriculum Vitae (C.V.)</a>
+                <a class="dropdown-item text-body" href="/about/developer.html">My Developer's Story</a>
+                <a class="dropdown-item text-body" href="/about/tech.html">Technology Used</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle bg-dark text-danger" data-toggle="dropdown" href="#">Media</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item text-body" href="/media/images/index.html">Photos</a>
+                <a class="dropdown-item text-body" href="/media/videos/index.html">Videos</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle bg-dark text-info" data-toggle="dropdown" href="#">Portfolio</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item text-body" href="/portfolio/connect_4/">Breaking Bad Connect 4 Game</a>
+                <a class="dropdown-item text-body" href="https://ezfit.rocks/" target="_blank">EZ-FIT: FitBit Workout Suggestions</a>
+                <a class="dropdown-item text-body" href="/portfolio/memory_match/">Star Wars Memory Match Game</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
     <header>
-      <div class="row">
-        <div class="col"></div>
-        <div class="col">
-          <div id="header-bg" class="jumbotron jumbotron-fluid">
-            <div class="container">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <div id="header-bg" class="jumbotron text-center">
               <p class="text-white display-2" id="name">Keith Tachibana &gt;</p>
               <p class="text-white display-3" id="welcome">Welcome to my website!</p>
               <h3 class="text-white" id="description">Inside, you'll find my portfolio, showcasing some examples of my work as a full-stack web developer.</h3>
@@ -65,41 +69,47 @@
             </div>
           </div>
         </div>
-        <div class="col"></div>
       </div>
     </header>
     <main class="bg-secondary">
-      <div class="row justify-content-center">
-        <p class="display-4 text-warning page-title">Tech Advice, Tips, &amp; Tutorials</p>
-      </div>
-      <div class="row">
-        <div class="col-2"></div>
-        <div class="col">
-          <section id="article01-01-27-20">
-            <h3 class="article-name text-warning"><em>1/27/20: Learn to setup Putty for easier remote Linux server administration (Windows users only)</em></h3>
-            <figure class="figure float-right">
-              <img id="img0004-01-27-20" class="figure-image img-fluid rounded img-thumbnail"
-                src="../assets/images/main/img0004-01-27-20.png" alt="Screenshot of the PuTTY interface" />
-              <figcaption class="figure-caption text-warning"><h5><em>Figure 1: The PuTTY interface upon opening it</em></h5></figcaption>
-            </figure>
-            <p>If you use Windows and are administering a remote Linux server on Amazon Web Services (AWS) using Windows' shitty command-line shell (yes, that includes PowerShell), it's time you learned to switch to the most popular SSH/Telnet client called PuTTY (<a href="https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-0.73-installer.msi" target="_blank">download the 64-bit version here</a>). This will save you from having to type in that long-ass command to SSH into your remote server every time (you know the one I'm talking about: <code>ssh -i &lt;<em>the-location-of-my-pem-file</em>&gt; &lt;<em>my-user-name</em>&gt;&#64;&lt;<em>ip-address-of-server</em>&gt;</code>). After you have installed PuTTY, open the program and type in the IP address of your server in the "Host Name (or IP address)" field, followed by a convenient name to remember this login by in the "Saved Sessions" field. Now click the "Save" button (I've highlighted all those areas yellow in "Figure 1").</p>
-            <figure class="figure float-left">
-              <img id="img0005-01-27-20" class="figure-image img-fluid rounded img-thumbnail"
-                src="../assets/images/main/img0005-01-27-20.png" alt="Screenshot of the PuTTY key generator" />
-              <figcaption class="figure-caption text-warning">
-                <h5><em>Figure 2: The PuTTY key generator</em></h5>
-              </figcaption>
-            </figure>
-            <p>The next step is to convert the .pem key file that you got from AWS into a format that PuTTY can understand. If you right click on the open PuTTY program from the Windows task bar at the bottom, it will pull up a sub-menu list, which includes an entry entitled "Run PuTTYgen". Click on that to open up the PuTTY key generator. Once open, click on the "Conversions" menu at the top, then "Import key". Locate your .pem file to load it into the program, then click on the "Save private key" button (all these areas have been highlighted yellow for you in "Figure 2"). If it warns you about not setting a password, that is your choice to ignore or not. If you do set a password on the key, then you'll always be prompted to type it in every time you log into your remote server; otherwise you'll just be logged in automatically instead. Whichever option you choose, you now have to save your new private key for PuTTY in a safe location on your computer (this key file will end with the extension .ppk).</p>
-            <p>The final step is to configure PuTTY to use this new key file. Hopefully you still have your PuTTY client open from the first step. Refer back to the image on the right: you'll notice I have also highlighted yellow 3 sub-menus on the left-hand side of the image (namely, "Connection", "SSH", and "Auth"). Expand all 3 of those menus, and select the "Auth" sub-menu. You'll now notice a "Browse" button, which you will click on in order to select the .ppk key file you created in the previous step. Once you have selected that file, go back to the "Session" sub-menu of PuTTY, make sure the name you picked for this session is in the box under "Saved Sessions", and click on the "Save" button again so that it will associate that key file with this particular session. Now simply double-click on the name of your saved session in the box to launch the session, click "Yes" on the popup warning, and you should be in!</p>
-          </section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <p class="display-4 text-warning page-title text-center">Tech Tips &amp; Tutorials</p>
+          </div>
         </div>
-        <div class="col-2"></div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <section id="article01-01-27-20">
+              <h3 class="text-warning"><em>1/27/20: Learn to setup Putty for easier remote Linux server administration (Windows users only)</em></h3>
+              <div class="media">
+                <div class="media-body">
+                  <figure class="figure">
+                    <img id="img0004-01-27-20" class="figure-img img-fluid rounded img-thumbnail"
+                      src="../assets/images/main/img0004-01-27-20.png" alt="Screenshot of the PuTTY interface" />
+                    <figcaption class="figure-caption text-warning"><h5><em>Figure 1: The PuTTY interface upon opening it</em></h5></figcaption>
+                  </figure>
+                </div>
+              </div>
+              <p>If you use Windows and are administering a remote Linux server on Amazon Web Services (AWS) using Windows' shitty command-line shell (yes, that includes PowerShell), it's time you learned to switch to the most popular SSH/Telnet client called PuTTY (<a href="https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-0.73-installer.msi" target="_blank">download the 64-bit version here</a>). This will save you from having to type in that long-ass command to SSH into your remote server every time (you know the one I'm talking about: <code>ssh -i &lt;<em>the-location-of-my-pem-file</em>&gt; &lt;<em>my-user-name</em>&gt;&#64;&lt;<em>ip-address-of-server</em>&gt;</code>). After you have installed PuTTY, open the program and type in the IP address of your server in the "Host Name (or IP address)" field, followed by a convenient name to remember this login by in the "Saved Sessions" field. Now click the "Save" button (I've highlighted all those areas yellow in "Figure 1").</p>
+              <figure class="figure float-left">
+                <img id="img0005-01-27-20" class="figure-image img-fluid rounded img-thumbnail"
+                  src="../assets/images/main/img0005-01-27-20.png" alt="Screenshot of the PuTTY key generator" />
+                <figcaption class="figure-caption text-warning">
+                  <h5><em>Figure 2: The PuTTY key generator</em></h5>
+                </figcaption>
+              </figure>
+              <p>The next step is to convert the .pem key file that you got from AWS into a format that PuTTY can understand. If you right click on the open PuTTY program from the Windows task bar at the bottom, it will pull up a sub-menu list, which includes an entry entitled "Run PuTTYgen". Click on that to open up the PuTTY key generator. Once open, click on the "Conversions" menu at the top, then "Import key". Locate your .pem file to load it into the program, then click on the "Save private key" button (all these areas have been highlighted yellow for you in "Figure 2"). If it warns you about not setting a password, that is your choice to ignore or not. If you do set a password on the key, then you'll always be prompted to type it in every time you log into your remote server; otherwise you'll just be logged in automatically instead. Whichever option you choose, you now have to save your new private key for PuTTY in a safe location on your computer (this key file will end with the extension .ppk).</p>
+              <p>The final step is to configure PuTTY to use this new key file. Hopefully you still have your PuTTY client open from the first step. Refer back to the image on the right: you'll notice I have also highlighted yellow 3 sub-menus on the left-hand side of the image (namely, "Connection", "SSH", and "Auth"). Expand all 3 of those menus, and select the "Auth" sub-menu. You'll now notice a "Browse" button, which you will click on in order to select the .ppk key file you created in the previous step. Once you have selected that file, go back to the "Session" sub-menu of PuTTY, make sure the name you picked for this session is in the box under "Saved Sessions", and click on the "Save" button again so that it will associate that key file with this particular session. Now simply double-click on the name of your saved session in the box to launch the session, click "Yes" on the popup warning, and you should be in!</p>
+            </section>
+          </div>
+        </div>
       </div>
       <hr />
       <div class="row">
-        <div class="col-2"></div>
-        <div class="col">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
           <section id="article02-01-26-20">
             <h3 class="article-name text-warning"><em>1/26/20: My idol, Kobe Bryant, has passed away today <i class="far fa-sad-tear fa-lg pl-4"></i> </em></h3>
             <div class="container">
@@ -119,11 +129,9 @@
               Los Angeles for work, he made his home with his family right here in Orange County, in the Newport Coast section of
               Newport Beach, less than 5 minutes away from where I live. Many times he was spotted working out at the Anteater
               Recreation Center (or the "Arc") on the campus of the University of California, Irvine (UCI), where I went for
-              graduate school. He was family and I will miss him sorely. Thanks for the memories Kobe, your accomplishments will
-              continue to endure until the end of time.</p>
+              graduate school. He was family and I will miss him sorely. Thanks for the memories Kobe: legends are forever.</p>
           </section>
         </div>
-        <div class="col-2"></div>
       </div>
       <hr />
       <div class="row">

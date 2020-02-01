@@ -3,8 +3,9 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-width: 98vw;
+  min-width: 100vw;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 body {
@@ -13,83 +14,144 @@ body {
 
 #demon1 {
   position: absolute;
-  height: 540px;
-  width: 960px;
-  background-image: url('../images/landing/demon2.png');
-  background-repeat: cover;
+  height: 248px;
+  width: 255px;
+  background-image: url('../images/landing/demon1.png');
 }
 
 #demon2 {
   position: absolute;
-  height: 540px;
-  width: 960px;
+  height: 375px;
+  width: 269px;
   background-image: url('../images/landing/demon2.png');
-  background-repeat: cover;
+}
+
+#demon3 {
+  position: absolute;
+  height: 350px;
+  width: 277px;
+  background-image: url('../images/landing/demon3.png');
+}
+
+#demon4 {
+  position: absolute;
+  height: 296px;
+  width: 273px;
+  background-image: url('../images/landing/demon4.png');
 }
 
 #imp1 {
   position: absolute;
-  height: 512px;
-  width: 512px;
+  height: 344px;
+  width: 270px;
   background-image: url('../images/landing/imp1.png');
-  background-repeat: cover;
 }
 
 #imp2 {
   position: absolute;
-  height: 512px;
-  width: 512px;
+  height: 257px;
+  width: 268px;
+  background-image: url('../images/landing/imp2.png');
+}
+
+#imp3 {
+  position: absolute;
+  height: 295px;
+  width: 269px;
+  background-image: url('../images/landing/imp3.png');
+}
+
+#imp4 {
+  position: absolute;
+  height: 344px;
+  width: 270px;
   background-image: url('../images/landing/imp1.png');
-  background-repeat: cover;
 }
 
-#succubus1 {
+#tombstone1 {
   position: absolute;
-  height: 540px;
-  width: 960px;
-  background-image: url('../images/landing/succubus.png');
-  background-repeat: cover;
+  height: 224px;
+  width: 224px;
+  background-image: url('../images/landing/tombstone1.png');
 }
 
-#succubus2 {
+#tombstone2 {
   position: absolute;
-  height: 540px;
-  width: 960px;
-  background-image: url('../images/landing/succubus.png');
-  background-repeat: cover;
+  height: 312px;
+  width: 233px;
+  background-image: url('../images/landing/tombstone2.png');
 }
 
 #flames1 {
   position: absolute;
-  height: 518px;
-  width: 921px;
+  height: 818px;
+  width: 1312px;
   background-image: url('../images/landing/flames1.png');
-  background-repeat: cover;
+  background-repeat: no-repeat;
 }
 
 #flames2 {
   position: absolute;
-  height: 518px;
-  width: 921px;
+  height: 266px;
+  width: 200px;
   background-image: url('../images/landing/flames1.png');
-  background-repeat: cover;
+  /*background-repeat: repeat-x;*/
 }
 
 #flames3 {
   position: absolute;
-  height: 518px;
-  width: 921px;
+  height: 266px;
+  width: 200px;
   background-image: url('../images/landing/flames1.png');
-  background-repeat: cover;
+  /*background-repeat: repeat-x;*/
+}
+
+#flames4 {
+  position: absolute;
+  height: 266px;
+  width: 200px;
+  background-image: url('../images/landing/flames1.png');
+  /*background-repeat: repeat-x;*/
+}
+
+#flames5 {
+  position: absolute;
+  height: 266px;
+  width: 200px;
+  background-image: url('../images/landing/flames1.png');
+  /*background-repeat: repeat-x;*/
+}
+
+#flames6 {
+  position: absolute;
+  height: 266px;
+  width: 200px;
+  background-image: url('../images/landing/flames1.png');
+  /*background-repeat: repeat-x;*/
+}
+
+#flames7 {
+  position: absolute;
+  height: 266px;
+  width: 200px;
+  background-image: url('../images/landing/flames1.png');
+  /*background-repeat: repeat-x;*/
+}
+
+#flames8 {
+  position: absolute;
+  height: 266px;
+  width: 200px;
+  background-image: url('../images/landing/flames1.png');
+  /*background-repeat: repeat-x;*/
 }
 
 #sun {
   position: absolute;
-  height: 1024px;
-  width: 1024px;
+  height: 768px;
+  width: 768px;
   background-image: url('../images/landing/sun.png');
-  background-repeat: cover;
-}
+ }
 
 #enter {
   position: absolute;
