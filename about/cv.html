@@ -15,10 +15,10 @@
         <a class="navbar-brand pt-2" href="http://www.keith-tachibana.com/">
           <h3>Keith Tachibana &gt;&gt;&gt;</h3>
         </a>
-        <li class="nav-item pt-1">
+        <li class="nav-item">
           <a class="nav-link bg-dark text-warning" href="/main/">Home</a>
         </li>
-        <li class="nav-item dropdown pt-1">
+        <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle bg-dark text-success" data-toggle="dropdown" href="#">About Me</a>
           <div class="dropdown-menu">
             <a class="dropdown-item text-body" href="/about/index.html">About Me</a>
@@ -28,17 +28,17 @@
             <a class="dropdown-item text-body" href="/about/tech.html">Technology Used</a>
           </div>
         </li>
-        <li class="nav-item dropdown pt-1">
+        <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle bg-dark text-danger" data-toggle="dropdown" href="#">Media</a>
           <div class="dropdown-menu">
             <a class="dropdown-item text-body" href="/media/images/index.html">Photos</a>
             <a class="dropdown-item text-body" href="/media/videos/index.html">Videos</a>
           </div>
         </li>
-        <li class="nav-item dropdown pt-1">
+        <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle bg-dark text-info" data-toggle="dropdown" href="#">Portfolio</a>
           <div class="dropdown-menu">
-            <a class="dropdown-item text-body" href="/portfolio/connect_4/">Breaking Bad Connect 4 Game</a>
+            <a class="dropdown-item text-body" href="/portfolio/connect4/">Breaking Bad Connect 4 Game</a>
             <a class="dropdown-item text-body" href="https://ezfit.rocks/" target="_blank">EZ-FIT: FitBit Workout Suggestions</a>
             <a class="dropdown-item text-body" href="/portfolio/memory_match/">Star Wars Memory Match Game</a>
           </div>
@@ -46,11 +46,10 @@
       </ul>
     </nav>
     <header>
-      <div class="row">
-        <div class="col"></div>
-        <div class="col">
-          <div id="header-bg" class="jumbotron jumbotron-fluid">
-            <div class="container">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <div id="header-bg" class="jumbotron text-center">
               <p class="text-white display-2" id="name">Keith Tachibana &gt;</p>
               <p class="text-white display-3" id="welcome">Curriculum Vitae</p>
               <h3 class="text-white" id="description">Full-stack web developer, computer science graduate, and IT
@@ -69,21 +68,21 @@
             </div>
           </div>
         </div>
-        <div class="col"></div>
       </div>
     </header>
     <main class="bg-secondary">
-      <div class="row justify-content-center">
-        <p class="display-4 text-success page-title">My Curriculum Vitae (C.V.)</p>
-      </div>
-      <div class="row justify-content-center">
-        <p><a href="http://www.keith-tachibana.com/about/Keith_Tachibana-Resume.pdf"><i class="far fa-file-pdf fa-2x pr-2"></i>Click to view and download my resume in PDF</a></p>
-      </div>
-      <div class="row">
-        <div class="col-2"></div>
-        <div class="col">
-          <section>
-            <div class="container">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <p class="display-4 text-success page-title text-center">My Curriculum Vitae (C.V.)</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <p><a href="http://www.keith-tachibana.com/about/Keith_Tachibana-Resume.pdf"><i class="far fa-file-pdf fa-2x pr-2"></i>Click to view and download my resume in PDF</a></p>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <section>
               <h2 style="text-transform:uppercase">Keith Tachibana</h2>
               <h4 class="text-success">Education:</h4>
               <p><em>Learning Fuze:</em> Irvine, CA / Full-Stack Web Development / Jan. 2020 Cohort</p>
@@ -101,32 +100,30 @@
                 <li>Leadership Development Track award conferred after successful completion of program which consisted of various volunteer opportunities around New York City</li>
               </ul>
               <h4 class="text-success">Technical Skills:</h4>
-              <div class="container">
-                <table class="table table-dark table-hover table-striped">
-                  <tbody>
-                    <tr>
-                      <th>Web Development</th>
-                      <td>HTML, CSS, JavaScript, Express.js, React.js, Node.js, JSON, XML</td>
-                    </tr>
-                    <tr>
-                      <th>Python</th>
-                      <td>Python 3, Jupyter Notebook, Anaconda, Sklearn, Keras</td>
-                    </tr>
-                    <tr>
-                      <th>Mobile</th>
-                      <td>Android Studio</td>
-                    </tr>
-                    <tr>
-                      <th>Database/Deploy</th>
-                      <td>MongoDB, MySQL/MariaDB, Heroku</td>
-                    </tr>
-                    <tr>
-                      <th>Other</th>
-                      <td>C++, C, Linux (Bash scripting), Cisco IOS</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+              <table class="table table-dark table-hover table-striped">
+                <tbody>
+                  <tr>
+                    <th scope="row">Web Development</th>
+                    <td>HTML, CSS, JavaScript, Express.js, React.js, Node.js, JSON, XML</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Python</th>
+                    <td>Python 3, Jupyter Notebook, Anaconda, Sklearn, Keras</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Mobile</th>
+                    <td>Android Studio</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Database/Deploy</th>
+                    <td>MongoDB, MySQL/MariaDB, Heroku</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Other</th>
+                    <td>C++, C, Linux (Bash scripting), Cisco IOS</td>
+                  </tr>
+                </tbody>
+              </table>
               <h4 class="text-success">Work Experience:</h4>
               <p><em>JetSuite Inc.:</em> Irvine, CA / IT Department / Apr. 2017 &dash; Feb. 2019</p>
               <ul>
@@ -170,11 +167,9 @@
                 <li>Proficient in all aspects of Spanish (Castellano/Castilian) including reading, writing, conversing, and listening</li>
                 <li>COMPTIA A+ certified (exam numbers 220-1001 and 220-1002): <a href="http://verify.CompTIA.org" target="_blank">Click to verify with code QWCR3D93RGQ4QVS0</a></li>
               </ul>
-            </div>
-
-          </section>
+            </section>
+          </div>
         </div>
-        <div class="col-2"></div>
       </div>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

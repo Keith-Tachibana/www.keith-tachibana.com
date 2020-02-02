@@ -1,7 +1,16 @@
 body {
   font-family: Tahoma, sans-serif;
   font-size: 1.25rem;
-  max-width: 98vw;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+.nav {
+  border: none;
+}
+
+.navbar-brand {
+  font-family: 'Metal Mania', sans-serif;
 }
 
 #name {
@@ -27,6 +36,11 @@ header {
 
 .page-title {
   font-family: 'Metal Mania', sans-serif;
+}
+
+.caption {
+  font-style: italic;
+  font-weight: bold;
 }
 
 #img0002-greenpoint-tattoo {

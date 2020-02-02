@@ -301,6 +301,7 @@ th:hover {
 
 main {
   display: flex;
+  justify-content: center;
 }
 
 .choose-token {
