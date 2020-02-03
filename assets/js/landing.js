@@ -85,7 +85,7 @@ function fillObjectArray() {
 
   var tombstone1Div = document.getElementById("tombstone1");
   var tombstone1X = 0; //position div from half width of the page
-  var tombstone1Y = 350;
+  var tombstone1Y = 375;
   var tombstone1Factor = 0.11; //parallax shift factor, the bigger the value, the more it shift for parallax movement
   var tombstone1Array = new Array();
   tombstone1Array.push(tombstone1Div, tombstone1X, tombstone1Y, tombstone1Factor);

@@ -1,12 +1,21 @@
 body {
-  font-family: 'Metal Mania', cursive
+  font-family: 'Metal Mania', cursive;
+  color: white;
 }
 
 main {
   min-width: 100vw;
   min-height: 100vh;
-  overflow: hidden;
-  background-color: crimson;
+  background:
+    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+  background-color: #131313;
+  background-size: 20px 20px;
+  overflow-x: hidden;
 }
 
 #demon1 {
@@ -14,7 +23,6 @@ main {
   height: 124px;
   width: 128px;
   background-image: url('../images/landing/demon1.png');
-
 }
 
 #demon2 {
@@ -22,7 +30,6 @@ main {
   height: 150px;
   width: 108px;
   background-image: url('../images/landing/demon2.png');
-
 }
 
 #demon3 {
@@ -30,7 +37,6 @@ main {
   height: 140px;
   width: 111px;
   background-image: url('../images/landing/demon3.png');
-
 }
 
 #demon4 {
@@ -38,7 +44,6 @@ main {
   height: 118px;
   width: 109px;
   background-image: url('../images/landing/demon4.png');
-
 }
 
 #imp1 {
@@ -46,7 +51,6 @@ main {
   height: 172px;
   width: 135px;
   background-image: url('../images/landing/imp1.png');
-
 }
 
 #imp2 {
@@ -54,7 +58,6 @@ main {
   height: 103px;
   width: 107px;
   background-image: url('../images/landing/imp2.png');
-
 }
 
 #imp3 {
@@ -62,7 +65,6 @@ main {
   height: 118px;
   width: 108px;
   background-image: url('../images/landing/imp3.png');
-
 }
 
 #imp4 {
@@ -70,7 +72,6 @@ main {
   height: 172px;
   width: 135px;
   background-image: url('../images/landing/imp1.png');
-
 }
 
 #tombstone1 {
@@ -78,7 +79,6 @@ main {
   height: 112px;
   width: 112px;
   background-image: url('../images/landing/tombstone1.png');
-
 }
 
 #tombstone2 {
@@ -86,7 +86,6 @@ main {
   height: 140px;
   width: 105px;
   background-image: url('../images/landing/tombstone2.png');
-
 }
 
 #flames1 {
@@ -141,4 +140,9 @@ main {
 
 #sun:active {
   transform: translateY(5px);
+}
+
+.welcome {
+  position: relative;
+  top: 100px;
 }
