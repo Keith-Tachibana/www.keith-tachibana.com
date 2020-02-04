@@ -1,6 +1,5 @@
 body {
-  font-family: 'Metal Mania', cursive;
-  color: white;
+  font-family: Tahoma, sans-serif;
 }
 
 main {
@@ -16,6 +15,14 @@ main {
   background-color: #131313;
   background-size: 20px 20px;
   overflow-x: hidden;
+}
+
+.welcome h1 {
+  font-family: 'Metal Mania', cursive;
+}
+
+.welcome h5 {
+  color: white;
 }
 
 #demon1 {

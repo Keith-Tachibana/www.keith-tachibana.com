@@ -12,14 +12,14 @@
   </head>
   <body>
     <nav class="bg-dark sticky-top">
-      <ul class="nav nav-tabs">
+      <ul class="nav nav-tabs justify-content-between">
         <a class="navbar-brand pt-2" href="http://www.keith-tachibana.com/">
-          <h3>Keith Tachibana &gt;&gt;&gt;</h3>
+          <h3 class="pl-4">Keith Tachibana&gt;&gt;&gt;</h3>
         </a>
         <li class="nav-item">
           <a class="nav-link bg-dark text-warning" href="/main/">Home</a>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown ">
           <a class="nav-link dropdown-toggle bg-dark text-success" data-toggle="dropdown" href="#">About Me</a>
           <div class="dropdown-menu">
             <a class="dropdown-item text-body" href="/about/index.html">About Me</a>
@@ -44,6 +44,17 @@
             <a class="dropdown-item text-body" href="/portfolio/memory_match/">Star Wars Memory Match Game</a>
           </div>
         </li>
+        <a class="navbar-brand pt-2 pl-4" href="#">
+          <h3 class="pl-2"></h3>
+        </a>
+        <li class="pt-2 pb-2">
+          <a class="p-4" href="mailto:Keith.Tachibana@gmail.com" target="_blank"><i class="fas fa-envelope fa-lg"></i></a>
+          <a class="p-4" href="https://www.facebook.com/keith.tachibana/" target="_blank"><i class="fab fa-facebook fa-lg"></i></a>
+          <a class="p-4" href="https://github.com/Keith-Tachibana/" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+          <a class="p-4" href="https://www.instagram.com/keithjf1/" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+          <a class="p-4" href="https://www.linkedin.com/in/keithtachibana/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+          <a class="p-4" href="https://twitter.com/Keith_Tachibana/" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+        </li>
       </ul>
     </nav>
     <header>
@@ -55,23 +66,12 @@
               <p class="text-white display-3" id="welcome">Technology Used</p>
               <h3 class="text-white" id="description">Full-stack web developer, computer science graduate, and IT
                 enthusiast</h3>
-              <button type="button" id="contact-button" class="btn btn-primary" data-toggle="collapse"
-                data-target="#contact">Connect With Me</button>
-              <div id="contact" class="collapse">
-                <br />
-                <a class="p-4" href="mailto:Keith.Tachibana@gmail.com" target="_blank"><i class="fas fa-envelope fa-2x"></i></a>
-                <a class="p-4" href="https://www.facebook.com/keith.tachibana/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
-                <a class="p-4" href="https://github.com/Keith-Tachibana/" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-                <a class="p-4" href="https://www.instagram.com/keithjf1/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
-                <a class="p-4" href="https://www.linkedin.com/in/keithtachibana/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-                <a class="p-4" href="https://twitter.com/Keith_Tachibana/" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
-              </div>
             </div>
           </div>
         </div>
       </div>
     </header>
-    <main class="bg-secondary">
+    <main class="bg-dark">
       <div class="row">
         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
           <p class="display-4 text-success page-title text-center">My Technology</p>
@@ -79,19 +79,33 @@
       </div>
       <div class="row">
         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-          <section class="pl-4 pr-4">
+          <section class="pl-4 pr-4 text-white">
             <div id="modalbox_pc_side_view" class="modal">
               <span id="close_pc_side_view" class="close">&times;</span>
               <img id="modal_pc_side_view" class="modal-content">
               <div id="caption_pc_side_view" class="caption"></div>
             </div>
-            <div class="container w-50 float-right">
+            <div class="container w-25 float-right">
               <figure class="figure">
-                <img id="pc_side_view" class="figure-img rounded img-fluid img-thumbnail" src="../assets/images/about/pc_side_view.jpg" alt="Side view of my computer" />
+                <img id="pc_side_view" class="figure-img rounded img-fluid img-thumbnail" src="../assets/images/about/pc_side_view.jpg" alt="A side view of my computer with the watercooled CPU and GPU in the foreground with built-in RGB lighting" />
                   <figcaption class="figure-caption text-success"><h6><em>A side view of my computer with the watercooled CPU and GPU in the foreground with built-in RGB lighting</em></h6></figcaption>
               </figure>
             </div>
-            <p>I built my personal workstation at home with the following components:</p>
+            <div id="modalbox_pc_front_view" class="modal">
+              <span id="close_pc_front_view" class="close">&times;</span>
+              <img id="modal_pc_front_view" class="modal-content">
+              <div id="caption_pc_front_view" class="caption"></div>
+            </div>
+            <div class="container w-25 float-right">
+              <figure class="figure">
+                <img id="pc_front_view" class="figure-img rounded img-fluid img-thumbnail"
+                  src="../assets/images/about/pc_front_view.jpg" alt="A front view of my computer with the 360mm external radiator in the background for my water cooling loop" />
+                <figcaption class="figure-caption text-success">
+                  <h6><em>A front view of my computer with the 360mm external radiator in the background for my water cooling loop</em></h6>
+                </figcaption>
+              </figure>
+            </div>
+            <p class="first-paragraph"><span class="text-success">I</span> built my personal workstation at home with the following components:</p>
             <ul>
               <li>Asus Rampage VI Extreme Omega motherboard featuring the Intel X299 chipset with an E-ATX form factor (<a href="https://www.newegg.com/asus-rog-rampage-vi-extrme-omega/p/N82E16813119187?Item=N82E16813119187" target="_blank">Click to view on Newegg</a>)</li>
               <li>Intel Core i9-9820X Skylake X 10-core, 20-threads 3.3 GHz default clock (4.1 GHz turbo) LGA 2066 socket 165W CPU with 16.5MB L3 cache (<a href="https://www.newegg.com/core-i9-x-series-intel-core-i9-9820x/p/N82E16819117332?Item=N82E16819117332" target="_blank">Click to view on Newegg</a>)</li>

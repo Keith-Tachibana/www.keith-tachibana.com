@@ -12,14 +12,14 @@
   </head>
   <body>
     <nav class="bg-dark sticky-top">
-      <ul class="nav nav-tabs">
+      <ul class="nav nav-tabs justify-content-between">
         <a class="navbar-brand pt-2" href="http://www.keith-tachibana.com/">
-          <h3>Keith Tachibana &gt;&gt;&gt;</h3>
+          <h3 class="pl-4">Keith Tachibana&gt;&gt;&gt;</h3>
         </a>
         <li class="nav-item">
           <a class="nav-link bg-dark text-warning" href="/main/">Home</a>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown ">
           <a class="nav-link dropdown-toggle bg-dark text-success" data-toggle="dropdown" href="#">About Me</a>
           <div class="dropdown-menu">
             <a class="dropdown-item text-body" href="/about/index.html">About Me</a>
@@ -44,6 +44,17 @@
             <a class="dropdown-item text-body" href="/portfolio/memory_match/">Star Wars Memory Match Game</a>
           </div>
         </li>
+        <a class="navbar-brand pt-2 pl-4" href="#">
+          <h3 class="pl-2"></h3>
+        </a>
+        <li class="pt-2 pb-2">
+          <a class="p-4" href="mailto:Keith.Tachibana@gmail.com" target="_blank"><i class="fas fa-envelope fa-lg"></i></a>
+          <a class="p-4" href="https://www.facebook.com/keith.tachibana/" target="_blank"><i class="fab fa-facebook fa-lg"></i></a>
+          <a class="p-4" href="https://github.com/Keith-Tachibana/" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+          <a class="p-4" href="https://www.instagram.com/keithjf1/" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+          <a class="p-4" href="https://www.linkedin.com/in/keithtachibana/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+          <a class="p-4" href="https://twitter.com/Keith_Tachibana/" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+        </li>
       </ul>
     </nav>
     <header>
@@ -54,106 +65,97 @@
               <p class="text-white display-2" id="name">Keith Tachibana&gt;</p>
               <p class="text-white display-3" id="welcome">Videos</p>
               <h3 class="text-white" id="description">Recorded snapshots from my life's journey</h3>
-              <button type="button" id="contact-button" class="btn btn-primary" data-toggle="collapse"
-                data-target="#contact">Connect With Me</button>
-              <div id="contact" class="collapse">
-                <br />
-                <a class="p-4" href="mailto:Keith.Tachibana@gmail.com" target="_blank"><i class="fas fa-envelope fa-2x"></i></a>
-                <a class="p-4" href="https://www.facebook.com/keith.tachibana/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
-                <a class="p-4" href="https://github.com/Keith-Tachibana/" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-                <a class="p-4" href="https://www.instagram.com/keithjf1/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
-                <a class="p-4" href="https://www.linkedin.com/in/keithtachibana/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-                <a class="p-4" href="https://twitter.com/Keith_Tachibana/" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
-              </div>
             </div>
           </div>
         </div>
       </div>
     </header>
-    <main class="bg-secondary">
-      <div class="row">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-          <p class="display-4 text-danger page-title text-center">My Videos</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-          <div class="container w-75">
-            <div class="iframe-container">
-              <iframe class="video" src="https://www.youtube.com/embed/n0BRce0qtZA" frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <h6>9/7/2018 - I got to sit in the jumpseat in the cockpit onboard a JetSuiteX flight from Concord, Northern California to Burbank, Southern California (this is a clip of the pilots doing a pre-flight check)</h6>
+    <main class="bg-dark">
+      <section class="text-white">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <p class="display-4 text-danger page-title text-center">My Videos</p>
           </div>
         </div>
-        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-          <div class="container w-75">
-            <div class="iframe-container">
-              <iframe class="video" src="https://www.youtube.com/embed/TzqEK7ekhdc" frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="row">
+          <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <div class="container w-75">
+              <div class="iframe-container">
+                <iframe class="video" src="https://www.youtube.com/embed/n0BRce0qtZA" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <h6 class="pb-4">9/7/2018 - I got to sit in the jumpseat in the cockpit onboard a JetSuiteX flight from Concord, Northern California to Burbank, Southern California (this is a clip of the pilots doing a pre-flight check)</h6>
             </div>
-            <h6>9/7/2018 - I got to sit in the jumpseat in the cockpit onboard a JetSuiteX flight from Concord, Northern California to Burbank, Southern California (this is a clip of the takeoff)</h6>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <div class="container w-75">
+              <div class="iframe-container">
+                <iframe class="video" src="https://www.youtube.com/embed/TzqEK7ekhdc" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <h6 class="pb-4">9/7/2018 - I got to sit in the jumpseat in the cockpit onboard a JetSuiteX flight from Concord, Northern California to Burbank, Southern California (this is a clip of the takeoff)</h6>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-          <div class="container w-75">
-            <div class="iframe-container">
-              <iframe class="video" src="https://www.youtube.com/embed/P_x9VehS_cU" frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="row">
+          <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <div class="container w-75">
+              <div class="iframe-container">
+                <iframe class="video" src="https://www.youtube.com/embed/P_x9VehS_cU" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <h6 class="pb-4">9/7/2018 - I got to sit in the jumpseat in the cockpit onboard a JetSuiteX flight from Concord, Northern California to Burbank, Southern California (this is a clip of the landing at night)</h6>
             </div>
-            <h6>9/7/2018 - I got to sit in the jumpseat in the cockpit onboard a JetSuiteX flight from Concord, Northern California to Burbank, Southern California (this is a clip of the landing at night)</h6>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <div class="container w-75">
+              <div class="iframe-container">
+                <iframe class="video" src="https://www.youtube.com/embed/KZPRk-m4Ssc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <h6 class="pb-4">11/24/2018 - Victoria Secret supermodel Alessandra Ambroiso at the JetSuiteX terminal in Oakland, California about to board a flight</h6>
+            </div>
           </div>
         </div>
-        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-          <div class="container w-75">
-            <div class="iframe-container">
-              <iframe class="video" src="https://www.youtube.com/embed/KZPRk-m4Ssc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="row">
+          <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <div class="container w-75">
+              <div class="iframe-container">
+                <iframe class="video" src="https://www.youtube.com/embed/1NQcnfwRszg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <h6 class="pb-4">4/2/2019 - "Are You Dead Yet" by the Finnish melodic death metal band Children of Bodom (I recorded this live at the Observatory in Santa Ana, Orange County, California)</h6>
             </div>
-            <h6>11/24/2018 - Victoria Secret supermodel Alessandra Ambroiso at the JetSuiteX terminal in Oakland, California about to board a flight</h6>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <div class="container w-75">
+              <div class="iframe-container">
+                <iframe class="video" src="https://www.youtube.com/embed/OWdqQc78fwE" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <h6 class="pb-4">10/26/2019 - "Slaughter of the Soul" by the Swedish death metal band At the Gates (I recorded this live at the Hollywood Palladium in Hollywood, Los Angeles, California)</h6>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-          <div class="container w-75">
-            <div class="iframe-container">
-              <iframe class="video" src="https://www.youtube.com/embed/1NQcnfwRszg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="row">
+          <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <div class="container w-75">
+              <div class="iframe-container">
+                <iframe class="video" src="https://www.youtube.com/embed/6lBj61LWyRQ" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <h6 class="pb-4">10/26/2019 - "Blinded by Fear" by the Swedish death metal band At the Gates (I recorded this live at the Hollywood Palladium in Hollywood, Los Angeles, California)</h6>
             </div>
-            <h6>4/2/2019 - "Are You Dead Yet" by the Finnish melodic death metal band Children of Bodom (I recorded this live at the Observatory in Santa Ana, Orange County, California)</h6>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <div class="container w-75">
+              <div class="iframe-container">
+                <iframe class="video" src="https://www.youtube.com/embed/FohUWh5MYaE" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <h6 class="pb-4">10/26/2019 - "Death in Fire" by the Swedish melodic death metal band Amon Amarth (I recorded this live at the Hollywood Palladium in Hollywood, Los Angeles, California)</h6>
+            </div>
           </div>
         </div>
-        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-          <div class="container w-75">
-            <div class="iframe-container">
-              <iframe class="video" src="https://www.youtube.com/embed/OWdqQc78fwE" frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <h6>10/26/2019 - "Slaughter of the Soul" by the Swedish death metal band At the Gates (I recorded this live at the Hollywood Palladium in Hollywood, Los Angeles, California)</h6>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-          <div class="container w-75">
-            <div class="iframe-container">
-              <iframe class="video" src="https://www.youtube.com/embed/6lBj61LWyRQ" frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <h6>10/26/2019 - "Blinded by Fear" by the Swedish death metal band At the Gates (I recorded this live at the Hollywood Palladium in Hollywood, Los Angeles, California)</h6>
-          </div>
-        </div>
-        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-          <div class="container w-75">
-            <div class="iframe-container">
-              <iframe class="video" src="https://www.youtube.com/embed/FohUWh5MYaE" frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <h6>10/26/2019 - "Death in Fire" by the Swedish melodic death metal band Amon Amarth (I recorded this live at the Hollywood Palladium in Hollywood, Los Angeles, California)</h6>
-          </div>
-        </div>
-      </div>
+      </section>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>

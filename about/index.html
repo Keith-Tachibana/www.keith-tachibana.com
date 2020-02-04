@@ -12,14 +12,14 @@
   </head>
   <body>
     <nav class="bg-dark sticky-top">
-      <ul class="nav nav-tabs">
+      <ul class="nav nav-tabs justify-content-between">
         <a class="navbar-brand pt-2" href="http://www.keith-tachibana.com/">
-          <h3>Keith Tachibana &gt;&gt;&gt;</h3>
+          <h3 class="pl-4">Keith Tachibana&gt;&gt;&gt;</h3>
         </a>
         <li class="nav-item">
           <a class="nav-link bg-dark text-warning" href="/main/">Home</a>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown ">
           <a class="nav-link dropdown-toggle bg-dark text-success" data-toggle="dropdown" href="#">About Me</a>
           <div class="dropdown-menu">
             <a class="dropdown-item text-body" href="/about/index.html">About Me</a>
@@ -44,6 +44,17 @@
             <a class="dropdown-item text-body" href="/portfolio/memory_match/">Star Wars Memory Match Game</a>
           </div>
         </li>
+        <a class="navbar-brand pt-2 pl-4" href="#">
+          <h3 class="pl-2"></h3>
+        </a>
+        <li class="pt-2 pb-2">
+          <a class="p-4" href="mailto:Keith.Tachibana@gmail.com" target="_blank"><i class="fas fa-envelope fa-lg"></i></a>
+          <a class="p-4" href="https://www.facebook.com/keith.tachibana/" target="_blank"><i class="fab fa-facebook fa-lg"></i></a>
+          <a class="p-4" href="https://github.com/Keith-Tachibana/" target="_blank"><i class="fab fa-github fa-lg"></i></a>
+          <a class="p-4" href="https://www.instagram.com/keithjf1/" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+          <a class="p-4" href="https://www.linkedin.com/in/keithtachibana/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+          <a class="p-4" href="https://twitter.com/Keith_Tachibana/" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+        </li>
       </ul>
     </nav>
     <header>
@@ -55,22 +66,12 @@
               <p class="text-white display-3" id="welcome">About Me</p>
               <h3 class="text-white" id="description">Full-stack web developer, computer science graduate, and IT
                 enthusiast</h3>
-              <button type="button" id="contact-button" class="btn btn-primary" data-toggle="collapse" data-target="#contact">Connect With Me</button>
-              <div id="contact" class="collapse">
-                <br />
-                <a class="p-4" href="mailto:Keith.Tachibana@gmail.com" target="_blank"><i class="fas fa-envelope fa-2x"></i></a>
-                <a class="p-4" href="https://www.facebook.com/keith.tachibana/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
-                <a class="p-4" href="https://github.com/Keith-Tachibana/" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-                <a class="p-4" href="https://www.instagram.com/keithjf1/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
-                <a class="p-4" href="https://www.linkedin.com/in/keithtachibana/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-                <a class="p-4" href="https://twitter.com/Keith_Tachibana/" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
-              </div>
             </div>
           </div>
         </div>
       </div>
     </header>
-    <main class="bg-secondary">
+    <main class="bg-dark">
       <div class="row">
         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
           <p class="display-4 text-success page-title text-center">My Personal Story</p>
@@ -78,29 +79,38 @@
       </div>
       <div class="row">
         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-          <section class="pl-4 pr-4">
+          <section class="pl-4 pr-4 text-white">
             <div id="modalbox_spanish_bar" class="modal">
               <span id="close_spanish_bar" class="close">&times;</span>
               <img id="modal_spanish_bar" class="modal-content">
               <div id="caption_spanish_bar" class="caption"></div>
             </div>
-            <div class="container w-75 float-right">
+            <div class="container w-25 float-right">
               <figure class="figure">
-              <img id="spanish_bar" class="figure-img rounded img-fluid img-thumbnail" src="../assets/images/about/spanish_bar.jpg" alt="At a local bar socializing in Santander, Spain" />
+              <img id="spanish_bar" class="figure-img rounded img-fluid img-thumbnail" src="../assets/images/about/spanish_bar.jpg" alt="Socializing at a local bar in Santander, Spain" />
               <figcaption class="figure-caption text-success"><h6><em>Socializing at a local bar in Santander, Spain</em></h6></figcaption>
               </figure>
             </div>
-            <p>My name is Keith Tachibana and I was born in Loma Linda, California. However, I grew up 50 miles away in Irvine, where I currently reside. I attended high school at University High School, where I had my first taste of studying abroad in the charming coastal city of Santander, in the autonomous region of Cantabria along the northern coast of Spain. This was one of those life-changing experiences that opened up my eyes to world cultures and prompted me to study Spanish as one of my majors as an undergraduate at New York University (NYU). I loved the Spanish culture so much, that
-            I ended up doing 2 more study abroads to Spain &dash; once more to
-            Santander and my last one to Salamanca. I did many weekend excursions to other parts of Spain and Europe while I was
-            there each time, visiting Paris, Lisbon, Madrid, Pamplona (and the Running of the Bulls), Barcelona, and my favorite
-            of all, Ibiza (the electronic club capital of the world). It was in Ibiza where I checked out the largest dance club
-            in the world called "Privilege", which was literally the size of multiple airplane hangars with a pool in the middle
-            of the club.</p>
-            <p>My freshman year at NYU in 2001 happened to coincide with the September 11th (9/11) atacks on the World Trade Center in lower Manhattan, and I happened to be less than 2 miles away from ground zero when it happened, safely tucked away in the basement of one of NYU's lecture halls attending my inorganic chemistry lecture, completely oblivious to what was happening around me outside above ground. When I surfaced, I felt like I was in the middle of a war zone, since my NYU dormitory was located within the military baracades that were set up on 14th street (I was living on 3rd Avenue and 10th street in the Lower East Side). Military personnel were everywhere and plumes of dust were blowing down the avenues of Manhattan. The mobile networks were down and my parents were unable to reach me, worried that I might have been a casuality. Needless to say, it was quite a welcome my very first month in New York City!</p>
-            <p>I discovered many things about myself living in the greatest city on earth, and one of those things was the music of heavy metal. Before discovering metal, I enjoyed listening to alternative rock, punk, hardcore, and rap. But after listening to my very first metal album, "Follow the Reaper" by the Finnish group "Children of Bodom", I knew I had found something great. And ever since, I have been exploring the many sub-genres of metal, including true Norwegian black metal, melodic death metal, and thrash metal, which are some of my favorites. In fact, the theme of this website was inspired by my affection for metal, since some of the artwork of metal album covers is some of the best visuals I have seen depicting scenes from hell and dark fantasy.</p>
-            <p></p>
-          </section>
+            <p class="first-paragraph"><span class="text-success">M</span>y name is Keith Tachibana and I was born in Loma Linda, California. However, I grew up 50 miles away in Irvine, where I currently reside. I attended high school at University High School, where I had my first taste of studying abroad in the charming coastal city of Santander, in the autonomous region of Cantabria along the northern coast of Spain. This was one of those life-changing experiences that opened up my eyes to world cultures and prompted me to study Spanish as one of my majors as an undergraduate at New York University (NYU). I loved the Spanish culture so much, that I ended up doing 2 more study abroads to Spain &dash; once more to Santander and my last one to Salamanca. I did many weekend excursions to other parts of Spain and Europe while I was there each time, visiting Paris, Lisbon, Madrid, Pamplona (and the Running of the Bulls), Barcelona, and my favorite of all, Ibiza (the electronic club capital of the world). It was in Ibiza where I checked out the largest dance club in the world called "Privilege", which was literally the size of multiple airplane hangars with a pool in the middle of the club.</p>
+            <div id="modalbox_greenpoint_brooklyn" class="modal">
+              <span id="close_greenpoint_brooklyn" class="close">&times;</span>
+              <img id="modal_greenpoint_brooklyn" class="modal-content">
+              <div id="caption_greenpoint_brooklyn" class="caption"></div>
+            </div>
+            <div class="container w-25 float-left">
+              <figure class="figure">
+                <img id="greenpoint_brooklyn" class="figure-img rounded img-fluid img-thumbnail"
+                  src="../assets/images/about/greenpoint_brooklyn.jpg"
+                  alt="In front of my former NYU roommate David Szalyga's house in Greenpoint, Brooklyn during the winter of 2017" />
+                <figcaption class="figure-caption text-success">
+                  <h6><em>In front of my former NYU roommate David Szalyga's house in Greenpoint, Brooklyn during the winter of
+                      2017</em></h6>
+                </figcaption>
+              </figure>
+            </div>
+            <p class="first-paragraph"><span class="text-success">M</span>y freshman year at NYU in 2001 happened to coincide with the September 11th (9/11) atacks on the World Trade Center in lower Manhattan, and I happened to be less than 2 miles away from ground zero when it happened, safely tucked away in the basement of one of NYU's lecture halls attending my inorganic chemistry lecture, completely oblivious to what was happening around me outside above ground. When I surfaced, I felt like I was in the middle of a war zone, since my NYU dormitory was located within the military baracades that were set up on 14th street (I was living on 3rd Avenue and 10th street in the Lower East Side). Military personnel were everywhere and plumes of dust were blowing down the avenues of Manhattan. The mobile networks were down and my parents were unable to reach me, worried that I might have been a casuality. Needless to say, it was quite a welcome my very first month in New York City!</p>
+            <p class="first-paragraph"><span class="text-success">I</span> discovered many things about myself living in the greatest city on earth, and one of those things was the music of heavy metal. Before discovering metal, I enjoyed listening to alternative rock, punk, hardcore, and rap. But after listening to my very first metal album, "Follow the Reaper" by the Finnish group "Children of Bodom", I knew I had found something great. And ever since, I have been exploring the many sub-genres of metal, including true Norwegian black metal, melodic death metal, and thrash metal, which are some of my favorites. In fact, the theme of this website was inspired by my affection for metal, since some of the artwork of metal album covers is some of the best visuals I have seen depicting scenes from hell and dark fantasy.</p>
+           </section>
         </div>
       </div>
     </main>
