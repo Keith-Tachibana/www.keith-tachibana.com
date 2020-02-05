@@ -107,14 +107,73 @@ section > p {
   transform: translateY(5px);
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 992px) and (min-width: 576px) {
+  body {
+    min-width: 90vh;
+  }
+
   .modal-content {
     width: 100%;
+  }
+
+  .close {
+    top: 20px;
+  }
+
+  section > p {
+    clear: both;
+  }
+
+  figure {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 576px) and (min-width: 465px) {
+  body {
+    min-width: 85vh;
+  }
+
+  .modal-content {
+    width: 100%;
+  }
+
+  .close {
+    top: 20px;
+  }
+
+  section > p {
+    clear: both;
+  }
+
+  figure {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 465px) {
+  body {
+    min-width: 60vh;
+  }
+
+  .modal-content {
+    width: 100%;
+  }
+
+  .close {
+    top: 20px;
+  }
+
+  section > p {
+    clear: both;
+  }
+
+  figure {
+    width: 300px;
   }
 }
 
 #server_room_29prime {
-  width: 95%;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -124,7 +183,6 @@ section > p {
 }
 
 #jetsuitex_joffrey {
-  width: 95%;
   cursor: pointer;
   transition: 0.3s;
 }
