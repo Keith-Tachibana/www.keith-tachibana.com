@@ -1,0 +1,45 @@
+@media only screen and (max-width: 992px) {
+  #page-title {
+    text-align: center;
+  }
+
+  #average-grade-container {
+    position: relative;
+    right: 33%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #average-grade-container {
+    position: relative;
+    right: 30%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #average-grade-container {
+    position: relative;
+    right: 25%;
+  }
+}
+
+@media only screen and (max-width: 476px) {
+  #average-grade-container {
+    position: relative;
+    right: 20%;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  #average-grade-container {
+    position: relative;
+    right: 12%;
+  }
+}
+
+@media only screen and (max-width: 276px) {
+  #average-grade-container {
+    position: relative;
+    right: 1%;
+  }
+}
