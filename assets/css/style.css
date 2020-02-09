@@ -91,12 +91,12 @@ p {
 }
 
 ::-moz-selection {
-  background: #b8a07e;
+  background: #ef271b;
   color: #fff;
 }
 
 ::selection {
-  background: #b8a07e;
+  background: #ef271b;
   color: #fff;
 }
 
@@ -271,6 +271,7 @@ nav ul li a {
   text-transform: capitalize;
   color: #fff;
   font-weight: 500;
+  line-height: 55px;
 }
 
 .header-content .list-social li {
@@ -320,6 +321,7 @@ nav ul li a {
   font-size: 28px;
   text-align: left;
   color: #fff;
+  line-height: 40px;
 }
 
 #about .about-descr .separator {
