@@ -1,101 +1,157 @@
-// img0001-01-25-20
-const modalbox_img0001_01_25_20 = document.getElementById('modalbox-img0001-01-25-20');
-const img0001_01_25_20 = document.getElementById('img0001-01-25-20');
-const modal_img0001_01_25_20 = document.getElementById('modal-img0001-01-25-20');
-const caption_img0001_01_25_20 = document.getElementById('caption-img0001-01-25-20');
+/*global $, jQuery, alert*/
+$(document).ready(function() {
 
-img0001_01_25_20.onclick = function () {
-  modalbox_img0001_01_25_20.style.display = "block";
-  modal_img0001_01_25_20.src = this.src;
-  caption_img0001_01_25_20.innerHTML = this.alt;
-}
+  'use strict';
 
-const close_img0001_01_25_20 = document.getElementById('close-img0001-01-25-20');
-close_img0001_01_25_20.onclick = function () {
-  modalbox_img0001_01_25_20.style.display = "none";
-}
+  // ========================================================================= //
+  //  //SMOOTH SCROLL
+  // ========================================================================= //
 
-// img0002-01-26-20
-const modalbox_img0002_01_26_20 = document.getElementById('modalbox-img0002-01-26-20');
-const img0002_01_26_20 = document.getElementById('img0002-01-26-20');
-const modal_img0002_01_26_20 = document.getElementById('modal-img0002-01-26-20');
-const caption_img0002_01_26_20 = document.getElementById('caption-img0002-01-26-20');
 
-img0002_01_26_20.onclick = function () {
-  modalbox_img0002_01_26_20.style.display = "block";
-  modal_img0002_01_26_20.src = this.src;
-  caption_img0002_01_26_20.innerHTML = this.alt;
-}
+  $(document).on("scroll", onScroll);
 
-const close_img0002_01_26_20 = document.getElementById('close-img0002-01-26-20');
-close_img0002_01_26_20.onclick = function () {
-  modalbox_img0002_01_26_20.style.display = "none";
-}
+  $('a[href^="#"]').on('click', function(e) {
+    e.preventDefault();
+    $(document).off("scroll");
 
-// img0003-01-26-20
-const modalbox_img0003_01_26_20 = document.getElementById('modalbox-img0003-01-26-20');
-const img0003_01_26_20 = document.getElementById('img0003-01-26-20');
-const modal_img0003_01_26_20 = document.getElementById('modal-img0003-01-26-20');
-const caption_img0003_01_26_20 = document.getElementById('caption-img0003-01-26-20');
+    $('a').each(function() {
+      $(this).removeClass('active');
+      if ($(window).width() < 768) {
+        $('.nav-menu').slideUp();
+      }
+    });
 
-img0003_01_26_20.onclick = function () {
-  modalbox_img0003_01_26_20.style.display = "block";
-  modal_img0003_01_26_20.src = this.src;
-  caption_img0003_01_26_20.innerHTML = this.alt;
-}
+    $(this).addClass('active');
 
-const close_img0003_01_26_20 = document.getElementById('close-img0003-01-26-20');
-close_img0003_01_26_20.onclick = function () {
-  modalbox_img0003_01_26_20.style.display = "none";
-}
+    var target = this.hash,
+        menu = target;
 
-// img0004-01-26-20
-const modalbox_img0004_01_26_20 = document.getElementById('modalbox-img0004-01-26-20');
-const img0004_01_26_20 = document.getElementById('img0004-01-26-20');
-const modal_img0004_01_26_20 = document.getElementById('modal-img0004-01-26-20');
-const caption_img0004_01_26_20 = document.getElementById('caption-img0004-01-26-20');
+    target = $(target);
+    $('html, body').stop().animate({
+      'scrollTop': target.offset().top - 80
+    }, 500, 'swing', function() {
+      window.location.hash = target.selector;
+      $(document).on("scroll", onScroll);
+    });
+  });
 
-img0004_01_26_20.onclick = function () {
-  modalbox_img0004_01_26_20.style.display = "block";
-  modal_img0004_01_26_20.src = this.src;
-  caption_img0004_01_26_20.innerHTML = this.alt;
-}
 
-const close_img0004_01_26_20 = document.getElementById('close-img0004-01-26-20');
-close_img0004_01_26_20.onclick = function () {
-  modalbox_img0004_01_26_20.style.display = "none";
-}
+  function onScroll(event) {
+    if ($('.home').length) {
+      var scrollPos = $(document).scrollTop();
+      $('nav ul li a').each(function() {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+      });
+    }
+  }
 
-// img0005-01-27-20
-const modalbox_img0005_01_27_20 = document.getElementById('modalbox-img0005-01-27-20');
-const img0005_01_27_20 = document.getElementById('img0005-01-27-20');
-const modal_img0005_01_27_20 = document.getElementById('modal-img0005-01-27-20');
-const caption_img0005_01_27_20 = document.getElementById('caption-img0005-01-27-20');
+  // ========================================================================= //
+  //  //NAVBAR SHOW - HIDE
+  // ========================================================================= //
 
-img0005_01_27_20.onclick = function () {
-  modalbox_img0005_01_27_20.style.display = "block";
-  modal_img0005_01_27_20.src = this.src;
-  caption_img0005_01_27_20.innerHTML = this.alt;
-}
 
-const close_img0005_01_27_20 = document.getElementById('close-img0005-01-27-20');
-close_img0005_01_27_20.onclick = function () {
-  modalbox_img0005_01_27_20.style.display = "none";
-}
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    if (scroll > 200 ) {
+      $("#main-nav, #main-nav-subpage").slideDown(700);
+      $("#main-nav-subpage").removeClass('subpage-nav');
+    } else {
+      $("#main-nav").slideUp(700);
+      $("#main-nav-subpage").hide();
+      $("#main-nav-subpage").addClass('subpage-nav');
+    }
+  });
 
-// img0006-01-27-20
-const modalbox_img0006_01_27_20 = document.getElementById('modalbox-img0006-01-27-20');
-const img0006_01_27_20 = document.getElementById('img0006-01-27-20');
-const modal_img0006_01_27_20 = document.getElementById('modal-img0006-01-27-20');
-const caption_img0006_01_27_20 = document.getElementById('caption-img0006-01-27-20');
+  // ========================================================================= //
+  //  // RESPONSIVE MENU
+  // ========================================================================= //
 
-img0006_01_27_20.onclick = function () {
-  modalbox_img0006_01_27_20.style.display = "block";
-  modal_img0006_01_27_20.src = this.src;
-  caption_img0006_01_27_20.innerHTML = this.alt;
-}
+  $('.responsive').on('click', function(e) {
+    $('.nav-menu').slideToggle();
+  });
 
-const close_img0006_01_27_20 = document.getElementById('close-img0006-01-27-20');
-close_img0006_01_27_20.onclick = function () {
-  modalbox_img0006_01_27_20.style.display = "none";
-}
+  // ========================================================================= //
+  //  Typed Js
+  // ========================================================================= //
+
+  var typed = $(".typed");
+
+  $(function() {
+    typed.typed({
+      strings: ["Keith Tachibana.", "A Web Developer.", "A Computer Science Grad.", "An IT Technician.", "A Tech Enthusiast."],
+      typeSpeed: 100,
+      loop: true,
+    });
+  });
+
+
+  // ========================================================================= //
+  //  Owl Carousel Services
+  // ========================================================================= //
+
+
+  $('.services-carousel').owlCarousel({
+      autoplay: true,
+      loop: true,
+      margin: 20,
+      dots: true,
+      nav: false,
+      responsiveClass: true,
+      responsive: { 0: { items: 1 }, 768: { items: 2 }, 900: { items: 4 } }
+    });
+
+  // ========================================================================= //
+  //  magnificPopup
+  // ========================================================================= //
+
+  var magnifPopup = function() {
+    $('.popup-img').magnificPopup({
+      type: 'image',
+      removalDelay: 300,
+      mainClass: 'mfp-with-zoom',
+      gallery: {
+        enabled: true
+      },
+      zoom: {
+        enabled: true, // By default it's false, so don't forget to enable it
+
+        duration: 300, // duration of the effect, in milliseconds
+        easing: 'ease-in-out', // CSS transition easing function
+
+        // The "opener" function should return the element from which popup will be zoomed in
+        // and to which popup will be scaled down
+        // By defailt it looks for an image tag:
+        opener: function(openerElement) {
+          // openerElement is the element on which popup was initialized, in this case its <a> tag
+          // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+          return openerElement.is('img') ? openerElement : openerElement.find('img');
+        }
+      }
+    });
+  };
+
+
+  // Call the functions
+  magnifPopup();
+
+});
+
+// ========================================================================= //
+//  Porfolio isotope and filter
+// ========================================================================= //
+$(window).load(function(){
+
+  var portfolioIsotope = $('.portfolio-container').isotope({
+    itemSelector: '.portfolio-thumbnail',
+    layoutMode: 'fitRows'
+  });
+
+  $('#portfolio-flters li').on( 'click', function() {
+    $("#portfolio-flters li").removeClass('filter-active');
+    $(this).addClass('filter-active');
+
+    portfolioIsotope.isotope({ filter: $(this).data('filter') });
+  });
+
+})

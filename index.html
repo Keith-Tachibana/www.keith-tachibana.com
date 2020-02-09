@@ -1,53 +1,470 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Keith Tachibana: Homepage</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="icon" type="image/png" href="assets/images/icon.png" />
-    <link rel="stylesheet" type="text/css" href="assets/css/style-landing.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Metal+Mania&display=swap" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
-  </head>
-  <body>
-    <main>
+
+<head>
+  <!-- meta -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Keith Tachibana - My Personal Portfolio</title>
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="./lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="./lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="./lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="./lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="./lib/hover/hover.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="./assets/css/style.css" rel="stylesheet">
+
+  <!-- Responsive css -->
+  <link href="./assets/css/responsive.css" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/images/favicon.png">
+
+  <!-- =======================================================
+    Theme Name: Folio
+    Theme URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+</head>
+
+<body>
+
+  <!-- start section navbar -->
+  <nav id="main-nav">
+    <div class="row">
       <div class="container">
-        <div class="row">
-          <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-            <div id="imp1"></div>
-            <div id="imp2"></div>
-            <div id="imp3"></div>
-            <div id="imp4"></div>
-            <div id="tombstone1"></div>
-            <div id="tombstone2"></div>
-            <div id="flames1"></div>
-            <div id="demon1"></div>
-            <div id="flames2"></div>
-            <div id="demon2"></div>
-            <div id="flames3"></div>
-            <div id="demon3"></div>
-            <div id="flames4"></div>
-            <div id="flames5"></div>
-            <div id="demon4"></div>
-            <div id="flames6"></div>
-            <a id="enter" href="/main/">
-              <div id="sun"></div>
-            </a>
-          </div>
-          <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-            <div class="welcome">
-              <h1 class="text-danger">Keith Tachibana: Welcome to my website!</h1>
-              <h5>&copy; 2020: All rights reserved</h5>
+
+        <div class="logo">
+          <a href="./index.html"><img src="./assets/images/logo.png" alt="logo"></a>
+        </div>
+
+        <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
+
+        <ul class="nav-menu list-unstyled">
+          <li><a href="#header" class="smoothScroll">Home</a></li>
+          <li><a href="#about" class="smoothScroll">About</a></li>
+          <li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>
+          <li><a href="#journal" class="smoothScroll">Journal</a></li>
+          <li><a href="#contact" class="smoothScroll">Contact</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <!-- End section navbar -->
+
+
+  <!-- start section header -->
+  <div id="header" class="home">
+
+    <div class="container">
+      <div class="header-content">
+        <h1>I'm <span class="typed"></span></h1>
+        <p>web developer, CS graduate, IT experienced</p>
+
+        <ul class="list-unstyled list-social">
+          <li><a href="mailto: Keith.Tachibana@gmail.com"><i class="ion-email" target="_blank"></i></a></li>
+ 		      <li><a href="https://www.facebook.com/keith.tachibana/" target="_blank"><i class="ion-social-facebook"></i></a></li>
+          <li><a href="https://github.com/Keith-Tachibana/" target="_blank"><i class="ion-social-github"></i></a></li>
+          <li><a href="https://www.instagram.com/keithjf1/" target="_blank"><i class="ion-social-instagram"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/keithtachibana/" target="_blank"><i class="ion-social-linkedin"></i></a></li>
+		      <li><a href="https://twitter.com/Keith_Tachibana/" target="_blank"><i class="ion-social-twitter"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End section header -->
+
+
+  <!-- start section about us -->
+  <div id="about" class="paddsection">
+    <div class="container">
+      <div class="row justify-content-between">
+
+        <div class="col-lg-4 ">
+          <div class="div-img-bg">
+            <div class="about-img">
+              <img src="./assets/images/me.jpg" class="img-responsive" id="me" alt="me" width="100">
             </div>
           </div>
         </div>
+
+        <div class="col-lg-7">
+          <div class="about-descr">
+
+            <p class="p-heading">I'm a web developer who can do front-end and back-end work, with a Master's in Computer Science, and work experience as an Information Technology (IT) technician.</p>
+            <p class="separator">I first started off working in the IT departments of various companies, building my skills in troubleshooting a myriad of issues, both hardware and software. I also worked on networking problems and administered servers on various platforms, including Linux and Microsoft Windows Server. After a while, I decided I wanted a fresh challenge and took up computer programming at the University of California, Irvine, where I earned a Master's degree. But I didn't stop there. I wanted to specialize in web development, and that led me to a coding boot camp called Learning Fuze where I developed the required skills to create full-stack web applications. Some of the courses I have taken include:</p>
+
+          </div>
+
+        </div>
       </div>
-    </main>
-    <script src="assets/js/landing.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script src="https://kit.fontawesome.com/3ccb874c3d.js" crossorigin="anonymous"></script>
-  </body>
+    </div>
+  </div>
+  <!-- end section about us -->
+
+
+  <!-- start section services -->
+  <div id="services">
+    <div class="container">
+
+        <div class="services-carousel owl-theme">
+
+          <div class="services-block">
+
+            <i class="ion-ios-infinite"></i>
+            <span>Boolean Algebra &amp; Logic</span>
+            <p class="separator">Relations and their properties; Boolean algebra, formal languages; finite automata</p>
+
+          </div>
+
+          <div class="services-block">
+
+            <i class="ion-ios-locked"></i>
+            <span>Computer Security</span>
+            <p class="separator">Authorization, authentication, data integrity, malware, operating systems security, network security, web security, and basic cryptography</p>
+
+          </div>
+
+          <div class="services-block">
+
+            <i class="ion-android-desktop"></i>
+            <span>Computer Systems Architecture</span>
+            <p class="separator">Study of architectural issues and their relation to technology and software: design of processor, interconnections, and memory hierarchies</p>
+
+          </div>
+
+          <div class="services-block">
+
+            <i class="ion-android-cloud"></i>
+            <span>Computer and Communication Networks</span>
+            <p class="separator">Internet architecture, protocols, and services; advanced concepts of IP and TCP, including addressing, internetworking, forwarding, routing, and implementations of flow and congestion control</p>
+
+          </div>
+
+          <div class="services-block">
+
+            <i class="ion-android-document"></i>
+            <span>Data Structures with Applications</span>
+            <p class="separator">Data structures and their associated management algorithms, including their application and analysis</p>
+
+          </div>
+
+          <div class="services-block">
+
+            <i class="ion-ios-loop"></i>
+            <span>Fundamentals of Algorithms</span>
+            <p class="separator">Fundamental concepts in the design and analysis of algorithms, including greedy algorithms, deterministic and randomized graph algorithms, models of network flow, and NP-completeness</p>
+
+          </div>
+
+		  <div class="services-block">
+
+            <i class="ion-android-bulb"></i>
+            <span>Intro to Artificial Intelligence</span>
+            <p class="separator">The study of theories and computational models for systems which behave and act in an intelligent manner, including knowledge representation, search, deduction, planning, and probabilistic reasoning</p>
+
+          </div>
+
+		  <div class="services-block">
+
+            <i class="ion-calculator"></i>
+            <span>Intro to Linear Algebra</span>
+            <p class="separator">Systems of linear equations, matrix operations, determinants, eigenvalues and eigenvectors, vector spaces, subspaces, and dimension</p>
+
+          </div>
+
+		  <div class="services-block">
+
+            <i class="ion-android-wifi"></i>
+            <span>Intro to the Internet of Things (IoT)</span>
+            <p class="separator">A comprehensive understanding of the hardware and software technology, the communication protocols, and the security and privacy requirements underlying the IoT ecosystem</p>
+
+          </div>
+
+	      <div class="services-block">
+
+            <i class="ion-code"></i>
+            <span>Machine Learning and Data Mining</span>
+            <p class="separator">Learning algorithms for classifications, regression, and clustering, with emphasis on discriminative classification methods such as decision trees, rules, nearest neighbor, linear models, and naive Bayes</p>
+
+          </div>
+
+		  <div class="services-block">
+
+            <i class="ion-archive"></i>
+            <span>Principles of Data Management</span>
+            <p class="separator">Fundamental principles underlying data management systems, including storage management, buffer management, record-oriented file systems, access methods, query optimizations, and query processing</p>
+
+          </div>
+
+		  <div class="services-block">
+
+            <i class="ion-beaker"></i>
+            <span>Scientific Computing</span>
+            <p class="separator">Overview of widely used principles and methods of numerical and scientific computing, including methods in floating-point, linear algebra, optimization, simulation, modeling, and probability&#47;statistics</p>
+
+          </div>
+
+        </div>
+
+    </div>
+
+  </div>
+  <!-- end section services -->
+
+
+  <!-- start section portfolio -->
+  <div id="portfolio" class="text-center paddsection">
+
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>My Portfolio</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+
+          <div class="portfolio-list">
+
+            <ul class="nav list-unstyled" id="portfolio-flters">
+              <li class="filter filter-active" data-filter=".all">all</li>
+              <li class="filter" data-filter=".connect4">breaking bad themed connect 4</li>
+              <li class="filter" data-filter=".ezfit">eZ-FIT fitBit workout suggestions</li>
+              <li class="filter" data-filter=".memorymatch">star wars themed memory match</li>
+              <li class="filter" data-filter=".sgt">student grade table</li>
+            </ul>
+
+          </div>
+
+          <div class="portfolio-container">
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all connect4">
+              <a href="./portfolio/connect4/index.html">
+                <img src="./assets/images/portfolio/connect4.jpg" alt="Connect 4">
+				        <p><em>Tech Stack: Vanilla JavaScript, HTML, CSS, Git</em></p>
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all ezfit">
+              <a href="https://ezfit.rocks/">
+                <img src="./assets/images/portfolio/ezfit.png"  alt="EZ-FIT">
+				        <p><em>Tech Stack: MongoDB, Express.js, React.js, Node.js, Flask, Heroku, Decision Trees, K-Means Clustering, Git</em></p>
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all memorymatch">
+              <a href="./portfolio/memory_match/index.html">
+                <img src="./assets/images/portfolio/memorymatch.png" alt="Memory Match">
+				        <p><em>Tech Stack: Vanilla JavaScript, HTML, CSS, Git</em></p>
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all sgt">
+              <a href="./portfolio/studentGradeTable/index.html">
+                <img src="./assets/images/portfolio/sgt.png" alt="Student Grade Table">
+				        <p><em>Tech Stack: JavaScript, jQuery, Object-Oriented Programming, HTML, CSS, Git</em></p>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- End section portfolio -->
+
+
+  <!-- start section journal -->
+  <div id="journal" class="text-left paddsection">
+
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>journal</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="journal-block">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="journal-info">
+
+              <a href="./personal.html"><img src="/assets/images/journal/personal.jpg" class="img-responsive" alt="My Personal Story"></a>
+
+              <div class="journal-txt">
+
+                <h4><a href="./personal.html">my personal story</a></h4>
+                <p class="separator journal-desc">My humble beginnings: growing up in Orange County, attending college in New York City, and listening to heavy metal music!</p>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="journal-info">
+
+              <a href="./developer.html"><img src="/assets/images/journal/developer.jpg" class="img-responsive" alt="My Developer Story"></a>
+
+              <div class="journal-txt">
+
+                <h4><a href="./developer.html">my developer's story</a></h4>
+                <p class="separator journal-desc">How I started working as an IT professional and ended up as a web&#47;software developer</p>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="journal-info">
+
+              <a href="./technology.html"><img src="/assets/images/journal/tech.jpg" class="img-responsive" alt="My Technology"></a>
+
+              <div class="journal-txt">
+
+                <h4><a href="./technology.html">my technology</a></h4>
+                <p class="separator journal-desc">An insight into the technology I use: from my custom-built gaming system to my custom-built pfSense firewall appliance</p>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- End section journal -->
+
+
+  <!-- start sectoion contact -->
+  <div id="contact" class="paddsection">
+    <div class="container">
+      <div class="contact-block1">
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="contact-contact">
+
+              <h2 class="mb-30">connect with me</h2>
+
+              <ul class="contact-details">
+                <li><span>Keith Tachibana</span></li>
+                <li><span>Irvine, California, United States</span></li>
+                <li><span>(949) 331&dash;8370</span></li>
+                <li><span>Keith.Tachibana&#64;gmail.com</span></li>
+              </ul>
+
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <form action="" method="post" role="form" class="contactForm">
+              <div class="row">
+
+                <div id="sendmessage">Your message has been sent. Thank you!</div>
+                <div id="errormessage"></div>
+
+                <div class="col-lg-6">
+                  <div class="form-group contact-block1">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Full Name Here" data-rule="minlen:1" data-msg="Please enter your full name" />
+                    <div class="validation"></div>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your E-mail Address Here" data-rule="email" data-msg="Please enter a valid email address" />
+                    <div class="validation"></div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Your Subject Here" data-rule="minlen:1" data-msg="Please enter a subject line" />
+                    <div class="validation"></div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <textarea class="form-control" name="message" rows="12" data-rule="required" data-msg="Please enter your message" placeholder="Your Message Here"></textarea>
+                    <div class="validation"></div>
+                  </div>
+                </div>
+
+                <div class="col-lg-12">
+                  <input type="submit" class="btn btn-defeault btn-send" value="Send message">
+                </div>
+
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- start sectoion contact -->
+
+
+  <!-- start section footer -->
+  <div id="footer" class="text-center">
+    <div class="container">
+      <div class="socials-media text-center">
+
+        <ul class="list-unstyled">
+          <li><a href="mailto: Keith.Tachibana@gmail.com"><i class="ion-email" target="_blank"></i></a></li>
+ 		      <li><a href="https://www.facebook.com/keith.tachibana/" target="_blank"><i class="ion-social-facebook"></i></a></li>
+          <li><a href="https://github.com/Keith-Tachibana/" target="_blank"><i class="ion-social-github"></i></a></li>
+          <li><a href="https://www.instagram.com/keithjf1/" target="_blank"><i class="ion-social-instagram"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/keithtachibana/" target="_blank"><i class="ion-social-linkedin"></i></a></li>
+		      <li><a href="https://twitter.com/Keith_Tachibana/" target="_blank"><i class="ion-social-twitter"></i></a></li>
+        </ul>
+
+      </div>
+
+      <p>&copy; Keith Tachibana. All rights reserved.</p>
+
+
+
+    </div>
+  </div>
+  <!-- End section footer -->
+
+  <!-- JavaScript Libraries -->
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/jquery/jquery-migrate.min.js"></script>
+  <script src="./lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./lib/typed/typed.js"></script>
+  <script src="./lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="./lib/magnific-popup/magnific-popup.min.js"></script>
+  <script src="./lib/isotope/isotope.pkgd.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="./contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="./assets/js/main.js"></script>
+
+</body>
+
 </html>
