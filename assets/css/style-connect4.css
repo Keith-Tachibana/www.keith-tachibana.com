@@ -1,171 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  max-width: 100vw;
   margin: 0;
-  background-image: url('../images/connect_4/pablo-garcia-saldana-6WysHvxpQEQ-unsplash.jpg');
+  font-family: 'Krona One', sans-serif;
+}
+
+#video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+aside {
+  align-self: center;
+  text-align: center;
+  font-size: 1em;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  width: 15%;
+}
+
+.game {
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%;
+  height: 80vh;
+  margin-top: 15px;
+}
+
+.row {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid #000;
+  background-color: #fff;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.player-one {
+  width: 100%;
+  border-radius: 50%;
+  background-color: #92140C;
+  background-image: url('../images/connect_4/darth_maul.png');
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-h1 {
-  color: whitesmoke;
-}
-
-table {
-  margin: .5rem 3rem;
-}
-
-tr, td, tbody {
-  border: 1px solid #000;
+.player-two {
+  width: 100%;
   border-radius: 50%;
-  height: 100px;
-  width: 100px;
-}
-
-#gameInfo {
-  font-size: 1.75rem;
-}
-
-.tdElement {
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  margin: 0 auto;
-  display: block;
-}
-
-th:hover {
-  background-image: url('../images/connect_4/arrow.png');
-  background-size: contain;
+  background-color: #F6F930;
+  background-image: url('../images/connect_4/rey.png');
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
-#startGame {
-  font-size: 1rem;
-  font-weight: bold;
-  height: 35px;
-  width: 125px;
-  border-radius: 20px;
-  border: none;
-  background-color: rgb(60, 103, 58);
-  color: rgb(224, 233, 66);
-}
-
-#startGame:hover {
-  cursor: pointer;
-  background-color: rgb(36, 58, 35);
-}
-
-#startGame:active {
-  transform: translateY(5px);
-}
-
-#startGame:disabled {
-  color: grey;
-  cursor: initial;
-}
-
-#startGame:disabled:hover {
-  background-color: rgb(60, 103, 58);
-  cursor: initial;
-}
-
-#resetGame {
-  font-size: 1rem;
-  height: 35px;
-  width: 125px;
-  border-radius: 20px;
-  border: none;
-  background-color: rgb(224, 233, 66);
-  color: rgb(60, 103, 58);
-}
-
-#resetGame:hover {
-  cursor: pointer;
-  background-color: rgb(126, 131, 35);
-}
-
-#resetGame:active {
-  transform: translateY(5px);
-}
-
-#music {
-  height: 25px;
-  width: 30px;
-  border-radius: 10px;
-  border: none;
-  background-color: rgb(6, 94, 54);
-  color: white;
-}
-
-#music:hover {
-  cursor: pointer;
-  background-color: rgb(188, 194, 191);
-}
-
-#music:active {
-  transform: translateY(5px);
-}
-
-#p1Wins, #p2Wins {
-  font-style: italic;
-}
-
-.modal, .modal-draw {
-  position: fixed;
+.col {
   display: flex;
-  justify-content: center;
-  margin: 0;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 10%;
   height: 100%;
-  width: 100%;
-  background-color: rgba(27, 29, 25, 0.637)
 }
 
-.modal-text {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  color: white;
-}
-
-.modal-text>div {
-  text-align: center;
-  font-size: 3rem;
-  position: relative;
-  top: 50px;
-}
-
-.close {
-  font-size: 5rem;
-  font-weight: bolder;
-  color: #fff;
-}
-
-.close:hover {
+.col:hover {
   cursor: pointer;
-  color: #aaa;
 }
 
-.close:active {
-  transform: translateY(5px);
+.col:hover > :first-child {
+  box-shadow:
+    0 0 30px 5px #fff,
+    0 0 50px 10px #f0f,
+    0 0 70px 15px #0ff;
+  background-color: rgba(150, 150, 150, 0.6);
 }
 
-.restart, .restart-draw {
-  height: 25px;
-  width: 100px;
-  border-radius: 10px;
-  border: none;
-  background-color: dodgerblue;
-  color: white;
+.col:active > :first-child {
+  background-color: red;
+}
+/*
+.fall-9 {
+  animation-name: fall-animation-9;
+  animation-duration: 500ms;
 }
 
-.restart:hover {
-  cursor: pointer;
-  background-color: blue;
+.fall-8 {
+  animation-name: fall-animation-8;
+  animation-duration: 500ms;
 }
 
-.restart:active {
-  transform: translateY(5px);
+.fall-7 {
+  animation-name: fall-animation-7;
+  animation-duration: 500ms;
+}
+
+.fall-6 {
+  animation-name: fall-animation-6;
+  animation-duration: 500ms;
 }
 
 .fall-5 {
@@ -196,6 +149,42 @@ th:hover {
 .fall-0 {
   animation-name: fall-animation-0;
   animation-duration: 500ms;
+}
+
+@keyframes fall-animation-9 {
+  from {
+    transform: translateY(-900px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fall-animation-8 {
+  from {
+    transform: translateY(-800px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fall-animation-7 {
+  from {
+    transform: translateY(-700px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fall-animation-6 {
+  from {
+    transform: translateY(-600px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 
 @keyframes fall-animation-5 {
@@ -251,135 +240,157 @@ th:hover {
     transform: translateY(0);
   }
 }
-
-.player1 {
-  background-color: rgb(66, 151, 62);
-}
-
-.player2 {
-  background-color: rgb(224, 233, 66);
-}
-
-.theme-title {
+*/
+.modal {
+  position: fixed;
   display: flex;
-  height: 120px;
-  justify-content: center;
-}
-
-.theme-title p {
-  color: whitesmoke;
-  font-size: 3rem;
-  margin-top: 2.5rem;
-}
-
-.title-1 {
-  background-image: url('../images/connect_4/co.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 90px;
-  width: 100px;
-  margin: 1rem;
-  margin-right: .3rem;
-}
-
-.title-2 {
-  background-image: url('../images/connect_4/F.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 90px;
-  width: 100px;
-  margin: 1rem;
-  margin-right: .3rem;
-}
-
-.gameStats {
-  display: flex;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100vh;
   width: 100%;
-}
-
-main {
-  display: flex;
+  border: 2px solid #000;
+  background-color: #fff;
+  background-image: url('../images/connect_4/win.gif');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: white;
   justify-content: center;
+  font-size: 2em;
+  font-family: 'Krona One', sans-serif;
 }
 
-.choose-token {
-  /* margin: auto; */
-  height: 100px;
-  width: 100px;
-  margin: auto;
-  margin-top: .5rem;
-  background-repeat: no-repeat;
+.modal-lose {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-image: url('../images/connect_4/lose.gif');
   background-position: center;
-  background-size: 5rem;
-  border-radius: 50%;
-  background-color: rgba(136, 194, 88, 0.842)
-}
-
-.icon-1 {
-  background-image: url('../images/connect_4/beaker.png');
-  background-size: 80%;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  text-align: center;
+  color: #fff;
+  justify-content: center;
+  font-size: 2em;
+  font-family: 'Krona One', sans-serif;
 }
 
-.icon-2 {
-  background-image: url('../images/connect_4/icons8-camper-80.png');
-  background-size: 80%;
-  background-repeat: no-repeat;
-  background-position: center;
+#player-turn, #lose-screen, #finish-game {
+  color: #F6F930;
 }
 
-.icon-3 {
-  background-image: url('../images/connect_4/icons8-hat-80.png');
-  background-size: 80%;
-  background-repeat: no-repeat;
-  background-position: center;
+button {
+  border: 0;
+  align-self: center;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  outline: none;
+  font-family: 'Krona One', sans-serif;
+  height: 35px;
 }
 
-.icon-4 {
-  background-image: url('../images/connect_4/icons8-skull-crossbones-100.png');
-  background-size: 80%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.icon-5 {
-  background-image: url('../images/connect_4/money.png');
-  background-size: 80%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-#token1, #token2 {
-  color: black;
-  font-weight: bold;
-}
-
-.choose-token:hover {
-  background-color: rgb(7, 7, 7);
+button:hover {
+  background-color: #F6F930;
   cursor: pointer;
 }
 
-.choose-token:active {
-  transform: translateY(5px);
+button:active {
+  background-color: #D1A511;
+  transform: translateY(2px);
 }
 
-#p1Wins, #p2Wins {
-  margin-top: 2rem;
-  color: whitesmoke;
-  font-family: sans-serif;
-  font-size: 1.2rem;
-  line-height: 0.5rem;
-}
-
-aside {
+.start-box {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+  height: 75vh;
+  width: 75%;
+  margin: auto;
+  background-color: rgba(45, 83, 121, 0);
+  border-radius: 15px;
+  color: #FFB627;
   text-align: center;
+  font-size: 2em;
+  justify-content: center;
+  font-family: 'Krona One', sans-serif;
 }
 
-header {
+h1 {
+  margin: 0 auto;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltipText {
+  visibility: hidden;
+  background-color: #000;
+  color: #fff;
   text-align: center;
+  font-size: 70%;
+  border-radius: 5px;
+  padding: 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  width: 85%;
+  font-size: 1.1rem;
+  font-family: 'Krona One', sans-serif;
+}
+
+.tooltip:hover .tooltipText {
+  visibility: visible;
+  opacity: 50%;
+}
+
+input {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-family: 'Krona One', sans-serif;
+  height: 40px;
+  font-size: 1.25rem;
+}
+
+input::placeholder {
+  font-size: 1.25rem;
+}
+
+.timer-alert {
+  color: #D81E5B;
+  font-size: 1rem;
+}
+
+.fadeIn {
+  animation-name: fade;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 25%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 25%;
+  }
 }
 
 .hidden {
