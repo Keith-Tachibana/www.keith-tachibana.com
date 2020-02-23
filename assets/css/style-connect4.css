@@ -61,7 +61,7 @@ aside {
   width: 100%;
   border-radius: 50%;
   background-color: #92140C;
-  background-image: url('../images/connect_4/darth_maul.png');
+  background-image: url('../images/connect4/darth_maul.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -71,7 +71,7 @@ aside {
   width: 100%;
   border-radius: 50%;
   background-color: #F6F930;
-  background-image: url('../images/connect_4/rey.png');
+  background-image: url('../images/connect4/rey.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -252,7 +252,7 @@ aside {
   width: 100%;
   border: 2px solid #000;
   background-color: #fff;
-  background-image: url('../images/connect_4/win.gif');
+  background-image: url('../images/connect4/win.gif');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -273,7 +273,7 @@ aside {
   height: 100vh;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.5);
-  background-image: url('../images/connect_4/lose.gif');
+  background-image: url('../images/connect4/lose.gif');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

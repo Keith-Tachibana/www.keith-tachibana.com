@@ -1,0 +1,198 @@
+* {
+  box-sizing: content-box;
+}
+
+body {
+  font-family: 'Boogaloo', cursive !important;
+  overflow-x: hidden;
+}
+
+#calendar {
+  position: relative;
+  left: 5px;
+  top: 5px;
+}
+
+#greeting-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: 50px;
+}
+
+#submit-name {
+  width: 500px;
+  box-shadow:
+    0 0 30px 1px #fff,
+    0 0 50px 3px #f0f,
+    0 0 70px 5px #0ff;
+}
+
+#submit-name::placeholder {
+  font-size: 1.25rem;
+}
+
+#toDo-container {
+  height: 120px;
+  overflow: auto;
+  width: 700px;
+}
+
+#todDo {
+  border: none;
+  border-bottom: 1px solid #043565;
+  background-color: #fff;
+}
+
+#toDo-form {
+  position: relative;
+  top: -55%;
+}
+
+#toDo::placeholder {
+  text-align: center;
+}
+
+#toDo:-webkit-autofill,
+#toDo:-webkit-autofill:hover,
+#toDo:-webkit-autofill:focus,
+#toDo:-webkit-autofill:active  {
+  box-shadow: 0 0 0 30px white inset;
+}
+
+#toDo:focus {
+  outline: none;
+}
+
+#toDo-add {
+  background-color: #043565;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  width: 75px;
+  outline: none;
+}
+
+#toDo-add:active {
+  transform: translateY(5px);
+  background-color: #03274A;
+}
+
+#toDo-add:hover {
+  background-color: #03274A;
+}
+
+#toDo-ul {
+  display: inline-block;
+}
+
+#delete-toDo {
+  border-radius: 15px;
+  font-size: 0.9rem;
+  border: none;
+  outline: none;
+}
+
+#delete-toDo:active {
+  transform: translateY(2px);
+  background-color: rgb(126, 25, 45);
+}
+
+#headlines {
+  height: 800px;
+  overflow: auto;
+  font-size: 1rem;
+  font-family: Tahoma, sans-serif;
+}
+
+#sports {
+  height: 800px;
+  overflow: auto;
+  font-size: 1rem;
+  direction: rtl;
+  font-family: Tahoma, sans-serif;
+}
+
+#weather-form {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 15px;
+}
+
+#weather-city-container, #temps, #condition, #wind, #sunrise, #sunset {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 15px;
+}
+
+#city {
+  position: relative;
+  top: 15px;
+}
+
+#weather-submit, #headlines-submit {
+  background-color: #043565;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+#headlines-submit {
+  font-size: 1.2rem;
+}
+
+#weather-submit:active, #headlines-submit:active {
+  transform: translateY(2px);
+  background-color: #03274A;
+}
+
+#weather-submit:hover, #headlines-submit:hover {
+  background-color: #03274A;
+}
+
+#headlines-search::placeholder {
+  padding-left: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #070707;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #043565;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #03274A;
+}
+
+#stocks-container {
+  overflow: hidden;
+  white-space: nowrap;
+  border: 1px groove #fff;
+}
+
+#stocks {
+  position: relative;
+  animation: ticker 10s linear infinite;
+}
+
+#stocks:hover {
+  animation-play-state: paused;
+}
+
+@keyframes ticker {
+  0% {
+    right: -25em;
+  }
+  100% {
+    right: 45em;
+  }
+}

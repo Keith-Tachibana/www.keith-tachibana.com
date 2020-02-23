@@ -1,5 +1,5 @@
 body {
-  background-image: url("../../assets/images/memory_match/background.gif");
+  background-image: url("../../assets/images/memoryMatch/background.gif");
   background-size: 100% 150%;
   background-repeat: no-repeat;
   height: 97vh;
@@ -154,7 +154,7 @@ body {
 }
 
 .card-back {
-  background-image: url("../../assets/images/memory_match/storm-trooper.gif");
+  background-image: url("../../assets/images/memoryMatch/storm-trooper.gif");
   transition: transform .2s;
   /*opacity: 0.5;*/
 }
@@ -170,44 +170,44 @@ body {
 }
 
 .chewbacca {
-  background-image: url("../../assets/images/memory_match/chewbacca.jpg");
+  background-image: url("../../assets/images/memoryMatch/chewbacca.jpg");
 }
 
 .emperor {
-  background-image: url("../../assets/images/memory_match/emperor.jpg");
+  background-image: url("../../assets/images/memoryMatch/emperor.jpg");
 }
 
 .hansolo {
-  background-image: url("../../assets/images/memory_match/hansolo.webp");
+  background-image: url("../../assets/images/memoryMatch/hansolo.webp");
 }
 
 .leia {
-  background-image: url("../../assets/images/memory_match/leia.jpg");
+  background-image: url("../../assets/images/memoryMatch/leia.jpg");
 }
 
 .luke {
-  background-image: url("../../assets/images/memory_match/luke.png");
+  background-image: url("../../assets/images/memoryMatch/luke.png");
 }
 
 .obiwan {
-  background-image: url("../../assets/images/memory_match/obiwan.webp");
+  background-image: url("../../assets/images/memoryMatch/obiwan.webp");
 }
 
 .padme {
-  background-image: url("../../assets/images/memory_match/padme.jpg");
+  background-image: url("../../assets/images/memoryMatch/padme.jpg");
 }
 
 .vader {
-  background-image: url("../../assets/images/memory_match/vader.jpg");
+  background-image: url("../../assets/images/memoryMatch/vader.jpg");
 }
 
 .yoda {
-  background-image: url("../../assets/images/memory_match/yoda.jpg");
+  background-image: url("../../assets/images/memoryMatch/yoda.jpg");
 }
 
 .modal {
   position: fixed;
-  background-image: url("../../assets/images/memory_match/fireworks.gif");
+  background-image: url("../../assets/images/memoryMatch/fireworks.gif");
   background-repeat: no-repeat;
   background-size: cover;
   color: black;

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="../../assets/images/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="../../assets/css/style-homepage.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
+    <title>Keith Tachibana: Homepage API</title>
+  </head>
+  <body class="bg-dark">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2" id="calendar">
+        <p><i class="far fa-calendar-alt fa-lg text-white"><span id="date" class="h6 ml-1"></span></i></p>
+        <p><i class="far fa-clock fa-lg text-white"><span id="clock" class="h6 ml-1"></span></i></p>
+        <div id="stocks-container" class="mt-2">
+          <div id="stocks" class="text-white">[Stock Ticker] &gt;&gt;&gt; </div>
+        </div>
+        <div id="maps" class="mt-4" style="height:350px;"></div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 mt-2" id="nasa">
+        <div id="greeting-container" class="text-center">
+          <form>
+            <input type="text" class="form-control mt-4 mb-4 text-center" id="submit-name" placeholder="Please enter your name" required="required" />
+          </form>
+          <p class="d-none display-2 text-white" id="greeting"></p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
+        <form class="form-inline" id="weather-form">
+          <div class="input-group mt-4">
+            <div class="input-group-prepend">
+              <i class="input-group-text fas fa-cloud-sun"></i>
+            </div>
+            <input type="text" name="weather" id="weather-search" placeholder="Enter city name for weather" size="25" required="required" />
+            <button type="submit" name="weather-submit" id="weather-submit">Submit</button>
+          </div>
+        </form>
+        <div id="weather-city-container">
+          <p>
+            <span id="city" class="h6 d-none mt-2 text-white"></span>
+            <span id="weatherIMG" class="d-none"></span>
+          </p>
+        </div>
+        <p id="temps" class="h6 d-none text-white"></p>
+        <p id="condition" class="h6 d-none text-white"></p>
+        <p id="wind" class="h6 d-none text-white"></p>
+        <p id="sunrise" class="h6 d-none text-white"></p>
+        <p id="sunset" class="h6 d-none text-white"></p>
+        <span id="day2" class="h6 d-none text-white"></span><span id="day2IMG" class="d-none"></span>
+        <span id="day3" class="h6 d-none text-white"></span><span id="day3IMG" class="d-none"></span>
+        <span id="day4" class="h6 d-none text-white"></span><span id="day4IMG" class="d-none"></span>
+        <span id="day5" class="h6 d-none text-white"></span><span id="day5IMG" class="d-none"></span>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+        <form id="toDo-form" class="text-center">
+          <label for="toDo">
+            <h4 class="text-white">Today's To Do List:
+              <span>
+                <input type="text" id="toDo" class="ml-4" name="add" size="50" placeholder="Enter task to do here" />
+                <button type="button" id="toDo-add" class="ml-2">Add</button>
+              </span>
+            </h4>
+            <div id="toDo-container">
+              <ul id="toDo-ul" class="text-white"></ul>
+            </div>
+          </label>
+        </form>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="display-4 text-center text-white">-Top Headlines-</div>
+        <form class="form-inline justify-content-center mt-4" id="headlines-form">
+          <div class="input-group-prepend">
+            <i class="input-group-text mb-2 far fa-newspaper"></i>
+          </div>
+          <input type="text" class="w-75 mb-2" id="headlines-search" name="headlines-search" placeholder="Search For Top Headlines Here" required="required" />
+          <button type="submit" name="headlines-submit" id="headlines-submit" class="mb-2">Search</button>
+        </form>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <div class="display-4 text-center text-white">-Sports-</div>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 pl-4 text-white" id="headlines"></div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-white" id="sports">
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="../../assets/js/homepageAPI/weather.js"></script>
+    <script src="../../assets/js/homepageAPI/nasa.js"></script>
+    <script src="../../assets/js/homepageAPI/greeting.js"></script>
+    <script src="../../assets/js/homepageAPI/newDate.js"></script>
+    <script src="../../assets/js/homepageAPI/clock.js"></script>
+    <script src="../../assets/js/homepageAPI/todo.js"></script>
+    <script src="../../assets/js/homepageAPI/news.js"></script>
+    <script src="../../assets/js/homepageAPI/sports.js"></script>
+    <script src="../../assets/js/homepageAPI/stocks.js"></script>
+    <script src="../../assets/js/homepageAPI/giphy.js"></script>
+    <script src="../../assets/js/homepageAPI/quotes.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQc2g2qijgNGJhh3sZrGQj8RJS6HkKilI&callback=initMap"></script>
+    <script src="../../assets/js/homepageAPI/maps.js"></script>
+    <script src="../../assets/js/homepageAPI/app.js"></script>
+    <script src="../../assets/js/homepage.js"></script>
+  </body>
+</html>
