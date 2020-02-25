@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="../../assets/images/favicon.png" />
     <link rel="stylesheet" type="text/css" href="../../assets/css/style-homepage.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" />
@@ -45,15 +45,27 @@
             <span id="weatherIMG" class="d-none"></span>
           </p>
         </div>
-        <p id="temps" class="h6 d-none text-white"></p>
-        <p id="condition" class="h6 d-none text-white"></p>
-        <p id="wind" class="h6 d-none text-white"></p>
-        <p id="sunrise" class="h6 d-none text-white"></p>
-        <p id="sunset" class="h6 d-none text-white"></p>
-        <span id="day2" class="h6 d-none text-white"></span><span id="day2IMG" class="d-none"></span>
-        <span id="day3" class="h6 d-none text-white"></span><span id="day3IMG" class="d-none"></span>
-        <span id="day4" class="h6 d-none text-white"></span><span id="day4IMG" class="d-none"></span>
-        <span id="day5" class="h6 d-none text-white"></span><span id="day5IMG" class="d-none"></span>
+        <div>
+          <p id="temps" class="h6 d-none text-white"></p>
+          <p id="condition" class="h6 d-none text-white"></p>
+          <p id="wind" class="h6 d-none text-white"></p>
+          <p id="sunrise" class="h6 d-none text-white"></p>
+          <p id="sunset" class="h6 d-none text-white"></p>
+        </div>
+        <hr />
+        <div id="giphy-container">
+          <h5 class="text-white text-center">Search Giphy Pictures:</h5>
+          <form class="form-inline mb-4" id="giphy-form">
+            <div class="input-group mt-4">
+              <div class="input-group-prepend">
+                <i class="input-group-text far fa-images"></i>
+              </div>
+              <input type="text" name="giphy" id="giphy-search" placeholder="Enter image to search" size="25" required="required" />
+              <button type="submit" name="giphy-submit" id="giphy-submit">Submit</button>
+            </div>
+          </form>
+          <div id="giphy" class="text-center"></div>
+        </div>
       </div>
     </div>
     <div class="row justify-content-center">

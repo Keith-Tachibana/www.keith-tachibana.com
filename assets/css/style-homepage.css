@@ -46,7 +46,7 @@ body {
 
 #toDo-form {
   position: relative;
-  top: -55%;
+  top: -105%;
 }
 
 #toDo::placeholder {
@@ -130,7 +130,7 @@ body {
   top: 15px;
 }
 
-#weather-submit, #headlines-submit {
+#giphy-submit, #weather-submit, #headlines-submit {
   background-color: #043565;
   color: #fff;
   border: none;
@@ -142,12 +142,12 @@ body {
   font-size: 1.2rem;
 }
 
-#weather-submit:active, #headlines-submit:active {
+#giphy-submit:active, #weather-submit:active, #headlines-submit:active {
   transform: translateY(2px);
   background-color: #03274A;
 }
 
-#weather-submit:hover, #headlines-submit:hover {
+#giphy-submit:hover, #weather-submit:hover, #headlines-submit:hover {
   background-color: #03274A;
 }
 
