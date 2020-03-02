@@ -16,8 +16,6 @@ body {
 #greeting-container {
   display: flex;
   justify-content: center;
-  position: relative;
-  left: 50px;
 }
 
 #submit-name {
@@ -42,11 +40,6 @@ body {
   border: none;
   border-bottom: 1px solid #043565;
   background-color: #fff;
-}
-
-#toDo-form {
-  position: relative;
-  top: -105%;
 }
 
 #toDo::placeholder {
@@ -98,6 +91,7 @@ body {
   background-color: rgb(126, 25, 45);
 }
 
+#sports,
 #headlines {
   height: 800px;
   overflow: auto;
@@ -105,54 +99,37 @@ body {
   font-family: Tahoma, sans-serif;
 }
 
-#sports {
-  height: 800px;
-  overflow: auto;
-  font-size: 1rem;
-  direction: rtl;
-  font-family: Tahoma, sans-serif;
+.weather-giphy-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+#weather-city-container,
+#temps,
+#condition,
+#wind,
+#sunrise,
+#sunset,
 #weather-form {
   display: flex;
   justify-content: flex-end;
   margin-right: 15px;
 }
 
-#weather-city-container, #temps, #condition, #wind, #sunrise, #sunset {
+.maps-container {
   display: flex;
-  justify-content: flex-end;
-  margin-right: 15px;
+  justify-content: center;
+}
+
+#giphy-container, #weather-city-container {
+  width: 275px;
 }
 
 #city {
   position: relative;
   top: 15px;
-}
-
-#giphy-submit, #weather-submit, #headlines-submit {
-  background-color: #043565;
-  color: #fff;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-}
-
-#headlines-submit {
-  font-size: 1.2rem;
-}
-
-#giphy-submit:active, #weather-submit:active, #headlines-submit:active {
-  transform: translateY(2px);
-  background-color: #03274A;
-}
-
-#giphy-submit:hover, #weather-submit:hover, #headlines-submit:hover {
-  background-color: #03274A;
-}
-
-#headlines-search::placeholder {
-  padding-left: 10px;
 }
 
 ::-webkit-scrollbar {
@@ -186,6 +163,10 @@ body {
 
 #stocks:hover {
   animation-play-state: paused;
+}
+
+.completed {
+  text-decoration: line-through;
 }
 
 @keyframes ticker {
