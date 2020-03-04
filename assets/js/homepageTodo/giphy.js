@@ -49,6 +49,13 @@ class Giphy {
     event.target.reset();
   }
 
+  playRandom() {
+    setInterval(() => {
+      const queries = ['bikini', 'outer space', 'weird', 'supermodels', 'nature'];
+      queries.forEach(query => this.getGiphy(query));
+    }, 5000);
+  }
+
   loadGiphy() {
     const currentImage = localStorage.getItem('giphy');
     if (currentImage === undefined) {
