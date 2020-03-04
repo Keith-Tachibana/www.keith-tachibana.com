@@ -30,67 +30,6 @@ body {
   font-size: 1.25rem;
 }
 
-#toDo-container {
-  height: 120px;
-  overflow: auto;
-  width: 700px;
-}
-
-#todDo {
-  border: none;
-  border-bottom: 1px solid #043565;
-  background-color: #fff;
-}
-
-#toDo::placeholder {
-  text-align: center;
-}
-
-#toDo:-webkit-autofill,
-#toDo:-webkit-autofill:hover,
-#toDo:-webkit-autofill:focus,
-#toDo:-webkit-autofill:active  {
-  box-shadow: 0 0 0 30px white inset;
-}
-
-#toDo:focus {
-  outline: none;
-}
-
-#toDo-add {
-  background-color: #043565;
-  color: #fff;
-  border: none;
-  border-radius: 15px;
-  width: 75px;
-  outline: none;
-}
-
-#toDo-add:active {
-  transform: translateY(5px);
-  background-color: #03274A;
-}
-
-#toDo-add:hover {
-  background-color: #03274A;
-}
-
-#toDo-ul {
-  display: inline-block;
-}
-
-#delete-toDo {
-  border-radius: 15px;
-  font-size: 0.9rem;
-  border: none;
-  outline: none;
-}
-
-#delete-toDo:active {
-  transform: translateY(2px);
-  background-color: rgb(126, 25, 45);
-}
-
 #sports,
 #headlines {
   height: 800px;
