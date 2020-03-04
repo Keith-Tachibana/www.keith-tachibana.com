@@ -19,7 +19,6 @@ class Quotes {
   }
 
   handleGetQuotesSuccess(data) {
-    console.log('Quotes:', data);
     let quote = document.createElement('p');
     quote.classList.add('ml-2', 'mt-2', 'text-white', 'h4', 'text-center');
     quote.innerHTML = `${data.content} <em>-${data.author}</em>`;

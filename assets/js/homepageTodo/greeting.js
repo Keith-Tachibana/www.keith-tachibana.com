@@ -13,10 +13,10 @@ class Greeting {
   }
 
   handleSubmit(event) {
-    var greeting = document.querySelector('#greeting-container');
-    var input = greeting.querySelector('input');
+    let greeting = document.querySelector('#greeting-container');
+    let input = greeting.querySelector('input');
     event.preventDefault();
-    var name = input.value;
+    let name = input.value;
     this.displayName(name);
     input.value = ``;
   }

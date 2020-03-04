@@ -23,9 +23,9 @@ class Giphy {
   }
 
   handleGetGiphySuccess(data) {
-    console.log('Giphy:', data);
     const img = document.createElement('img');
     const giphy = document.getElementById('giphy');
+    $('#giphy').text('');
     let min = Math.ceil(0);
     let max = Math.floor(24);
     let random = Math.floor(Math.random() * (max - min + 1)) + min;

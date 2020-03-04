@@ -23,7 +23,6 @@ class Weather {
   }
 
   handleGetWeatherSuccess(data) {
-    console.log('Weather:', data);
     let spanWeather1 = document.createElement('span');
     let spanWeather2 = document.createElement('span');
     let spanWeather3 = document.createElement('span');

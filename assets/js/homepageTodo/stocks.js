@@ -21,7 +21,6 @@ class Stocks {
   }
 
   handleGetStocksSuccess(data) {
-    console.log('Stocks:', data);
     const stocks = document.getElementById('stocks');
     for (let i = 0; i < data.data.length; i++) {
       const span = document.createElement('span');
