@@ -1,0 +1,43 @@
+{
+  "name": "keith-tachibana.com",
+  "version": "1.0.0",
+  "description": "Keith Tachibana's personal portfolio featuring personal projects, computer science courses taken, and a short biography",
+  "main": "portfolio/studentGradeTable/server/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=production",
+    "client": "webpack-dev-server",
+    "start": "node server/index.js",
+    "dev": "npm-run-all --silent --parallel start client"
+  },
+  "proxy": "http://localhost:3000",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Keith-Tachibana/www.keith-tachibana.com.git"
+  },
+  "author": "Keith Tachibana",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Keith-Tachibana/www.keith-tachibana.com/issues"
+  },
+  "homepage": "https://github.com/Keith-Tachibana/www.keith-tachibana.com#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "pg": "^7.18.2",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/plugin-transform-react-jsx": "^7.8.3",
+    "babel-loader": "^8.0.6",
+    "npm-run-all": "^4.1.5",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
