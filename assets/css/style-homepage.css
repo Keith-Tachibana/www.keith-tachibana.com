@@ -20,10 +20,6 @@ body {
 
 #submit-name {
   width: 500px;
-  box-shadow:
-    0 0 30px 1px #fff,
-    0 0 50px 3px #f0f,
-    0 0 70px 5px #0ff;
 }
 
 #submit-name::placeholder {
