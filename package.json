@@ -2,7 +2,7 @@
   "name": "keith-tachibana.com",
   "version": "1.0.0",
   "description": "Keith Tachibana's personal portfolio featuring personal projects, computer science courses taken, and a short biography",
-  "main": "portfolio/studentGradeTable/server/index.js",
+  "main": "server/index.js",
   "directories": {
     "lib": "lib"
   },
@@ -13,7 +13,6 @@
     "start": "node server/index.js",
     "dev": "npm-run-all --silent --parallel start client"
   },
-  "proxy": "http://localhost:3000",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Keith-Tachibana/www.keith-tachibana.com.git"
@@ -26,11 +25,15 @@
   "homepage": "https://github.com/Keith-Tachibana/www.keith-tachibana.com#readme",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "express-session": "^1.17.0",
     "lodash": "^4.17.15",
     "pg": "^7.18.2",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
+    "react-router-dom": "^5.1.2",
+    "session-file-store": "^1.4.0",
     "youtube-api-search": "0.0.5"
   },
   "devDependencies": {
