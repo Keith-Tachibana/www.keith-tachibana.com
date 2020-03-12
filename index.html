@@ -244,8 +244,9 @@
 
             <ul class="nav list-unstyled" id="portfolio-flters">
               <li class="filter filter-active" data-filter=".all">all</li>
-              <li class="filter" data-filter=".ezfit">eZ-FIT fitBit workouts</li>
-              <li class="filter" data-filter=".homepage">homepage to do list</li>
+              <li class="filter" data-filter=".ecommerce">e-Commerce site</li>
+              <li class="filter" data-filter=".ezfit">eZ-FIT</li>
+              <li class="filter" data-filter=".homepage">homepage</li>
               <li class="filter" data-filter=".connect4">star wars connect 4</li>
               <li class="filter" data-filter=".memorymatch">star wars memory match</li>
               <li class="filter" data-filter=".sgt">student grade table</li>
@@ -255,17 +256,33 @@
 
           <div class="portfolio-container">
 
+            <div class="col-lg-4 col-md-6 portfolio-thumbnail all ecommerce">
+              <a href="./portfolio/eCommerceSite/server/public/index.html">
+                <img src="./assets/images/portfolio/ecommerce.png" alt="E-Commerce Site">
+                <p><em>Tech Stack: React.js, Express.js, Node.js, PostgreSQL, JavaScript, HTML, CSS, Bootstrap</em>
+                </p>
+                <dl style="color:#d3d3d3;">
+                  <dt>Description:</dt>
+                  <dd>&#42;A full-stack, single-page application that models a typical e-commerce website</dd>
+                  <dd>&#42;Shopper can view, add, and delete items from a shopping cart that gets stored in a session cookie</dd>
+                  <dd>&#42;Cart information, orders, and products are stored on a PostgreSQL database server</dd>
+                  <dd>&#42;All back-end routing is handled by Express.js for all API endpoints</dd>
+                  <dd>&#42;CORS middleware is used for cross-origin requests along with a reverse proxy for front-end/back-end communication</dd>
+                </dl>
+              </a>
+            </div>
+
             <div class="col-lg-4 col-md-6 portfolio-thumbnail all ezfit">
               <a href="https://ezfit.rocks/">
                 <img src="./assets/images/portfolio/ezfit.png"  alt="EZ-FIT">
                 <p><em>Tech Stack: MongoDB, Express.js, React.js, Node.js, Material UI, Python Flask, Heroku, Machine Learning</em></p>
                 <dl style="color:#d3d3d3;">
                   <dt>Description:</dt>
-                  <dd>A full-stack web application that uses the FitBit API to sync the user's fitness data</dd>
-                  <dd>Features a one-of-a-kind injury tracking system not found in other fitness tracking applications</dd>
-                  <dd>Suggests a full week of workouts based on 4 factors: body mass index (BMI), body fat, age, and injuries</dd>
-                  <dd>Workout suggestions generated using machine learning algorithms (decision trees and k-means clustering)</dd>
-                  <dd>The main dashboard consists of Material UI themed components (based on React.js)</dd>
+                  <dd>&#42;A full-stack web application that uses the FitBit API to sync the user's fitness data</dd>
+                  <dd>&#42;Features a one-of-a-kind injury tracking system not found in other fitness tracking applications</dd>
+                  <dd>&#42;Suggests a full week of workouts based on 4 factors: body mass index (BMI), body fat, age, and injuries</dd>
+                  <dd>&#42;Workout suggestions generated using machine learning algorithms (decision trees and k-means clustering)</dd>
+                  <dd>&#42;The main dashboard consists of Material UI themed components (based on React.js)</dd>
                 </dl>
               </a>
             </div>
@@ -276,11 +293,11 @@
                 <p><em>Tech Stack: JavaScript, jQuery, React.js, Node.js, Lodash, HTML, CSS, Bootstrap, Object-Oriented Programming</em></p>
                 <dl style="color:#d3d3d3;">
                   <dt>Description:</dt>
-                  <dd>A homepage that serves dynamic content from 8 different API's: YouTube, NASA, Google Maps, Giphy, News API, World Trading Data, Open Weather, and Quotable</dd>
-                  <dd>Consists of 5 tabbed pages - world news, maps, sports, a to do list, and a YouTube video playlist</dd>
-                  <dd>Generates a random Giphy image every 5 seconds on each page</dd>
-                  <dd>The to do list utilizes local storage for persistence and was written in React.js</dd>
-                  <dd>The YouTube playlist, also written in React.js, has a search bar that performs delayed searches using Lodash's debounce method, mimicking real-life Google seraches</dd>
+                  <dd>&#42;A homepage that serves dynamic content from 8 different API's: YouTube, NASA, Google Maps, Giphy, News API, World Trading Data, Open Weather, and Quotable</dd>
+                  <dd>&#42;Consists of 5 tabbed pages - world news, maps, sports, a to do list, and a YouTube video playlist</dd>
+                  <dd>&#42;Generates a random Giphy image every 5 seconds on each page</dd>
+                  <dd>&#42;The to do list utilizes local storage for persistence and was written in React.js</dd>
+                  <dd>&#42;The YouTube playlist, also written in React.js, has a search bar that performs delayed searches using Lodash's debounce method, mimicking real-life Google seraches</dd>
                 </dl>
               </a>
             </div>
@@ -291,9 +308,9 @@
                 <p><em>Tech Stack: Vanilla JavaScript, HTML, CSS</em></p>
                 <dl style="color:#d3d3d3;">
                   <dt>Description:</dt>
-                  <dd>A two player gaming application modeled after the classic Connect 4 game but with a Star Wars theme</dd>
-                  <dd>Features 15 second limit player turns, board sizing options, and real-time game statistics</dd>
-                  <dd>All styling was done manually with CSS rather than using 3rd party libraries such as Bootstrap or Foundation</dd>
+                  <dd>&#42;A two player gaming application modeled after the classic Connect 4 game but with a Star Wars theme</dd>
+                  <dd>&#42;Features 15 second limit player turns, board sizing options, and real-time game statistics</dd>
+                  <dd>&#42;All styling was done manually with CSS rather than using 3rd party libraries such as Bootstrap or Foundation</dd>
                 </dl>
               </a>
             </div>
@@ -304,9 +321,9 @@
                 <p><em>Tech Stack: Vanilla JavaScript, HTML, CSS</em></p>
                 <dl style="color:#d3d3d3;">
                   <dt>Description:</dt>
-                  <dd>An online gaming application where the user must match pairs of face-down cards that are themed after Star Wars</dd>
-                  <dd>Features dynamic card creation, deck shuffling, and real-time game statistics</dd>
-                  <dd>All logic was written in pure JavaScript and all styling was done manually with CSS</dd>
+                  <dd>&#42;An online gaming application where the user must match pairs of face-down cards that are themed after Star Wars</dd>
+                  <dd>&#42;Features dynamic card creation, deck shuffling, and real-time game statistics</dd>
+                  <dd>&#42;All logic was written in pure JavaScript and all styling was done manually with CSS</dd>
                 </dl>
               </a>
             </div>
@@ -317,12 +334,12 @@
                 <p><em>Tech Stack: React.js, Node.js, Express.js, PostgreSQL, JavaScript, HTML, CSS, Bootstrap</em></p>
                 <dl style="color:#d3d3d3;">
                   <dt>Description:</dt>
-                  <dd>A full-stack, CRUD application to create, read, update, and delete student grades</dd>
-                  <dd>All front-end components were written in React.js</dd>
-                  <dd>The back-end routing was done with Express.js to handle all API requests</dd>
-                  <dd>Setup a PostgreSQL database server to store the student data</dd>
-                  <dd>Utilizes CORS middleware to allow public access from different origins</dd>
-                  <dd>An Nginx reverse proxy facilitates communication between the front-end and back-end</dd>
+                  <dd>&#42;A full-stack, CRUD application to create, read, update, and delete student grades</dd>
+                  <dd>&#42;All front-end components were written in React.js</dd>
+                  <dd>&#42;The back-end routing was done with Express.js to handle all API requests</dd>
+                  <dd>&#42;Setup a PostgreSQL database server to store the student data</dd>
+                  <dd>&#42;Utilizes CORS middleware to allow public access from different origins</dd>
+                  <dd>&#42;An Nginx reverse proxy facilitates communication between the front-end and back-end</dd>
                 </dl>
               </a>
             </div>
