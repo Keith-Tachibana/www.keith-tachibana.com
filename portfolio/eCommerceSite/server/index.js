@@ -1,15 +1,23 @@
 require('dotenv/config');
 const express = require('express');
 
-const db = require('./database');
+//const db = require('./database');
 const ClientError = require('./client-error');
 const staticMiddleware = require('./static-middleware');
 const sessionMiddleware = require('./session-middleware');
+const cors = require('cors');
+const { Pool } = require('pg');
 
 const app = express();
 
+const connectionString = 'postgres://ubuntu:Kobe24lakers!@localhost/wickedSales';
+const db = new Pool({
+  connectionString
+});
+
 app.use(staticMiddleware);
 app.use(sessionMiddleware);
+app.use(cors());
 
 app.use(express.json());
 
@@ -214,7 +222,7 @@ app.use((err, req, res, next) => {
   }
 });
 
-app.listen(process.env.PORT, () => {
+app.listen(3001, () => {
   // eslint-disable-next-line no-console
-  console.log('Listening on port', process.env.PORT);
+  console.log('Listening on port 3001');
 });

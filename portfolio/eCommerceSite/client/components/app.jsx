@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+//import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import Header from './header';
 import ProductList from './product-list';
@@ -91,7 +91,7 @@ class App extends Component {
       });
       this.setState({
         cart: []
-      });
+      }, (name, params) => this.setView('catalog', {}));
     } catch (error) {
       console.error(error.message);
     }
@@ -119,6 +119,7 @@ class App extends Component {
   }
 
   render() {
+    /*
     return (
       <BrowserRouter>
         <Header
@@ -154,6 +155,56 @@ class App extends Component {
           <Route path="/" render={() => <div className="m-4 h1"><em>404:</em> Page not found</div>} />
         </Switch>
       </BrowserRouter>
+    */
+    const { view } = this.state;
+    let renderView;
+    switch (view.name) {
+      case 'details':
+        renderView = (
+          <React.Fragment>
+            <ProductDetails
+              params={this.state.view.params}
+              setView={this.setView}
+              addToCart={this.addToCart} />
+          </React.Fragment>
+        );
+        break;
+      case 'cart':
+        renderView = (
+          <React.Fragment>
+	    <CartSummary
+	      deleteItem={this.deleteItem}
+	      cart={this.state.cart}
+              setView={this.setView} />
+	  </React.Fragment>
+        );
+        break;
+      case 'checkout':
+	renderView = (
+	  <React.Fragment>
+	    <CheckoutForm
+	      cart={this.state.cart}
+	      setView={this.setView}
+	      placeOrder={this.placeOrder} />
+	  </React.Fragment>
+	);
+	break;
+      default:
+	renderView = (
+	  <React.Fragment>
+	    <ProductList
+	      setView={this.setView} />
+	  </React.Fragment>
+	);
+	break;
+    }
+    return (
+      <React.Fragment>
+	<Header
+	  cartItemCount={this.state.cart.length}
+	  setView={this.setView} />
+	{renderView}
+      </React.Fragment>	
     );
   }
 }

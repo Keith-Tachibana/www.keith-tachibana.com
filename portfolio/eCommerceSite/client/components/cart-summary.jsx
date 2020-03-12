@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 
 import CartSummaryItem from './cart-summary-item';
 
 class CartSummary extends Component {
   render() {
-    const { cart, deleteItem } = this.props;
+    const { cart, setView, deleteItem } = this.props;
     const total = cart.length === 0 ? 0 : cart.reduce((accumulator, current) => accumulator + current.price, 0);
     const cartItems = cart.map(cartItem => {
       return (
@@ -18,13 +18,12 @@ class CartSummary extends Component {
     return (
       <React.Fragment>
         <main className="cart-main container">
-          <Link to="/" className="text-muted">
-            <h5
-              className="back-button mt-4 ml-4">
-              <i className="fas fa-chevron-left mr-2"></i>
-              Back to catalog
-            </h5>
-          </Link>
+          <h5
+	    onClick={(name, params) => setView('catalog', {})}
+            className="back-button mt-4 ml-4">
+            <i className="fas fa-chevron-left mr-2"></i>
+            Back to catalog
+          </h5>
           <div className="row cart-row">
             <div className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
               <h2 className="ml-4 mt-4 mb-4">My Cart</h2>
@@ -33,8 +32,9 @@ class CartSummary extends Component {
                 <div className="cart-footer justify-content-between my-4">
                   <h2 className="ml-4">Item Total: ${(total / 100).toFixed(2)}</h2>
                   <button
+		    onClick={(name, params) => setView('checkout', {})}
                     className="btn btn-primary">
-                    <Link to="/checkout" className="text-white">Checkout</Link>
+                    Checkout
                   </button>
                 </div>
               </div>
