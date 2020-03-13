@@ -24,7 +24,7 @@ body {
     justify-content: center;
   }
 
-  .main-container {
+  .grade-container {
     display: flex;
     flex-direction: column-reverse;
   }
@@ -35,7 +35,7 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  .main-container {
+  .grade-container {
     display: flex;
     flex-direction: column-reverse;
   }
@@ -46,7 +46,6 @@ body {
 
   .operations {
     margin: 5px;
-
     font-size: 0.8rem;
   }
 }
@@ -73,9 +72,8 @@ body {
     right: 3px;
   }
 
-  .main-container {
+  .grade-container {
     display: flex;
     flex-direction: column-reverse;
   }
-
 }

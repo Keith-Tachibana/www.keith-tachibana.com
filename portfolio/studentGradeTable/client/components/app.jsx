@@ -117,17 +117,19 @@ class App extends Component {
     return (
       <React.Fragment>
         <Header averageGrade={this.getAverageGrade()} />
-        <main>
-          <div className="row main-container">
-            <GradeTable
-              grades={this.state.grades}
-              deleteGrade={this.deleteGrade}
-              updateGrade={this.updateGrade}
-            />
-            <GradeForm
-              addGrade={this.addGrade}
-              currentlyEditing={this.state.currentlyEditing}
-            />
+        <main className="main-container">
+          <div className="container-fluid">
+            <div className="row grade-container">
+              <GradeTable
+                grades={this.state.grades}
+                deleteGrade={this.deleteGrade}
+                updateGrade={this.updateGrade}
+              />
+              <GradeForm
+                addGrade={this.addGrade}
+                currentlyEditing={this.state.currentlyEditing}
+              />
+            </div>
           </div>
         </main>
       </React.Fragment>
