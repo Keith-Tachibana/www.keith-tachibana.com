@@ -17,7 +17,7 @@ class CartSummaryItem extends Component {
               <button
                 className="btn btn-danger"
                 onClick={() => deleteItem(item.cartItemId)}>
-                  Remove From Cart
+                Remove From Cart
               </button>
             </div>
           </div>
