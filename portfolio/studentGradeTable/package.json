@@ -2,7 +2,7 @@
   "name": "student_grade_table_fullstack",
   "version": "1.0.0",
   "description": "A project that uses React.jsx for the front-end and Node.js/Express.js/PostgreSQL for the back-end to pass student grade information back and forth",
-  "main": "server/studentGradeTable.js",
+  "main": "server/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode=production",
