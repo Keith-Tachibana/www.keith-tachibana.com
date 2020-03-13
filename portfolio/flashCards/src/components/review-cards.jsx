@@ -10,7 +10,6 @@ class ReviewCards extends Component {
       imageIndex: 0,
       progress: 0
     };
-
     this.nextCard = this.nextCard.bind(this);
     this.previousCard = this.previousCard.bind(this);
     this.flipCard = this.flipCard.bind(this);
@@ -42,8 +41,8 @@ class ReviewCards extends Component {
 
   showCard() {
     const { activeCard } = this.props;
-    if (activeCard === null) {
-      return;
+    if (!activeCard) {
+      return <h4 className="text-center"><em>Please create a flash card to review</em></h4>;
     } else {
       return (
         this.state.front

@@ -41,8 +41,7 @@ class CreateCard extends Component {
       question: '',
       answer: ''
     };
-    this.setState(clearFields);
-    setView('view-cards');
+    this.setState(clearFields, (view) => setView('view-cards'));
   }
 
   render() {

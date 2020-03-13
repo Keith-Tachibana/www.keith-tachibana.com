@@ -5,7 +5,7 @@ class ProgressBar extends Component {
     const { progress } = this.props;
     const realProgress = progress*100;
     const cssStyle = {
-      'width': realProgress + '%'
+      'width': `${realProgress}%`
     }
     return(
       <React.Fragment>
