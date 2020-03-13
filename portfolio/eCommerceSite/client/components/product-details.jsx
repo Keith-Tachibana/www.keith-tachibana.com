@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-//import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class ProductDetails extends Component {
   constructor(props) {
@@ -28,19 +28,20 @@ class ProductDetails extends Component {
 
   render() {
     const { product } = this.state;
-    const { addToCart, params, setView } = this.props;
+    const { addToCart, params } = this.props;
     if (!product) {
       return <div className="ml-4">Loading...</div>;
     } else {
       return (
         <React.Fragment>
           <section className="product-detail">
-            <h5
-	            onClick={(name, params) => setView('catalog', {})}
-              className="back-button mt-4 ml-4">
-              <i className="fas fa-chevron-left mr-2"></i>
-              Back to catalog
-            </h5>
+            <Link to="/" className="text-muted">
+              <h5
+                className="back-button mt-4 ml-4">
+                <i className="fas fa-chevron-left mr-2"></i>
+                  Back to catalog
+              </h5>
+            </Link>
             <div className="row">
               <div className="col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5 mt-4">
                 <img src={product.image} alt={product.name} className="img-detail img-fluid" />
