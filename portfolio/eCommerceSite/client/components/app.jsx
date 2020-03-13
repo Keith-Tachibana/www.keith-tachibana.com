@@ -124,27 +124,27 @@ class App extends Component {
         <Header
           cartItemCount={this.state.cart.length} />
         <Switch>
-          <Route path="/portfolio/eCommerceSite/server/public/" exact render={props =>
+          <Route path="/" exact render={props =>
             <React.Fragment>
               <ProductList
                 setView={this.setView} />
             </React.Fragment>
           } />
-          <Route path="/portfolio/eCommerceSite/server/public/cart" exact render={props =>
+          <Route path="/cart" exact render={props =>
             <React.Fragment>
               <CartSummary
                 deleteItem={this.deleteItem}
                 cart={this.state.cart} />
             </React.Fragment>
           } />
-          <Route path="/portfolio/eCommerceSite/server/public/checkout" exact render={props =>
+          <Route path="/checkout" exact render={props =>
             <React.Fragment>
               <CheckoutForm
                 cart={this.state.cart}
                 placeOrder={this.placeOrder} />
             </React.Fragment>
           } />
-          <Route path="/portfolio/eCommerceSite/server/public/:productId" exact render={props =>
+          <Route path="/:productId" exact render={props =>
             <React.Fragment>
               <ProductDetails
                 params={this.state.view.params}
