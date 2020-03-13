@@ -1,254 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <!-- meta -->
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Keith Tachibana: My Technology</title>
-  <meta content="" name="keywords">
-  <meta content="" name="description">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
-
-  <!-- Bootstrap CSS File -->
-  <link href="./lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Libraries CSS Files -->
-  <link href="./lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="./lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="./lib/magnific-popup/magnific-popup.css" rel="stylesheet">
-  <link href="./lib/hover/hover.min.css" rel="stylesheet">
-
-  <!-- Blog Stylesheet File -->
-  <link href="./assets/css/blog.css" rel="stylesheet">
-
-  <!-- Main Stylesheet File -->
-  <link href="./assets/css/style.css" rel="stylesheet">
-
-  <!-- Responsive css -->
-  <link href="./assets/css/responsive.css" rel="stylesheet">
-
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="./assets/images/favicon.png">
-
-  <!-- =======================================================
-    Theme Name: Folio
-    Theme URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
-    Author: BootstrapMade.com
-    Author URL: https://bootstrapmade.com
-  ======================================================= -->
-</head>
-
-<body>
-
-  <!-- start section navbar -->
-  <nav id="main-nav-subpage" class="subpage-nav">
-    <div class="row">
-      <div class="container">
-
-        <div class="logo">
-          <a href="./index.html"><img src="./assets/images/logo.png" alt="logo"></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Keith Tachibana, Portfolio, Web Developer" name="keywords" />
+    <meta content="The portfolio of Keith Tachibana" name="description" />
+    <title>Keith Tachibana: My Technology</title>
+    <!--Preload Google Fonts -->
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <!-- Preload Bootstrap CSS File -->
+    <link rel="preload" href="./lib/bootstrap/css/bootstrap.min.css" as="style" type="text/css" />
+    <!-- Preload Libraries CSS Files -->
+    <link rel="preload" href="./lib/ionicons/css/ionicons.min.css" as="style" type="text/css" />
+    <link rel="preload" href="./lib/owlcarousel/assets/owl.carousel.min.css" as="style" type="text/css" />
+    <link rel="preload" href="./lib/magnific-popup/magnific-popup.css" as="style" type="text/css" />
+    <link rel="preload" href="./lib/hover/hover.min.css" as="style" type="text/css" />
+    <!-- Preload Blog Stylesheet File -->
+    <link rel="preload" href="./assets/css/blog.css" as="style" type="text/css" />
+    <!-- Preload Main Stylesheet File -->
+    <link rel="preload" href="./assets/css/style.css" as="style" type="text/css" />
+    <!-- Preload Responsive CSS -->
+    <link rel="preload" href="./assets/css/responsive.css" as="style" type="text/css" />
+    <!-- Preload JavaScript Libraries-->
+    <link rel="preload" href="./lib/jquery/jquery.min.js" as="script" />
+    <link rel="preload" href="./lib/jquery/jquery-migrate.min.js" as="script" />
+    <link rel="preload" href="./lib/bootstrap/js/bootstrap.bundle.min.js" as="script" />
+    <link rel="preload" href="./lib/typed/typed.js" as="script" />
+    <link rel="preload" href="./lib/owlcarousel/owl.carousel.min.js" as="script" />
+    <link rel="preload" href="./lib/magnific-popup/magnific-popup.min.js" as="script" />
+    <link rel="preload" href="./lib/isotope/isotope.pkgd.min.js" as="script" />
+    <link rel="preload" href="./contactform/contactform.js" as="script" />
+    <link rel="preload" href="./assets/js/main.js" as="script" />
+    <!--Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i"
+      type="text/css"
+    />
+    <!--Bootstrap CSS File -->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css" type="text/css" />
+    <!-- Libraries CSS Files -->
+    <link rel="stylesheet" href="./lib/ionicons/css/ionicons.min.css" type="text/css" />
+    <link rel="stylesheet" href="./lib/owlcarousel/assets/owl.carousel.min.css" type="text/css" />
+    <link rel="stylesheet" href="./lib/magnific-popup/magnific-popup.css" type="text/css" />
+    <link rel="stylesheet" href="./lib/hover/hover.min.css" type="text/css" />
+    <!-- Blog Stylesheet File -->
+    <link rel="stylesheet" href="./assets/css/blog.css" type="text/css" />
+    <!-- Main Stylesheet File -->
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="./assets/css/responsive.css" type="text/css" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/png" />
+  </head>
+  <body>
+    <!-- start section navbar -->
+    <nav id="main-nav-subpage" class="subpage-nav">
+      <div class="row">
+        <div class="container">
+          <div class="logo">
+            <a href="./index.html"><img src="./assets/images/logo.png" alt="logo"></a>
+          </div>
+          <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
+          <ul class="nav-menu list-unstyled">
+            <li><a href="./index.html" class="smoothScroll">Home</a></li>
+            <li><a href="./index.html#about" class="smoothScroll">About</a></li>
+            <li><a href="./index.html#portfolio" class="smoothScroll">Portfolio</a></li>
+            <li><a href="./index.html#journal" class="smoothScroll">Journal</a></li>
+            <li><a href="./index.html#contact" class="smoothScroll">Contact</a></li>
+          </ul>
         </div>
-
-        <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
-
-        <ul class="nav-menu list-unstyled">
-          <li><a href="./index.html" class="smoothScroll">Home</a></li>
-          <li><a href="./index.html#about" class="smoothScroll">About</a></li>
-          <li><a href="./index.html#portfolio" class="smoothScroll">Portfolio</a></li>
-          <li><a href="./index.html#journal" class="smoothScroll">About Me</a></li>
-          <li><a href="./index.html#contact" class="smoothScroll">Contact</a></li>
-        </ul>
       </div>
-    </div>
-  </nav>
-  <!-- End section navbar -->
-  <!-- start section main content -->
-  <div class="main-content paddsection">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-8 col-md-offset-2">
-          <div class="row">
-            <div class="container-main single-main">
-              <div class="col-md-12">
-                <div class="block-main mb-30">
-                  <img src="./assets/images/journal/gaming_pc.jpg" class="img-responsive" alt="Gaming PC">
-                  <div class="content-main single-post padDiv">
-                    <div class="journal-txt">
-                      <h4><a href="#">my technology</a></h4>
+    </nav>
+    <!-- End section navbar -->
+    <!-- start section main content -->
+    <div class="main-content paddsection">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-md-offset-2">
+            <div class="row">
+              <div class="container-main single-main">
+                <div class="col-md-12">
+                  <div class="block-main mb-30">
+                    <img src="./assets/images/journal/gaming_pc.jpg" class="img-responsive" alt="Gaming PC">
+                    <div class="content-main single-post padDiv">
+                      <div class="journal-txt">
+                        <h4><a href="#">my technology</a></h4>
+                      </div>
+                      <p class="mb-30">I built my personal gaming system with the following components:</p>
+                      <p class="mb-30">
+                        <ul class="list-items">
+                          <li>Asus Rampage VI Extreme Omega motherboard featuring the Intel X299 chipset with an E-ATX form factor (<a href="https://www.newegg.com/asus-rog-rampage-vi-extrme-omega/p/N82E16813119187?Item=N82E16813119187" target="_blank">Click to view on Newegg</a>)</li>
+                          <li>Intel Core i9-9820X Skylake X 10-cores, 20-threads at 3.3 GHz default clock (4.1 GHz turbo) with a LGA 2066 socket at 165W CPU with 16.5MB L3 cache (<a href="https://www.newegg.com/core-i9-x-series-intel-core-i9-9820x/p/N82E16819117332?Item=N82E16819117332" target="_blank">Click to view on Newegg</a>)</li>
+                          <li>(2) Intel Optane SSD 900P series 280GB NVMe PCIe 3.0 x4 3D XPoint SSD in VROC (Virtual RAID On CPU) Raid0 mode for my PC game installations (<a href="https://www.amazon.com/INTEL-Optane-SSD-900P-280GB2-5in/dp/B07773PMNR/ref=sr_1_6?keywords=intel+optane+ssd+900p&qid=1580112211&s=pc&sr=1-6" target="_blank">Click to view on Amazon</a>)</li>
+                          <li>Gigabyte AORUS Xtreme GeForce GTX 1080 Ti Waterforce WB 11GB 352-bit GDDR5X RAM with built-in waterblock (<a href="https://www.amazon.com/Gigabyte-AORUS-GeForce-GV-N108TAORUS-X-11GD/dp/B07317H6CK?th=1" target="_blank">Click to view on Amazon</a>)</li>
+                          <li>Samsung 960 EVO M.2 500GB NVMe PCIe 3.0 x4 SSD for my operating system boot drive (<a href="https://www.amazon.com/Samsung-960-EVO-Internal-MZ-V6E500BW/dp/B01M20VBU7/ref=sxin_0_ac_d_pm?ac_md=2-1-QmV0d2VlbiAkMTAwIGFuZCAkMjAw-ac_d_pm&cv_ct_cx=samsung+960+evo&keywords=samsung+960+evo&pd_rd_i=B01M20VBU7&pd_rd_r=5998da66-2d1a-47d7-88d4-c7ae34abecdf&pd_rd_w=1kB7n&pd_rd_wg=dNweG&pf_rd_p=ef07af27-e48f-451d-ab63-8b6b216a0bc3&pf_rd_r=E798H4TPGKAMKE1RE1WD&psc=1&qid=1580112032&sr=1-2-22d05c05-1231-4126-b7c4-3e7a9c0027d0" target="_blank">Click to view on Amazon</a>)</li>
+                          <li>(2) HGST WD Ultrastar DC HC510 10TB 7200 RPM SATA 6 GB/s 3.5" helium platform enterprise hard drives in a two-way mirror using Microsoft Storage Spaces for my main data drive for media, torrents, etc. (<a href="https://www.amazon.com/gp/product/B073BLV4W5/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1" target="_blank">Click to view on Amazon</a>)</li>
+                          <li>(2) G.SKILL TridentZ series 16GB (2x8GB) DDR4 4133 SDRAM in XMP 2.0 mode featuring 19-19-19-39 timings at 1.35V (<a href="https://www.newegg.com/g-skill-16gb-288-pin-ddr4-sdram/p/N82E16820232469?Item=N82E16820232469" target="_blank">Click to view on Newegg</a>)</li>
+                          <li>(2) Samsung UE850 LU28E85KRS/GO 28" LED 4K UHD monitors at 3840x2160 resolution at 60 Hz refresh rate (<a href="https://www.newegg.com/p/N82E16824022461?Item=9SIA24G4UN6187" target="_blank">Click to view on Newegg</a>)</li>
+                          <li>Alphacool Eiswand 360 CPU black all-in-one water cooling kit with 360mm full-copper radiator and (6) Eiswind fans in push-pull configuration (<a href="https://www.aquatuning.us/water-cooling/kits-systems-and-aios/external-kits/21360/alphacool-eiswand-360-cpu-black?c=6461" target="_blank">Click to view on AquaTuning</a>)</li>
+                          <li>Alphacool Eisblock XPX Aurora Pro plexi chrome digital RGB CPU water block (<a href="https://modmymods.com/alphacool-eisblock-xpx-aurora-pro-plexi-chrome-digital-rgb-12951.html" target="_blank">Click to view on ModMyMods</a>)</li>
+                        </ul>
+                      </p>
+                      <p class="mb-30">I built a server to run <a href="https://www.pfsense.org/" target="_blank" id="weblink">pfSense</a> (a really cool, feature-packed, enterprise-grade firewall solution) with the following components:</p>
+                      <p class="mb-30">
+                        <ul class="list-items">
+                          <li>SUPERMICRO MBD-A1SAM-2550F-O server motherboard featuring the on-board Intel Atom processor C2550 with 4-cores at 14W, quad GbE LAN ports with dedicated IPMI LAN, and support for ECC RAM with a uATX form factor (<a href="https://www.newegg.com/supermicro-mbd-a1sam-2550f-o-intel-atom-processor-c2550-cpu-tdp-14w/p/N82E16813182914?Item=N82E16813182914" target="_blank">Click to view on Newegg</a>)</li>
+                          <li>Crucial 16GB kit (8GBx2) DDR3L 1600 MT/s PC3-12800 DR x8 ECC UDIMM RAM (<a href="https://www.amazon.com/Crucial-8GBx2-PC3-12800-240-Pin-Memory/dp/B008EMA5VU" target="_blank">Click to view on Amazon</a>)</li>
+                          <li>SUPERMICRO SuperChassis CSE-512L-200B Black 1U rackmount server case with 200W power supply unit (<a href="https://www.newegg.com/black-supermicro-cse-512l-200b/p/N82E16811152222?Item=N82E16811152222" target="_blank">Click to view on Newegg</a>)</li>
+                          <li>SUPERMICRO SSD-DM032-SMCMVN1 32GB SATA DOM SSD drive (<a href="https://www.newegg.com/p/1WK-0010-004Z2?Item=9SIA5EM56D9416" target="_blank">Click to view on Newegg</a>)</li>
+                          <li>SUPERMICRO RSC-RR1U-E8 1U PCI-E x8 slot to PCI-E slot riser card (<a href="https://www.newegg.com/supermicro-rsc-rr1u-e8-riser-card/p/N82E16816101390?Item=9SIA5EM2JS8113" target="_blank">Click to view on Newegg</a>)</li>
+                        </ul>
+                      </p>
+                      <p class="mb-30">Lastly, I use the following equipment for other areas of my network:</p>
+                      <p class="mb-30">
+                        <ul class="list-items">
+                          <li>Dell PowerEdge R710 2U rackserver with dual-socket Intel Xeon 5600 series 6-core processors, 18 DIMM slots with 128GB DDR3 RAM with ECC, 4 embedded Broadcom NetXtreme II Gigabit Ethernet NIC's and dedicated iDRAC6 Enterprise remote management port, running Windows Server 2019 Datacenter's Hyper-V for all my virtual machines (<a href="https://www.dell.com/downloads/global/products/pedge/r710-spec-sheet.pdf" target="_blank">Click to view on Dell</a>)</li>
+                          <li>Cisco Catalyst 2960-24TC-L 24-port Gigabit managed switch (<a href="https://www.cisco.com/c/en/us/support/switches/catalyst-2960-24tc-l-switch/model.html" target="_blank">Click to view on Cisco</a>)</li>
+                          <li>Cisco SG300-28PP 28-port Gigabit PoE+ managed switch (<a href="https://www.cisco.com/c/en/us/support/switches/sg300-28pp-28-port-gigabit-poe-plus-managed-switch/model.html" target="_blank">Click to view on Cisco</a>)</li>
+                          <li>Ubiquiti UniFi managed PoE+ 16-port Gigabit managed switch with SFP at 150W (<a href="https://www.bhphotovideo.com/c/product/1273932-REG/ubiquiti_networks_us_16_150w_us_unifi_switch_16port.html" target="_blank">Click to view on B&amp;H Photo Video</a>)</li>
+                          <li>Ubiquiti UniFi UAP-AC-HD-US access point with simultaneous dual-band 4x4 multi-user MIMO 802.11AC wave 2 technology (<a href="https://www.newegg.com/ubiquiti-uap-ac-hd-us/p/0ED-0005-00183?Item=0ED-0005-00183" target="_blank">Click to view on Newegg</a>)</li>
+                          <li>Ubiquiti UniFi UAP-AC-M-PRO-US 802.11AC access point with simultaneous dual-band 3x3 multi-user MIMO technology (<a href="https://www.newegg.com/ubiquiti-uap-ac-m-pro-us/p/2BM-003B-00001?Item=2BM-003B-00001" target="_blank">Click to view on Newegg</a>)</li>
+                        </ul>
+                      </p>
                     </div>
-                    <!--div class="post-meta">
-                      <ul class="list-unstyled mb-0">
-                        <li class="author">by:<a href="#">Keith Tachibana</a></li>
-                        <li class="date">date:<a href="#">February 9, 2020</a></li>
-                        <li class="commont"><i class="ion-ios-heart-outline"></i><a href="#">3 Comments</a></li>
-                      </ul>
-                    </div-->
-                    <p class="mb-30">I built my personal gaming system with the following components:</p>
-                    <p class="mb-30">
-					            <ul class="list-items">
-                        <li>Asus Rampage VI Extreme Omega motherboard featuring the Intel X299 chipset with an E-ATX form factor (<a href="https://www.newegg.com/asus-rog-rampage-vi-extrme-omega/p/N82E16813119187?Item=N82E16813119187" target="_blank">Click to view on Newegg</a>)</li>
-                        <li>Intel Core i9-9820X Skylake X 10-cores, 20-threads at 3.3 GHz default clock (4.1 GHz turbo) with a LGA 2066 socket at 165W CPU with 16.5MB L3 cache (<a href="https://www.newegg.com/core-i9-x-series-intel-core-i9-9820x/p/N82E16819117332?Item=N82E16819117332" target="_blank">Click to view on Newegg</a>)</li>
-                        <li>(2) Intel Optane SSD 900P series 280GB NVMe PCIe 3.0 x4 3D XPoint SSD in VROC (Virtual RAID On CPU) Raid0 mode for my PC game installations (<a href="https://www.amazon.com/INTEL-Optane-SSD-900P-280GB2-5in/dp/B07773PMNR/ref=sr_1_6?keywords=intel+optane+ssd+900p&qid=1580112211&s=pc&sr=1-6" target="_blank">Click to view on Amazon</a>)</li>
-                        <li>Gigabyte AORUS Xtreme GeForce GTX 1080 Ti Waterforce WB 11GB 352-bit GDDR5X RAM with built-in waterblock (<a href="https://www.amazon.com/Gigabyte-AORUS-GeForce-GV-N108TAORUS-X-11GD/dp/B07317H6CK?th=1" target="_blank">Click to view on Amazon</a>)</li>
-                        <li>Samsung 960 EVO M.2 500GB NVMe PCIe 3.0 x4 SSD for my operating system boot drive (<a href="https://www.amazon.com/Samsung-960-EVO-Internal-MZ-V6E500BW/dp/B01M20VBU7/ref=sxin_0_ac_d_pm?ac_md=2-1-QmV0d2VlbiAkMTAwIGFuZCAkMjAw-ac_d_pm&cv_ct_cx=samsung+960+evo&keywords=samsung+960+evo&pd_rd_i=B01M20VBU7&pd_rd_r=5998da66-2d1a-47d7-88d4-c7ae34abecdf&pd_rd_w=1kB7n&pd_rd_wg=dNweG&pf_rd_p=ef07af27-e48f-451d-ab63-8b6b216a0bc3&pf_rd_r=E798H4TPGKAMKE1RE1WD&psc=1&qid=1580112032&sr=1-2-22d05c05-1231-4126-b7c4-3e7a9c0027d0" target="_blank">Click to view on Amazon</a>)</li>
-                        <li>(2) HGST WD Ultrastar DC HC510 10TB 7200 RPM SATA 6 GB/s 3.5" helium platform enterprise hard drives in a two-way mirror using Microsoft Storage Spaces for my main data drive for media, torrents, etc. (<a href="https://www.amazon.com/gp/product/B073BLV4W5/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1" target="_blank">Click to view on Amazon</a>)</li>
-                        <li>(2) G.SKILL TridentZ series 16GB (2x8GB) DDR4 4133 SDRAM in XMP 2.0 mode featuring 19-19-19-39 timings at 1.35V (<a href="https://www.newegg.com/g-skill-16gb-288-pin-ddr4-sdram/p/N82E16820232469?Item=N82E16820232469" target="_blank">Click to view on Newegg</a>)</li>
-                        <li>(2) Samsung UE850 LU28E85KRS/GO 28" LED 4K UHD monitors at 3840x2160 resolution at 60 Hz refresh rate (<a href="https://www.newegg.com/p/N82E16824022461?Item=9SIA24G4UN6187" target="_blank">Click to view on Newegg</a>)</li>
-                        <li>Alphacool Eiswand 360 CPU black all-in-one water cooling kit with 360mm full-copper radiator and (6) Eiswind fans in push-pull configuration (<a href="https://www.aquatuning.us/water-cooling/kits-systems-and-aios/external-kits/21360/alphacool-eiswand-360-cpu-black?c=6461" target="_blank">Click to view on AquaTuning</a>)</li>
-                        <li>Alphacool Eisblock XPX Aurora Pro plexi chrome digital RGB CPU water block (<a href="https://modmymods.com/alphacool-eisblock-xpx-aurora-pro-plexi-chrome-digital-rgb-12951.html" target="_blank">Click to view on ModMyMods</a>)</li>
-					            </ul>
-					          </p>
-				          	<p class="mb-30">I built a server to run <a href="https://www.pfsense.org/" target="_blank" id="weblink">pfSense</a> (a really cool, feature-packed, enterprise-grade firewall solution) with the following components:</p>
-                    <p class="mb-30">
-					            <ul class="list-items">
-					              <li>SUPERMICRO MBD-A1SAM-2550F-O server motherboard featuring the on-board Intel Atom processor C2550 with 4-cores at 14W, quad GbE LAN ports with dedicated IPMI LAN, and support for ECC RAM with a uATX form factor (<a href="https://www.newegg.com/supermicro-mbd-a1sam-2550f-o-intel-atom-processor-c2550-cpu-tdp-14w/p/N82E16813182914?Item=N82E16813182914" target="_blank">Click to view on Newegg</a>)</li>
-						            <li>Crucial 16GB kit (8GBx2) DDR3L 1600 MT/s PC3-12800 DR x8 ECC UDIMM RAM (<a href="https://www.amazon.com/Crucial-8GBx2-PC3-12800-240-Pin-Memory/dp/B008EMA5VU" target="_blank">Click to view on Amazon</a>)</li>
-                        <li>SUPERMICRO SuperChassis CSE-512L-200B Black 1U rackmount server case with 200W power supply unit (<a href="https://www.newegg.com/black-supermicro-cse-512l-200b/p/N82E16811152222?Item=N82E16811152222" target="_blank">Click to view on Newegg</a>)</li>
-                        <li>SUPERMICRO SSD-DM032-SMCMVN1 32GB SATA DOM SSD drive (<a href="https://www.newegg.com/p/1WK-0010-004Z2?Item=9SIA5EM56D9416" target="_blank">Click to view on Newegg</a>)</li>
-                        <li>SUPERMICRO RSC-RR1U-E8 1U PCI-E x8 slot to PCI-E slot riser card (<a href="https://www.newegg.com/supermicro-rsc-rr1u-e8-riser-card/p/N82E16816101390?Item=9SIA5EM2JS8113" target="_blank">Click to view on Newegg</a>)</li>
-					            </ul>
-  				          </p>
-				  	        <p class="mb-30">Lastly, I use the following equipment for other areas of my network:</p>
-				            <p class="mb-30">
-				              <ul class="list-items">
-					              <li>Dell PowerEdge R710 2U rackserver with dual-socket Intel Xeon 5600 series 6-core processors, 18 DIMM slots with 128GB DDR3 RAM with ECC, 4 embedded Broadcom NetXtreme II Gigabit Ethernet NIC's and dedicated iDRAC6 Enterprise remote management port, running Windows Server 2019 Datacenter's Hyper-V for all my virtual machines (<a href="https://www.dell.com/downloads/global/products/pedge/r710-spec-sheet.pdf" target="_blank">Click to view on Dell</a>)</li>
-						            <li>Cisco Catalyst 2960-24TC-L 24-port Gigabit managed switch (<a href="https://www.cisco.com/c/en/us/support/switches/catalyst-2960-24tc-l-switch/model.html" target="_blank">Click to view on Cisco</a>)</li>
-                        <li>Cisco SG300-28PP 28-port Gigabit PoE+ managed switch (<a href="https://www.cisco.com/c/en/us/support/switches/sg300-28pp-28-port-gigabit-poe-plus-managed-switch/model.html" target="_blank">Click to view on Cisco</a>)</li>
-                        <li>Ubiquiti UniFi managed PoE+ 16-port Gigabit managed switch with SFP at 150W (<a href="https://www.bhphotovideo.com/c/product/1273932-REG/ubiquiti_networks_us_16_150w_us_unifi_switch_16port.html" target="_blank">Click to view on B&amp;H Photo Video</a>)</li>
-                        <li>Ubiquiti UniFi UAP-AC-HD-US access point with simultaneous dual-band 4x4 multi-user MIMO 802.11AC wave 2 technology (<a href="https://www.newegg.com/ubiquiti-uap-ac-hd-us/p/0ED-0005-00183?Item=0ED-0005-00183" target="_blank">Click to view on Newegg</a>)</li>
-                        <li>Ubiquiti UniFi UAP-AC-M-PRO-US 802.11AC access point with simultaneous dual-band 3x3 multi-user MIMO technology (<a href="https://www.newegg.com/ubiquiti-uap-ac-m-pro-us/p/2BM-003B-00001?Item=2BM-003B-00001" target="_blank">Click to view on Newegg</a>)</li>
-				              </ul>
-				            </p>
                   </div>
                 </div>
               </div>
-              <!--div class="col-md-12">
-                <div class="comments text-left padDiv mb-30">
-                  <div class="entry-comments">
-                    <h6 class="mb-30">3 comments</h6>
-                    <ul class="entry-comments-list list-unstyled">
-                      <li>
-                        <div class="entry-comments-item">
-                          <img src="./assets/images/avatar.jpg" class="entry-comments-avatar" alt="">
-                          <div class="entry-comments-body">
-                            <span class="entry-comments-author">Sommer Christian</span>
-                            <span><a href="#">fev 14, 2018 at 12:48 pm</a></span>
-                            <p class="mb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam justo, ullamcorper tincidunt pellentesque in, condimentum ut enim. Aenean at pharetra diam, quis vulputate urna. </p>
-                            <a class="rep" href="#">Reply</a>
-                          </div>
-                        </div>
-                        <ul class="entry-comments-reply list-unstyled">
-                          <li>
-                            <div class="entry-comments-item">
-                              <img src="./assets/images/avatar.jpg" class="entry-comments-avatar" alt="">
-                              <div class="entry-comments-body">
-                                <span class="entry-comments-author">Sara Smith</span>
-                                <span><a href="#">fev 14, 2018 at 12:51 pm</a></span>
-                                <p class="mb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam justo, ullamcorper tincidunt pellentesque in, condimentum ut enim. Aenean at pharetra diam, quis vulputate urna.</p>
-                                <a class="rep" href="#">Reply</a>
-                              </div>
-                            </div>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <div class="entry-comments-item">
-                          <img src="./assets/images/avatar.jpg" class="entry-comments-avatar" alt="">
-                          <div class="entry-comments-body">
-                            <span class="entry-comments-author">Andrew Lupkin</span>
-                            <span><a href="#">fev 14, 2018 at 12:55 pm</a></span>
-                            <p class="mb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam justo, ullamcorper tincidunt pellentesque in, condimentum ut enim. Aenean at pharetra diam, quis vulputate urna. </p>
-                            <a class="rep" href="#">Reply</a>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div-->
-              <!--div class="col-lg-12">
-                <div class="cmt padDiv">
-                  <form id="comment-form" method="post" action="" role="form">
-                    <div class="row">
-                        <div class="col-lg-6">
-                          <div class="form-group">
-                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Your Full Name Here" required="required">
-                          </div>
-                        </div>
-                        <div class="col-lg-6">
-                          <div class="form-group">
-                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Your E-mail Address Here" required="required">
-                          </div>
-                        </div>
-                        <div class="col-md-12">
-                          <div class="form-group">
-                            <input id="form_name" type="text" name="website" class="form-control" placeholder="Your Website Here (If Applicable)">
-                          </div>
-                        </div>
-                        <div class="col-lg-12">
-                          <div class="form-group">
-                            <textarea id="form_message" name="message" class="form-control" placeholder="Your Comments Here" style="height: 200px;" required="required"></textarea>
-                          </div>
-                        </div>
-                        <div class="col-lg-12">
-                          <input type="submit" class="btn btn-defeault btn-send" value="Send message">
-                        </div>
-                    </div>
-                  </form>
-                </div>
-              </div-->
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!--  </div> -->
-  <!-- start section main content -->
-
-  <!-- start section footer -->
-  <div id="footer" class="text-center">
-    <div class="container">
-      <div class="socials-media text-center">
-
-        <ul class="list-unstyled" id="contact">
-          <li><a href="mailto: Keith.Tachibana@gmail.com"><i class="ion-email" target="_blank"></i></a></li>
- 		      <li><a href="https://www.facebook.com/keith.tachibana/" target="_blank"><i class="ion-social-facebook"></i></a></li>
-          <li><a href="https://github.com/Keith-Tachibana/" target="_blank"><i class="ion-social-github"></i></a></li>
-          <li><a href="https://www.instagram.com/keithjf1/" target="_blank"><i class="ion-social-instagram"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/keithtachibana/" target="_blank"><i class="ion-social-linkedin"></i></a></li>
-		      <li><a href="https://twitter.com/Keith_Tachibana/" target="_blank"><i class="ion-social-twitter"></i></a></li>
-        </ul>
-
+    <!-- start section main content -->
+    <!-- start section footer -->
+    <div id="footer" class="text-center">
+      <div class="container">
+        <div class="socials-media text-center">
+          <ul class="list-unstyled" id="contact">
+            <li><a href="mailto: Keith.Tachibana@gmail.com"><i class="ion-email" target="_blank"></i></a></li>
+            <li><a href="https://www.facebook.com/keith.tachibana/" target="_blank"><i class="ion-social-facebook"></i></a></li>
+            <li><a href="https://github.com/Keith-Tachibana/" target="_blank"><i class="ion-social-github"></i></a></li>
+            <li><a href="https://www.instagram.com/keithjf1/" target="_blank"><i class="ion-social-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/keithtachibana/" target="_blank"><i class="ion-social-linkedin"></i></a></li>
+            <li><a href="https://twitter.com/Keith_Tachibana/" target="_blank"><i class="ion-social-twitter"></i></a></li>
+          </ul>
+        </div>
+        <p>&copy; Keith Tachibana. All rights reserved.</p>
       </div>
-
-      <p>&copy; Keith Tachibana. All rights reserved.</p>
-
-
-
     </div>
-  </div>
-  <!-- End section footer -->
-
-  <!-- JavaScript Libraries -->
-  <script src="./lib/jquery/jquery.min.js"></script>
-  <script src="./lib/jquery/jquery-migrate.min.js"></script>
-  <script src="./lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="./lib/typed/typed.js"></script>
-  <script src="./lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="./lib/magnific-popup/magnific-popup.min.js"></script>
-  <script src="./lib/isotope/isotope.pkgd.min.js"></script>
-
-  <!-- Contact Form JavaScript File -->
-  <script src="./contactform/contactform.js"></script>
-
-  <!-- Template Main Javascript File -->
-  <script src="./assets/js/main.js"></script>
-
-</body>
-
+    <!-- End section footer -->
+    <!-- JavaScript Libraries -->
+    <script src="./lib/jquery/jquery.min.js"></script>
+    <script src="./lib/jquery/jquery-migrate.min.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./lib/typed/typed.js"></script>
+    <script src="./lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="./lib/magnific-popup/magnific-popup.min.js"></script>
+    <script src="./lib/isotope/isotope.pkgd.min.js"></script>
+    <!-- Contact Form JavaScript File -->
+    <script src="./contactform/contactform.js"></script>
+    <!-- Template Main Javascript File -->
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>
