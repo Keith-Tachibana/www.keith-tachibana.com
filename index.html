@@ -107,7 +107,7 @@
           <div class="col-lg-7">
             <div class="about-descr">
               <p class="p-heading">I'm a web developer who can do front-end and back-end work, with a Master's in Computer Science, and work experience as an Information Technology (IT) technician.</p>
-              <i class="ion-archive" style="color: #cc2936; font-size: 1.25rem;"><a href="./Keith_Tachibana_Resume.pdf" download="Keith_Tachibana_Resume" target="_blank"> Click here to download my curriculum vitae (C.V.)</a></i>
+              <i class="ion-archive" style="color: #cc2936; font-size: 1.25rem;"><a href="./assets/pdf/Keith_Tachibana_Resume.pdf" download="Keith_Tachibana_Resume" target="_blank"> Click here to download my curriculum vitae (C.V.)</a></i>
               <p class="separator">I first started off working in the IT departments of various companies, building my skills in troubleshooting a myriad of issues, both hardware and software. I also worked on networking problems and administered servers on various platforms, including Linux and Microsoft Windows Server. After a while, I decided I wanted a fresh challenge and took up computer programming at the University of California, Irvine, where I earned a Master's degree. But I didn't stop there. I wanted to specialize in web development, and that led me to a coding boot camp called Learning Fuze where I developed the required skills to create full-stack web applications. Some of the courses I have taken include:</p>
             </div>
           </div>
@@ -196,16 +196,16 @@
             <div class="portfolio-list">
               <ul class="nav list-unstyled" id="portfolio-flters">
                 <li class="filter filter-active" data-filter=".all">all</li>
-                <li class="filter" data-filter=".ecommerce">e-Commerce site</li>
+                <li class="filter" data-filter=".eCommerce">e-Commerce site</li>
                 <li class="filter" data-filter=".ezfit">eZ-FIT</li>
+                <li class="filter" data-filter=".flashCards">flash cards</li>
                 <li class="filter" data-filter=".homepage">homepage</li>
-                <li class="filter" data-filter=".connect4">star wars connect 4</li>
-                <li class="filter" data-filter=".memorymatch">star wars memory match</li>
-                <li class="filter" data-filter=".sgt">student grade table</li>
+                <li class="filter" data-filter=".memoryMatch">star wars memory match</li>
+                <li class="filter" data-filter=".studentGradeTable">student grade table</li>
               </ul>
             </div>
             <div class="portfolio-container">
-              <div class="col-lg-4 col-md-6 portfolio-thumbnail all ecommerce">
+              <div class="col-lg-4 col-md-6 portfolio-thumbnail all eCommerce">
                 <a href="./portfolio/eCommerceSite/server/public/index.html">
                   <img src="./assets/images/portfolio/ecommerce.png" alt="E-Commerce Site">
                   <p>
@@ -226,7 +226,7 @@
               <div class="col-lg-4 col-md-6 portfolio-thumbnail all ezfit">
                 <a href="https://ezfit.rocks/">
                   <img src="./assets/images/portfolio/ezfit.png"  alt="EZ-FIT">
-                  <p><em>Tech Stack: MongoDB, Express.js, React.js, Node.js, Material UI, Python Flask, Heroku, Machine Learning</em></p>
+                  <p><em>Tech Stack: MongoDB, Express.js, React.js, Node.js, Material UI, Flask, Heroku, Machine Learning</em></p>
                   <dl style="color:#d3d3d3;">
                     <dt>Description:</dt>
                     <dd>&#42;A full-stack web application that uses the FitBit API to sync the user's fitness data</dd>
@@ -237,9 +237,26 @@
                   </dl>
                 </a>
               </div>
+              <div class="col-lg-4 col-md-6 portfolio-thumbnail all flashCards">
+                <a href="./portfolio/flashCards/dist/index.html">
+                  <img src="./assets/images/portfolio/flashCards.png" alt="Connect 4">
+                  <p>
+                    <em>Tech Stack: React.js, Node.js, JavaScript, Bootstrap, HTML, CSS</em>
+                    <br />
+                    <br />
+                  </p>
+                  <dl style="color:#d3d3d3;">
+                    <dt>Description:</dt>
+                    <dd>&#42;A single-page application where the user can create flash cards as a study aid to help memorize definitions</dd>
+                    <dd>&#42;The user can create flash cards with a front side (question) and back side (answer)</dd>
+                    <dd>&#42;There is a review section where the user can view all questions and click each one to flip the card and view the answer</dd>
+                    <dd>&#42;Features the ability to delete or edit any card</dd>
+                  </dl>
+                </a>
+              </div>
               <div class="col-lg-4 col-md-6 portfolio-thumbnail all homepage">
                 <a href="./portfolio/homepage/index.html">
-                  <img src="./assets/images/portfolio/homepage.png" alt="Homepage To Do List">
+                  <img src="./assets/images/portfolio/homepage.png" alt="Homepage">
                   <p><em>Tech Stack: JavaScript, jQuery, React.js, Node.js, Lodash, HTML, CSS, Bootstrap, Object-Oriented Programming</em></p>
                   <dl style="color:#d3d3d3;">
                     <dt>Description:</dt>
@@ -251,25 +268,9 @@
                   </dl>
                 </a>
               </div>
-              <div class="col-lg-4 col-md-6 portfolio-thumbnail all connect4">
-                <a href="./portfolio/connect4/index.html">
-                  <img src="./assets/images/portfolio/connect4.jpg" alt="Connect 4">
-                  <p>
-                    <em>Tech Stack: Vanilla JavaScript, HTML, CSS</em>
-                    <br />
-                    <br />
-                  </p>
-                  <dl style="color:#d3d3d3;">
-                    <dt>Description:</dt>
-                    <dd>&#42;A two player gaming application modeled after the classic Connect 4 game but with a Star Wars theme</dd>
-                    <dd>&#42;Features 15 second limit player turns, board sizing options, and real-time game statistics</dd>
-                    <dd>&#42;All styling was done manually with CSS rather than using 3rd party libraries such as Bootstrap or Foundation</dd>
-                  </dl>
-                </a>
-              </div>
-              <div class="col-lg-4 col-md-6 portfolio-thumbnail all memorymatch">
+              <div class="col-lg-4 col-md-6 portfolio-thumbnail all memoryMatch">
                 <a href="./portfolio/memoryMatch/index.html">
-                  <img src="./assets/images/portfolio/memorymatch.png" alt="Memory Match">
+                  <img src="./assets/images/portfolio/memoryMatch.png" alt="Memory Match">
                   <p>
                     <em>Tech Stack: Vanilla JavaScript, HTML, CSS</em>
                     <br />
@@ -283,9 +284,9 @@
                   </dl>
                 </a>
               </div>
-              <div class="col-lg-4 col-md-6 portfolio-thumbnail all sgt">
-                <a href="./portfolio/studentGradeTable/index.html">
-                  <img src="./assets/images/portfolio/sgt.png" alt="Student Grade Table">
+              <div class="col-lg-4 col-md-6 portfolio-thumbnail all studentGradeTable">
+                <a href="./portfolio/studentGradeTable/server/public/index.html">
+                  <img src="./assets/images/portfolio/studentGradeTable.png" alt="Student Grade Table">
                   <p><em>Tech Stack: React.js, Node.js, Express.js, PostgreSQL, JavaScript, HTML, CSS, Bootstrap</em></p>
                   <dl style="color:#d3d3d3;">
                     <dt>Description:</dt>

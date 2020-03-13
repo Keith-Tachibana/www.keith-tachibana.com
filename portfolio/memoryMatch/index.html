@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Keith Tachibana: Memory Match</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="shortcut icon" type="image/png" href="../../assets/images/favicon.png" />
-    <link rel="stylesheet" type="text/css" href="../../assets/css/grid-memory.css" />
-    <link rel="stylesheet" type="text/css" href="../../assets/css/style-memory.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" />
+    <title>Keith Tachibana: Memory Match</title>
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" href="./css/grid.css" as="style" type="text/css" />
+    <link rel="preload" href="./css/style.css" as="style" type="text/css" />
+    <link rel="preload" href="./js/main.js" as="script" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" type="text/css" />
+    <link rel="stylesheet" href="./css/grid.css" type="text/css" />
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+    <link rel="shortcut icon" href="../../assets/images/favicon.png" type="image/png" />
   </head>
   <body onload="shuffleCards()">
     <div class="container">
@@ -133,7 +137,7 @@
         <button class="reset"><span>Play Again </span></button>
       </div>
     </div>
-    <script src="../../assets/js/memory.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
 --

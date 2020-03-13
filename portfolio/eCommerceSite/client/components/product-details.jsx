@@ -36,7 +36,7 @@ class ProductDetails extends Component {
         <React.Fragment>
           <section className="product-detail">
             <h5
-	      onClick={(name, params) => setView('catalog', {})}
+	            onClick={(name, params) => setView('catalog', {})}
               className="back-button mt-4 ml-4">
               <i className="fas fa-chevron-left mr-2"></i>
               Back to catalog
@@ -52,7 +52,7 @@ class ProductDetails extends Component {
                 <button
                   className="btn btn-primary"
                   onClick={product => addToCart({ productId: params.productId })}>
-                    Add To Cart
+                  Add To Cart
                 </button>
               </div>
             </div>

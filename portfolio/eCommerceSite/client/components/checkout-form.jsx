@@ -171,7 +171,7 @@ class CheckoutForm extends Component {
             <div className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
               <div className="form-footer justify-content-between mt-4">
                 <h5
-		  onClick={(name, params) => setView('catalog', {})}
+		              onClick={(name, params) => setView('catalog', {})}
                   className="back-button ml-4">
                   <i className="fas fa-chevron-left mr-2"></i>
                   Continue shopping
@@ -181,7 +181,7 @@ class CheckoutForm extends Component {
                   type="submit"
                   onClick={this.handleSubmit}
                   className="btn btn-primary">
-                    Place Order
+                  Place Order
                 </button>
               </div>
             </div>

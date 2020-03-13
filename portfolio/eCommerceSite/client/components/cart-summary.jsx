@@ -19,7 +19,7 @@ class CartSummary extends Component {
       <React.Fragment>
         <main className="cart-main container">
           <h5
-	    onClick={(name, params) => setView('catalog', {})}
+	          onClick={(name, params) => setView('catalog', {})}
             className="back-button mt-4 ml-4">
             <i className="fas fa-chevron-left mr-2"></i>
             Back to catalog
@@ -32,7 +32,7 @@ class CartSummary extends Component {
                 <div className="cart-footer justify-content-between my-4">
                   <h2 className="ml-4">Item Total: ${(total / 100).toFixed(2)}</h2>
                   <button
-		    onClick={(name, params) => setView('checkout', {})}
+		                onClick={(name, params) => setView('checkout', {})}
                     className="btn btn-primary">
                     Checkout
                   </button>

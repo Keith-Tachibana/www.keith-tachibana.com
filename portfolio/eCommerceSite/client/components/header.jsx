@@ -10,9 +10,9 @@ class Header extends Component {
         <header className="bg-dark mb-4 d-flex justify-content-between text-white">
           <h1 className="ml-4"><em><i className="fas fa-dollar-sign"></i></em> Wicked Sales</h1>
           <h3 className="shopping-cart"
-	      onClick={(name, params) => setView('cart', {})}>
-              {count} {count === 1 ? 'item' : 'items'}
-              <i className="fas fa-shopping-cart mr-4 mt-2 ml-2"></i>
+            onClick={(name, params) => setView('cart', {})}>
+            {count} {count === 1 ? 'item' : 'items'}
+            <i className="fas fa-shopping-cart mr-4 mt-2 ml-2"></i>
           </h3>
         </header>
       </React.Fragment>
