@@ -124,27 +124,27 @@ class App extends Component {
         <Header
           cartItemCount={this.state.cart.length} />
         <Switch>
-          <Route path="/" exact render={props =>
+          <Route path="/portfolio/eCommerceSite/server/public/" exact render={props =>
             <React.Fragment>
               <ProductList
                 setView={this.setView} />
             </React.Fragment>
           } />
-          <Route path="/cart" exact render={props =>
+          <Route path="/portfolio/eCommerceSite/server/public/cart" exact render={props =>
             <React.Fragment>
               <CartSummary
                 deleteItem={this.deleteItem}
                 cart={this.state.cart} />
             </React.Fragment>
           } />
-          <Route path="/checkout" exact render={props =>
+          <Route path="/portfolio/eCommerceSite/server/public/checkout" exact render={props =>
             <React.Fragment>
               <CheckoutForm
                 cart={this.state.cart}
                 placeOrder={this.placeOrder} />
             </React.Fragment>
           } />
-          <Route path="/:productId" exact render={props =>
+          <Route path="/portfolio/eCommerceSite/server/public/:productId" exact render={props =>
             <React.Fragment>
               <ProductDetails
                 params={this.state.view.params}
@@ -157,58 +157,5 @@ class App extends Component {
     );
   }
 }
-    /*
-    const { view } = this.state;
-    let renderView;
-    switch (view.name) {
-      case 'details':
-        renderView = (
-          <React.Fragment>
-            <ProductDetails
-              params={this.state.view.params}
-              setView={this.setView}
-              addToCart={this.addToCart} />
-          </React.Fragment>
-        );
-        break;
-      case 'cart':
-        renderView = (
-          <React.Fragment>
-	          <CartSummary
-              deleteItem={this.deleteItem}
-              cart={this.state.cart}
-              setView={this.setView} />
-	        </React.Fragment>
-        );
-        break;
-      case 'checkout':
-	      renderView = (
-          <React.Fragment>
-            <CheckoutForm
-              cart={this.state.cart}
-              setView={this.setView}
-              placeOrder={this.placeOrder} />
-          </React.Fragment>
-	      );
-	      break;
-      default:
-      	renderView = (
-          <React.Fragment>
-            <ProductList
-              setView={this.setView} />
-          </React.Fragment>
-      	);
-	      break;
-    }
-    return (
-      <React.Fragment>
-        <Header
-          cartItemCount={this.state.cart.length}
-          setView={this.setView} />
-          {renderView}
-      </React.Fragment>
-    );
-  }
-}
-*/
+
 export default App;
