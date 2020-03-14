@@ -15,7 +15,7 @@
     <link rel="shortcut icon" href="../../assets/images/favicon.png" type="image/png" />
   </head>
   <body onload="shuffleCards()">
-    <div class="container">
+    <div class="container main-container">
       <div class="row">
         <header class="header">
           <div class="title-container">
@@ -25,9 +25,6 @@
       </div>
       <div class="row">
         <aside class="aside col-2">
-          <div class="clock-container">
-            <h4 class="clock">00:00:00</h4>
-          </div>
           <div class="games-container">
             <h4 class="games-text">Games:</h4>
           </div>
@@ -53,6 +50,9 @@
             <h4 class="accuracy-score">0%</h4>
           </div>
           <button class="shuffle-button">Click To Shuffle</button>
+          <video autoplay muted loop class="video-bg">
+            <source src="./videos/nebula.mp4" />
+          </video>
         </aside>
         <main class="main col-10" id="gameCards">
           <div class="card-item col-2">
@@ -130,14 +130,13 @@
         </main>
       </div>
     </div>
-    <div class="modal w3-modal hidden">
+    <div class="modal hidden">
       <div class="modal-text">
         <span class="close">&times;</span>
         <h3>Congratulations! You have won!!!</h3>
         <button class="reset"><span>Play Again </span></button>
       </div>
     </div>
-    <script src="./js/main.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
---
