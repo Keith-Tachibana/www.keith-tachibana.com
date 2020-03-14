@@ -9,12 +9,6 @@ body {
   }
 }
 
-@media only screen and (max-width: 1024px) and (orientation: portrait) {
-  input::placeholder {
-    font-size: 0.75rem;
-  }
-}
-
 @media only screen and (max-width: 992px) {
   #page-title {
     text-align: center;
@@ -45,8 +39,13 @@ body {
     margin-top: 10px;
   }
 
+  input::placeholder {
+    font-size: 1rem;
+  }
+
   .operations {
     margin: 5px;
+
     font-size: 0.8rem;
   }
 }
@@ -59,9 +58,15 @@ body {
     font-size: 0.8rem;
   }
 
+  input::placeholder {
+    font-size: 1rem;
+  }
+
   table {
     font-size: 0.8rem;
     margin-top: 10px;
+    position: relative;
+    right: 25px;
   }
 
   thead {

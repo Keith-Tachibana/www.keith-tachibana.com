@@ -117,7 +117,7 @@ class App extends Component {
     return (
       <React.Fragment>
         <Header averageGrade={this.getAverageGrade()} />
-        <main className="main-container">
+        <main>
           <div className="container-fluid">
             <div className="row grade-container">
               <GradeTable
