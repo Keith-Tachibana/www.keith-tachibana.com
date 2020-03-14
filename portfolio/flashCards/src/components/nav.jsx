@@ -22,8 +22,7 @@ class Nav extends Component {
       view: true,
       review: false,
       create: false
-    })
-    setView('view-cards');
+    }, (view) => setView('view-cards'));
   }
 
   handleClickReview() {
@@ -32,8 +31,7 @@ class Nav extends Component {
       view: false,
       review: true,
       create: false
-    })
-    setView('review-cards');
+    }, (view) => setView('review-cards'));
   }
 
   handleClickCreate() {
@@ -42,8 +40,7 @@ class Nav extends Component {
       view: false,
       review: false,
       create: true
-    })
-    setView('create-card');
+    }, (view) => setView('create-card'));
   }
 
   renderClassView() {
