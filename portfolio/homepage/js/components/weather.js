@@ -106,7 +106,6 @@ class Weather {
         break;
     }
     weatherIMG.src = src;
-    //weatherIMG.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     let tempK = data.main.temp;
     let tempF = ((tempK - 273.15) * (9/5) + 32).toFixed(1);
     let minTempK = data.main.temp_min;

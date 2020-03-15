@@ -78,7 +78,7 @@
 .start:hover {
   background-color: #6D5A1F;
   animation: shake 0.5s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
 }
 
 .start:active {
@@ -110,7 +110,7 @@
 .shuffle-button:hover {
   background-color: #6D5A1F;
   animation: shake 0.5s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
   color: #EA2B1F;
 }
 
@@ -172,19 +172,19 @@
   border: 1px groove #f0f;
   transform: scale(1.1);
   box-shadow:
-        0 0 30px 15px #fff,
-        0 0 50px 30px #f0f,
-        0 0 70px 45px #0ff;
+    0 0 10px 5px #fff,
+    0 0 20px 10px #f0f,
+    0 0 30px 15px #0ff;
   z-index: 10;
   cursor: pointer;
 }
 
 .chewbacca {
-  background-image: url("../images/chewbacca.jpg");
+  background-image: url("../images/chewbacca.webp");
 }
 
 .emperor {
-  background-image: url("../images/emperor.jpg");
+  background-image: url("../images/emperor.webp");
 }
 
 .hansolo {
@@ -192,11 +192,11 @@
 }
 
 .leia {
-  background-image: url("../images/leia.jpg");
+  background-image: url("../images/leia.webp");
 }
 
 .luke {
-  background-image: url("../images/luke.png");
+  background-image: url("../images/luke.webp");
 }
 
 .obiwan {
@@ -204,15 +204,15 @@
 }
 
 .padme {
-  background-image: url("../images/padme.jpg");
+  background-image: url("../images/padme.webp");
 }
 
 .vader {
-  background-image: url("../images/vader.jpg");
+  background-image: url("../images/vader.webp");
 }
 
 .yoda {
-  background-image: url("../images/yoda.jpg");
+  background-image: url("../images/yoda.webp");
 }
 
 .modal {
@@ -295,7 +295,7 @@
 .reset:hover {
   background-color: #6D5A1F;
   animation: shake 0.5s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
   color: #EA2B1F;
 }
 
@@ -346,6 +346,13 @@
 
   .shuffle-button {
     font-size: 0.5rem;
+  }
+
+  .card-back:hover {
+    box-shadow:
+      0 0 5px 1px #fff,
+      0 0 10px 3px #f0f,
+      0 0 15px 5px #0ff;
   }
 
   .card-item {
@@ -410,6 +417,13 @@
   .aside > div {
     height: 5%;
     margin: 0 1px;
+  }
+
+  .card-back:hover {
+    box-shadow:
+      0 0 5px 1px #fff,
+      0 0 10px 3px #f0f,
+      0 0 15px 5px #0ff;
   }
 
   .shuffle-button {
@@ -495,6 +509,13 @@
     font-size: 0.9rem;
   }
 
+  .card-back:hover {
+    box-shadow:
+      0 0 5px 1px #fff,
+      0 0 10px 3px #f0f,
+      0 0 15px 5px #0ff;
+  }
+
   .card-item {
     height: 30%;
     width: 15%;
@@ -551,6 +572,13 @@
   .accuracy-score {
     position: relative;
     top: 5px;
+  }
+
+  .card-back:hover {
+    box-shadow:
+      0 0 5px 1px #fff,
+      0 0 10px 3px #f0f,
+      0 0 15px 5px #0ff;
   }
 
   .shuffle-button {
@@ -617,6 +645,13 @@
   .accuracy-score {
     position: relative;
     top: 4px;
+  }
+
+  .card-back:hover {
+    box-shadow:
+      0 0 5px 1px #fff,
+      0 0 10px 3px #f0f,
+      0 0 15px 5px #0ff;
   }
 
   .card-item {

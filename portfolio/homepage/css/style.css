@@ -7,12 +7,6 @@ body {
   overflow-x: hidden;
 }
 
-#calendar {
-  position: relative;
-  left: 5px;
-  top: 5px;
-}
-
 #greeting-container {
   display: flex;
   justify-content: center;
@@ -37,11 +31,13 @@ body {
 .weather-giphy-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 #weather-city-container,
+#city,
+#weatherIMG,
 #temps,
 #condition,
 #wind,
@@ -59,7 +55,7 @@ body {
 }
 
 #giphy-container, #weather-city-container {
-  width: 275px;
+  width: 230px;
 }
 
 #city {
@@ -89,6 +85,7 @@ body {
   overflow: hidden;
   white-space: nowrap;
   border: 1px groove #fff;
+  width: 250px;
 }
 
 #stocks {
@@ -106,29 +103,30 @@ body {
 
 .search-bar {
   margin: 20px;
-  text-align: center;
-}
-
-.search-bar input {
-  width: 75%;
+  width: 50%;
+  position: relative;
+  left: 25%;
 }
 
 .video-detail .details {
-  margin-top: 10px;
+  margin: 10px 0;
   padding: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid #FF0555;
   border-radius: 4px;
   color: #fff;
   font-size: 1.25rem;
+  text-align: center;
 }
 
 .list-group-item {
   cursor: pointer;
   font-size: 1.25rem;
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  color: #FFF;
 }
 
 .list-group-item:hover {
-  background-color: #eee;
+  background-color: #FF0555 !important;
 }
 
 @keyframes ticker {

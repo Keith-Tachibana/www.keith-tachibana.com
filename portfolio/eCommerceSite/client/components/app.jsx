@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import Header from './header';
 import ProductList from './product-list';
@@ -26,11 +26,6 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('/sales/health-check')
-      .then(res => res.json())
-      .then(data => this.setState({ message: data.message || data.error }))
-      .catch(err => this.setState({ message: err.message }))
-      .finally(() => this.setState({ isLoading: false }));
     this.getCartItems();
   }
 
@@ -120,7 +115,7 @@ class App extends Component {
 
   render() {
     return (
-      <BrowserRouter>
+      <Router>
         <Header
           cartItemCount={this.state.cart.length} />
         <Switch>
@@ -130,21 +125,21 @@ class App extends Component {
                 setView={this.setView} />
             </React.Fragment>
           } />
-          <Route path="/cart" exact render={props =>
+          <Route path="/cart" render={props =>
             <React.Fragment>
               <CartSummary
                 deleteItem={this.deleteItem}
                 cart={this.state.cart} />
             </React.Fragment>
           } />
-          <Route path="/checkout" exact render={props =>
+          <Route path="/checkout" render={props =>
             <React.Fragment>
               <CheckoutForm
                 cart={this.state.cart}
                 placeOrder={this.placeOrder} />
             </React.Fragment>
           } />
-          <Route path="/:productId" exact render={props =>
+          <Route path="/:productId" render={props =>
             <React.Fragment>
               <ProductDetails
                 params={this.state.view.params}
@@ -153,7 +148,7 @@ class App extends Component {
           } />
           <Route path="/" render={() => <div className="m-4 h1"><em>404:</em> Page not found</div>} />
         </Switch>
-      </BrowserRouter>
+      </Router>
     );
   }
 }

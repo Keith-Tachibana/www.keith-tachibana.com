@@ -6,26 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Keith Tachibana: Homepage</title>
     <link
-      rel="preload"
+      rel="prefetch"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       as="style"
       type="text/css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
     />
     <link
-      rel="preload"
+      rel="prefetch"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
       as="style"
       type="text/css"
-      crossorigin="anonymous"
     />
     <link
-      rel="preload"
+      rel="prefetch"
       href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap"
       as="font"
       type="font/woff2"
-      crossorigin="anonymous"
     />
     <link rel="preload" href="./css/style.css" as="style" type="text/css" />
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js" as="script" />
@@ -41,10 +37,26 @@
     <link rel="preload" href="./js/components/todos.js" as="script" />
     <link rel="preload" href="./js/components/appTodo.js" as="script" />
     <link rel="preload" href="./js/mainTodo.js" as="script" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" type="text/css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" type="text/css" />
     <link rel="stylesheet" href="./css/style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      type="text/css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      type="text/css"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap"
+      type="text/css"
+      crossorigin="anonymous"
+    />
     <link rel="shortcut icon" href="../../assets/images/favicon.png" />
   </head>
   <body class="bg-dark">
@@ -76,7 +88,8 @@
             <div class="input-group-prepend">
               <i class="input-group-text bg-success fas fa-image pt-2"></i>
             </div>
-            <input type="search" name="giphy" id="giphy-search" placeholder="Enter Giphy image to search" class="form-control mr-sm-2" size="30" required="required" />
+            <input type="search" name="giphy" id="giphy-search" placeholder="Enter Giphy image to search"
+              class="form-control mr-sm-2" size="30" required="required" />
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Submit</button>
           </div>
         </form>
@@ -85,46 +98,49 @@
             <div class="input-group-prepend">
               <i class="input-group-text bg-info fas fa-cloud-sun pt-2 ml-4"></i>
             </div>
-            <input type="search" name="weather" id="weather-search" placeholder="Enter city name for weather" class="form-control mr-sm-2" size="30" required="required" />
+            <input type="search" name="weather" id="weather-search" placeholder="Enter city name for weather"
+              class="form-control mr-sm-2" size="30" required="required" />
             <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Submit</button>
           </div>
         </form>
       </div>
     </nav>
-    <div class="row">
-      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-2" id="calendar">
-        <p><i class="far fa-calendar-alt fa-lg text-white"><span id="date" class="h6 ml-1"></span></i></p>
-        <p><i class="far fa-clock fa-lg text-white"><span id="clock" class="h6 ml-1"></span></i></p>
-        <div id="stocks-container" class="mt-2">
-          <div id="stocks" class="text-white">[Stock Ticker] &gt;&gt;&gt; </div>
-        </div>
-        <div id="giphy-container" class="mt-4">
-          <div id="giphy" class="text-center"></div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-8 mt-2" id="nasa">
-        <div id="greeting-container" class="text-center">
-          <form>
-            <input type="text" class="form-control mt-4 mb-4 text-center" id="submit-name"
-              placeholder="Please enter your name" required="required" />
-          </form>
-          <p class="d-none display-2 text-white" id="greeting"></p>
-        </div>
-      </div>
-      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-2">
-        <div class="weather-giphy-container justify-content-end">
-          <div id="weather-city-container">
-            <p>
-              <span id="city" class="h5 d-none mt-2 text-white"></span>
-              <span id="weatherIMG" class="d-none"></span>
-            </p>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-2" id="calendar">
+          <p><i class="far fa-calendar-alt fa-lg text-white"><span id="date" class="h6 ml-1"></span></i></p>
+          <p><i class="far fa-clock fa-lg text-white"><span id="clock" class="h6 ml-1"></span></i></p>
+          <div id="stocks-container" class="mt-2">
+            <div id="stocks" class="text-white">[Stock Ticker] &gt;&gt;&gt; </div>
           </div>
-          <div>
-            <p id="temps" class="h6 d-none text-white"></p>
-            <p id="condition" class="h6 d-none text-white"></p>
-            <p id="wind" class="h6 d-none text-white"></p>
-            <p id="sunrise" class="h6 d-none text-white"></p>
-            <p id="sunset" class="h6 d-none text-white"></p>
+          <div id="giphy-container" class="mt-4">
+            <div id="giphy" class="text-center mr-3"></div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-8 mt-2" id="nasa">
+          <div id="greeting-container" class="text-center">
+            <form>
+              <input type="text" class="form-control mt-4 mb-4 text-center" id="submit-name"
+                placeholder="Please enter your name" required="required" />
+            </form>
+            <p class="d-none display-2 text-white" id="greeting"></p>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-2" id="weather-container">
+          <div class="weather-giphy-container justify-content-end">
+            <div id="weather-city-container">
+              <div>
+                <span id="city" class="h5 d-none mt-2 text-white"></span>
+                <span id="weatherIMG" class="d-none my-4"></span>
+              </div>
+            </div>
+            <div>
+              <p id="temps" class="h6 d-none text-white"></p>
+              <p id="condition" class="h6 d-none text-white"></p>
+              <p id="wind" class="h6 d-none text-white"></p>
+              <p id="sunrise" class="h6 d-none text-white"></p>
+              <p id="sunset" class="h6 d-none text-white"></p>
+            </div>
           </div>
         </div>
       </div>
