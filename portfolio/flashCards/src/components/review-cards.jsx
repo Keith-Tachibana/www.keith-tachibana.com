@@ -96,7 +96,6 @@ class ReviewCards extends Component {
           </div>
         </main>
       </React.Fragment>
-
     );
   }
 }
