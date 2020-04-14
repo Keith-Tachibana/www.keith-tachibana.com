@@ -164,7 +164,6 @@
 .card-back {
   background-image: url("../images/storm-trooper.gif");
   transition: transform .2s;
-  opacity: 0.5;
 }
 
 .card-back:hover {
