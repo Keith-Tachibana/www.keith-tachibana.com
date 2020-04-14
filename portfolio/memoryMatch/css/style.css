@@ -394,7 +394,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 35px;
+    left: 50px;
   }
 
   .aside {
@@ -477,6 +477,8 @@
   .modal-text {
     height: 200px;
     width: 350px;
+    position: relative;
+    right: 15px;
   }
 
   .reset {
@@ -566,13 +568,13 @@
     font-size: 1rem;
     justify-content: initial;
     position: relative;
-    top: -140px;
+    top: -125px;
   }
 
   .aside > div {
     align-items: flex-start;
     font-size: 0.75rem;
-    height: 25px;
+    height: 27px;
     margin: 1px;
   }
 
@@ -607,7 +609,7 @@
 
   #gameCards {
     position: relative;
-    top: -150px;
+    top: -125px;
     height: 275px;
     width: 400px;
   }
@@ -619,6 +621,8 @@
   .modal-text {
     height: 250px;
     width: 500px;
+    position: relative;
+    right: 11px;
   }
 
   .modal-text h3 {
@@ -651,6 +655,8 @@
 
   .aside {
     font-size: 1.25rem;
+    position: relative;
+    top: -25px;
   }
 
   .aside > div {
@@ -659,6 +665,11 @@
 
   .shuffle-button {
     font-size: 1.25rem;
+  }
+
+  #gameCards {
+    position: relative;
+    top: -20px;
   }
 
   .games-text,
@@ -685,13 +696,13 @@
     width: 15%;
   }
 
-  .modal {
-    height: 300px;
-    width: 700px;
+  .modal-text {
+    position: relative;
+    right: 20px;
   }
 
   .modal-text h3 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
 
   .reset {
@@ -711,12 +722,14 @@
     font-size: 4rem;
     letter-spacing: 5px;
     width: 100%;
+    position: relative;
+    top: -40px;
   }
 
   .aside {
     font-size: 1rem;
     position: relative;
-    top: -80px;
+    top: -100px;
     justify-content: initial;
   }
 
@@ -730,10 +743,14 @@
     font-size: 1.5rem;
   }
 
+  body {
+    overflow: hidden;
+  }
+
   #gameCards {
     height: 80%;
     position: relative;
-    top: -90px;
+    top: -115px;
   }
 
   .games-text,
@@ -759,7 +776,7 @@
   }
 
   .modal-text h3 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .reset {
