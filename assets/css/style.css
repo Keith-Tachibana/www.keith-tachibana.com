@@ -335,7 +335,7 @@ nav ul li a {
 /*   Services
 /*-----------------------------------------------------------------------------------*/
 
-#services {
+#services, #skills {
   background: #000;
   position: relative;
   padding-bottom: 80px;

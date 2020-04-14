@@ -41,7 +41,6 @@
   text-align: center;
   height: 9%;
   width: 80%;
-  border-radius: 15px;
   border: 2px groove #000;
   display: flex;
   justify-content: center;
@@ -95,7 +94,6 @@
   height: 10%;
   background-color: #EEC643;
   border-width: 0;
-  border-radius: 15px;
   font-weight: bold;
   font-style: italic;
   border: 2px groove #000;
@@ -166,6 +164,7 @@
 .card-back {
   background-image: url("../images/storm-trooper.gif");
   transition: transform .2s;
+  opacity: 0.5;
 }
 
 .card-back:hover {
@@ -395,6 +394,8 @@
   .main-container {
     display: flex;
     flex-direction: column;
+    position: relative;
+    left: 35px;
   }
 
   .aside {
@@ -403,7 +404,7 @@
     flex-direction: row;
     position: relative;
     bottom: 75px;
-    left: 8px;
+    left: 40px;
     justify-content: space-between;
   }
 
@@ -445,11 +446,17 @@
   #gameCards {
     display: flex;
     align-items: center;
+    min-width: 100vw;
+    min-height: 90vh;
   }
 
   .card-item {
     height: 30%;
     width: 14%;
+  }
+
+  body {
+    overflow: hidden;
   }
 
   .main {
@@ -544,9 +551,11 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 767px) {
   .title-text {
-    font-size: 4rem;
+    font-size: 2rem;
     letter-spacing: 5px;
     text-align: center;
+    height: 10vh;
+    width: 100vw;
   }
 
   .title-container {
@@ -556,10 +565,16 @@
 
   .aside {
     font-size: 1rem;
+    justify-content: initial;
+    position: relative;
+    top: -140px;
   }
 
   .aside > div {
     align-items: flex-start;
+    font-size: 0.75rem;
+    height: 25px;
+    margin: 1px;
   }
 
   .games-text,
@@ -571,7 +586,7 @@
   .accuracy-text,
   .accuracy-score {
     position: relative;
-    top: 5px;
+    top: -10px;
   }
 
   .card-back:hover {
@@ -582,12 +597,24 @@
   }
 
   .shuffle-button {
-    font-size: 1rem;
+    font-size: 0.75rem;
+    height: 35px;
   }
 
   .card-item {
     height: 30%;
     width: 15%;
+  }
+
+  #gameCards {
+    position: relative;
+    top: -150px;
+    height: 275px;
+    width: 400px;
+  }
+
+  body {
+    overflow: hidden;
   }
 
   .modal-text {
@@ -688,15 +715,26 @@
   }
 
   .aside {
-    font-size: 1.25rem;
+    font-size: 1rem;
+    position: relative;
+    top: -80px;
+    justify-content: initial;
   }
 
   .aside > div {
     align-items: flex-start;
+    height: 60px;
+    margin: 2px;
   }
 
   .shuffle-button {
     font-size: 1.5rem;
+  }
+
+  #gameCards {
+    height: 80%;
+    position: relative;
+    top: -90px;
   }
 
   .games-text,
