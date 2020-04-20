@@ -11,9 +11,6 @@ class Nav extends Component {
     this.handleClickView = this.handleClickView.bind(this);
     this.handleClickReview = this.handleClickReview.bind(this);
     this.handleClickCreate = this.handleClickCreate.bind(this);
-    this.renderClassView = this.renderClassView.bind(this);
-    this.renderClassReview = this.renderClassReview.bind(this);
-    this.renderClassCreate = this.renderClassCreate.bind(this);
   }
 
   handleClickView() {
@@ -22,7 +19,7 @@ class Nav extends Component {
       view: true,
       review: false,
       create: false
-    }, (view) => setView('view-cards'));
+    }, view => setView('view-cards'));
   }
 
   handleClickReview() {
@@ -31,7 +28,7 @@ class Nav extends Component {
       view: false,
       review: true,
       create: false
-    }, (view) => setView('review-cards'));
+    }, view => setView('review-cards'));
   }
 
   handleClickCreate() {
@@ -40,31 +37,7 @@ class Nav extends Component {
       view: false,
       review: false,
       create: true
-    }, (view) => setView('create-card'));
-  }
-
-  renderClassView() {
-    if (this.state.view) {
-      return "nav-link link active";
-    } else {
-      return "nav-link link";
-    }
-  }
-
-  renderClassReview() {
-    if (this.state.review) {
-      return "nav-link link active";
-    } else {
-      return "nav-link link";
-    }
-  }
-
-  renderClassCreate() {
-    if (this.state.create) {
-      return "nav-link link active";
-    } else {
-      return "nav-link link";
-    }
+    }, view => setView('create-card'));
   }
 
   render() {
@@ -73,13 +46,13 @@ class Nav extends Component {
         <nav>
           <ul className="nav nav-pills justify-content-end mt-4">
             <li className="nav-item">
-              <a onClick={this.handleClickView} className={this.renderClassView()}>View Cards</a>
+              <a onClick={this.handleClickView} className="nav-link link">View Cards</a>
             </li>
             <li className="nav-item">
-              <a onClick={this.handleClickReview} className={this.renderClassReview()}>Review</a>
+              <a onClick={this.handleClickReview} className="nav-link link">Review</a>
             </li>
             <li className="nav-item">
-              <a onClick={this.handleClickCreate} className={this.renderClassCreate()}>Create Card</a>
+              <a onClick={this.handleClickCreate} className="nav-link link">Create Card</a>
             </li>
           </ul>
         </nav>
