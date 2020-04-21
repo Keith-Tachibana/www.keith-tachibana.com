@@ -86,15 +86,15 @@ class UpdateCard extends Component {
                     <button
                       name="save"
                       type="submit"
-                      className="btn btn-outline-primary mr-2">
-                        Save Card
+                      className="btn btn-primary mr-2">
+                      Save Card
                     </button>
                     <button
                       name="cancel"
                       type="reset"
                       onClick={this.handleReset}
-                      className="btn btn-outline-danger ml-2">
-                        Cancel
+                      className="btn btn-danger ml-2">
+                      Cancel
                     </button>
                   </div>
                 </fieldset>

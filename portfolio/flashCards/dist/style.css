@@ -20,18 +20,14 @@
   overflow-x: hidden;
 }
 
-.create-container {
-  max-width: 99vw;
-}
-
 .previous {
-  transform: translateY(40%);
+  transform: translateY(30%);
   cursor: pointer;
   padding-left: 15px;
 }
 
 .next {
-  transform: translateY(40%);
+  transform: translateY(30%);
   cursor: pointer;
   padding-right: 15px;
 }
@@ -80,16 +76,14 @@
   align-items: center;
 }
 
-
 .modal-content {
   background-color: white;
   z-index: 1;
   width: 50%;
-  height: 35%;
   padding: 50px;
 }
 
 .button-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }

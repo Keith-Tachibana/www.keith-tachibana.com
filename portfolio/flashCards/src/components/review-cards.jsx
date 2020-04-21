@@ -47,24 +47,25 @@ class ReviewCards extends Component {
       return (
         this.state.front
           ? <React.Fragment>
-              <ProgressBar progress={this.state.progress}/>
-              <div className="carousel bg-dark">
-                <i className="previous fas fa-chevron-left fa-5x" onClick={this.previousCard}></i>
-                <div className="card-wrapper" onClick={this.flipCard}>
-                  <div className="card-container text-white">{activeCard.question}</div>
-                </div>
-                <i className="next fas fa-chevron-right fa-5x" onClick={this.nextCard}></i>
+            <ProgressBar progress={this.state.progress} />
+            <div className="carousel bg-dark">
+              <i className="previous fas fa-chevron-left fa-5x" onClick={this.previousCard}></i>
+              <div className="card-wrapper" onClick={this.flipCard}>
+                <div className="card-container text-white">{activeCard.question}</div>
               </div>
-            </React.Fragment>
+              <i className="next fas fa-chevron-right fa-5x" onClick={this.nextCard}></i>
+            </div>
+          </React.Fragment>
           : <React.Fragment>
-              <div className="carousel bg-secondary">
-                <i className="previous fas fa-chevron-left fa-5x" onClick={this.previousCard}></i>
-                <div className="card-wrapper" onClick={this.flipCard}>
-                  <div className="card-container text-white">{activeCard.answer}</div>
-                </div>
-                <i className="next fas fa-chevron-right fa-5x" onClick={this.nextCard}></i>
+            <ProgressBar progress={this.state.progress} />
+            <div className="carousel bg-secondary">
+              <i className="previous fas fa-chevron-left fa-5x" onClick={this.previousCard}></i>
+              <div className="card-wrapper" onClick={this.flipCard}>
+                <div className="card-container text-white">{activeCard.answer}</div>
               </div>
-            </React.Fragment>
+              <i className="next fas fa-chevron-right fa-5x" onClick={this.nextCard}></i>
+            </div>
+          </React.Fragment>
       );
     }
   }

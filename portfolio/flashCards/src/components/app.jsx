@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import ViewCards from './view-cards';
 import ReviewCards from './review-cards';
 import CreateCard from './create-card';
-import Nav from './nav';
+import Navbar from './navbar';
 import Modal from './modal';
 import UpdateCard from './update-card';
 
@@ -36,30 +36,30 @@ class App extends Component {
   }
 
   getView() {
-    switch(this.state.view) {
+    switch (this.state.view) {
       case 'create-card':
         return <CreateCard
-                addCard={this.addCard}
-                setView={this.setView}
-               />;
+          addCard={this.addCard}
+          setView={this.setView}
+        />;
       case 'review-cards':
         return <ReviewCards
-                activeCard={this.state.activeCard}
-                setActiveCard={this.setActiveCard}
-                cards={this.state.cards}
-               />;
+          activeCard={this.state.activeCard}
+          setActiveCard={this.setActiveCard}
+          cards={this.state.cards}
+        />;
       case 'view-cards':
         return <ViewCards
-                cards={this.state.cards}
-                renderModal={this.renderModal}
-                renderUpdate={this.renderUpdate}
-               />;
+          cards={this.state.cards}
+          renderModal={this.renderModal}
+          renderUpdate={this.renderUpdate}
+        />;
       case 'update-card':
         return <UpdateCard
-                updateCard={this.updateCard}
-                activeCard={this.state.activeCard}
-                setView={this.setView}
-               />
+          updateCard={this.updateCard}
+          activeCard={this.state.activeCard}
+          setView={this.setView}
+        />
       default:
         return null;
     };
@@ -123,7 +123,7 @@ class App extends Component {
     return (
       <React.Fragment>
         <div>
-          <Nav setView={this.setView} view={this.state.view} />
+          <Navbar setView={this.setView} view={this.state.view} />
           {this.getView()}
           <Modal modal={this.state.modal} renderModal={this.renderModal} deleteCard={this.deleteCard} />
         </div>

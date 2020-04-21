@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Nav extends Component {
+class Navbar extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -46,13 +46,13 @@ class Nav extends Component {
         <nav>
           <ul className="nav nav-pills justify-content-end mt-4">
             <li className="nav-item">
-              <a onClick={this.handleClickView} className="nav-link link">View Cards</a>
+              <a onClick={this.handleClickView} className="nav-link link active mr-2">View Cards</a>
             </li>
             <li className="nav-item">
-              <a onClick={this.handleClickReview} className="nav-link link">Review</a>
+              <a onClick={this.handleClickReview} className="nav-link link active mr-2">Review</a>
             </li>
             <li className="nav-item">
-              <a onClick={this.handleClickCreate} className="nav-link link">Create Card</a>
+              <a onClick={this.handleClickCreate} className="nav-link link active mr-2">Create Card</a>
             </li>
           </ul>
         </nav>
@@ -61,4 +61,4 @@ class Nav extends Component {
   }
 }
 
-export default Nav;
+export default Navbar;
