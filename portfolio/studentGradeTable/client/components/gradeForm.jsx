@@ -157,7 +157,7 @@ class GradeForm extends Component {
                 className="form-control mr-4"
                 placeholder="Student Grade"
                 size="25"
-                value={this.state.grade || 0}
+                value={this.state.grade || ''}
                 required="required"
                 onChange={this.handleChange}
                 min="0"
