@@ -21,7 +21,8 @@
   "homepage": "https://github.com/Keith-Tachibana/react-flash-cards-pt#readme",
   "dependencies": {
     "react": "^16.13.0",
-    "react-dom": "^16.13.0"
+    "react-dom": "^16.13.0",
+    "reactstrap": "^8.4.1"
   },
   "devDependencies": {
     "@babel/core": "^7.8.6",
