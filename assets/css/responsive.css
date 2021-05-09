@@ -11,7 +11,12 @@
  */
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  
+    /* portfolio */
+    #portfolio .portfolio-list .nav li {
+      float: none;
+      margin: 20px;
+      display: inline-block;
+    }      
 }
 
 /** Width between 768px to 991px
