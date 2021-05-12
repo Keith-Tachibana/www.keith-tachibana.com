@@ -39,23 +39,23 @@
       die('The contact form receiving e-mail address is not configured!');
     }
 
-    if(strlen($name)<3){
+    else if(strlen($name)<3){
       die($contact_error_name);
     }
 
-    if(!$email){
+    else if(!$email){
       die($contact_error_email);
     }
 
-    if(strlen($subject)<3){
+    else if(strlen($subject)<3){
       die($contact_error_subject);
     }
 
-    if(strlen($message)<3){
+    else if(strlen($message)<3){
       die($contact_error_message);
     }
 
-    if(!isset($contact_email_from)) {
+    else if(!isset($contact_email_from)) {
       $contact_email_from = "contactform@" . @preg_replace('/^www\./','', $_SERVER['SERVER_NAME']);
     }
 
