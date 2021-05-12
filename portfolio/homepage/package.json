@@ -1,0 +1,31 @@
+{
+  "name": "homepage",
+  "version": "1.0.0",
+  "description": "A homepage that utilizes many API's",
+  "main": "server/public/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Keith-Tachibana/Homepage_nextjs.git"
+  },
+  "keywords": [
+    "homepage",
+    "api"
+  ],
+  "author": "Keith Tachibana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Keith-Tachibana/Homepage_nextjs/issues"
+  },
+  "homepage": "https://github.com/Keith-Tachibana/Homepage_nextjs#readme",
+  "dependencies": {
+    "next": "^10.2.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}

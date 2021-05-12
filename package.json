@@ -1,0 +1,28 @@
+{
+  "name": "www.keith-tachibana.com",
+  "version": "1.0.0",
+  "description": "Keith Tachibana's portfolio website",
+  "main": "index.html",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Keith-Tachibana/www.keith-tachibana.com.git"
+  },
+  "keywords": [
+    "web",
+    "development",
+    "portfolio",
+    "full-stack"
+  ],
+  "author": "Keith Tachibana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Keith-Tachibana/www.keith-tachibana.com/issues"
+  },
+  "homepage": "https://github.com/Keith-Tachibana/www.keith-tachibana.com#readme"
+}
