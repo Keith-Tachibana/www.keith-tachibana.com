@@ -11,16 +11,16 @@
   $contact_email_to = "Keith.Tachibana@gmail.com";
 
   // Title prefixes
-  $subject_title = "Contat Form Message:";
+  $subject_title = "Contact Form Message:";
   $name_title = "Name:";
   $email_title = "Email:";
   $message_title = "Message:";
 
   // Error messages
-  $contact_error_name = "Your name is too short or empty!";
+  $contact_error_name = "Please enter your full name of 3 characters or more!";
   $contact_error_email = "Please enter a valid e-mail address!";
-  $contact_error_subject = "Your subject is too short or has been omitted!";
-  $contact_error_message = "Your message is too short or has been omitted - please enter something!";
+  $contact_error_subject = "Your subject must be greater than 3 characters!";
+  $contact_error_message = "Your message must be greater than 3 characters!";
 
 /********** Do not edit from the below line ***********/
 
