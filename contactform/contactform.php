@@ -54,7 +54,7 @@
     if(strlen($message)<3){
       die($contact_error_message);
     }
-s
+
     if(!isset($contact_email_from)) {
       $contact_email_from = "contactform@" . @preg_replace('/^www\./','', $_SERVER['SERVER_NAME']);
     }
