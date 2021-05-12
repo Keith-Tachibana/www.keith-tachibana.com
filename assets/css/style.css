@@ -9,7 +9,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  background: #ffffff;
+  background: #292929;
   color: #898989;
   font-family: 'Poppins', helvetica;
   font-size: 15px;
@@ -56,12 +56,12 @@ p {
 }
 
 ::-moz-selection {
-  background: #b8a07e;
+  background: #e02d00;
   color: #fff;
 }
 
 ::selection {
-  background: #b8a07e;
+  background: #e02d00;
   color: #fff;
 }
 
@@ -130,7 +130,7 @@ p {
 }
 
 .hvr-shutter-in-horizontal:hover {
-  background: #b8a07e;
+  background: #e02d00;
 }
 
 .mb-30 {
@@ -151,7 +151,7 @@ p {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #b8a07e;
+  background: #e02d00;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -165,7 +165,7 @@ p {
 }
 
 .back-to-top:hover {
-  background: #c6b398;
+  background: #551505;
   color: #fff;
 }
 
@@ -181,7 +181,7 @@ p {
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
-  background-color: #fff;
+  background-color: #333;
   top: -100%;
   box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.08);
 }
@@ -219,7 +219,7 @@ p {
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
-* Desktop Navigation 
+* Desktop Navigation
 */
 .navbar {
   padding: 0;
@@ -257,7 +257,7 @@ p {
 }
 
 .navbar a:hover, .navbar .active, .navbar li:hover > a {
-  color: #b8a07e;
+  color: #e02d00;
 }
 
 .navbar .dropdown ul {
@@ -270,7 +270,7 @@ p {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #fff;
+  background: #333;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
 }
@@ -289,7 +289,7 @@ p {
 }
 
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #b8a07e;
+  color: #e02d00;
 }
 
 .navbar .dropdown:hover > ul {
@@ -321,7 +321,7 @@ p {
 }
 
 /**
-* Mobile Navigation 
+* Mobile Navigation
 */
 .mobile-nav-toggle {
   color: #4b4a4a;
@@ -333,7 +333,7 @@ p {
 }
 
 .mobile-nav-toggle.bi-x {
-  color: #fff;
+  color: #333;
 }
 
 @media (max-width: 991px) {
@@ -371,7 +371,7 @@ p {
   left: 15px;
   padding: 10px 0;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: #333;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -383,7 +383,7 @@ p {
 }
 
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #b8a07e;
+  color: #e02d00;
 }
 
 .navbar-mobile .getstarted {
@@ -398,7 +398,7 @@ p {
   z-index: 99;
   opacity: 1;
   visibility: visible;
-  background: #fff;
+  background: #333;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
@@ -415,7 +415,7 @@ p {
 }
 
 .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-  color: #b8a07e;
+  color: #e02d00;
 }
 
 .navbar-mobile .dropdown > .dropdown-active {
@@ -425,11 +425,12 @@ p {
 /*--------------------------------------------------------------
 # Hero
 --------------------------------------------------------------*/
-#hero {
-  background: url("../img/home-bg.jpg") repeat scroll center center/cover;
+
+/*#hero {
+  background: url("../images/home-bg.webp") repeat scroll center center/cover;
   height: 100vh;
   width: 100%;
-}
+}*/
 
 #hero .hero-content {
   height: 100vh;
@@ -533,13 +534,13 @@ p {
 #about {
   width: 100%;
   height: auto;
-  background: #f7f7f7;
+  background: #333;
   padding-top: 120px;
 }
 
 #about .div-img-bg {
   padding-bottom: 30px;
-  border: 20px solid #b8a07e;
+  border: 20px solid #e02d00;
 }
 
 #about .div-img-bg .about-img img {
@@ -568,7 +569,7 @@ p {
 # Services
 --------------------------------------------------------------*/
 #services {
-  background: #f7f7f7;
+  background: #333;
   position: relative;
   padding-bottom: 80px;
 }
@@ -592,7 +593,7 @@ p {
 
 .services-block i {
   font-size: 44px;
-  color: #b8a07e;
+  color: #e02d00;
   line-height: 44px;
 }
 
@@ -604,14 +605,32 @@ p {
 .services-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: #fff;
+  background-color: #333;
   opacity: 1;
   border: 1px solid #b8a07e;
 }
 
 .services-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #b8a07e;
+  background-color: #e02d00;
 }
+
+/*--------------------------------------------------------------
+# Skills
+--------------------------------------------------------------*/
+#skills .container {
+  width: 100vw;
+}
+
+#skills .container .row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#skills .container .row figure {
+  width: calc(100vw / 4);
+}
+
 
 /*--------------------------------------------------------------
 # Portfolio
@@ -686,11 +705,11 @@ p {
   right: 40px;
   font-size: 24px;
   top: calc(50% - 18px);
-  color: #b8a07e;
+  color: #e02d00;
 }
 
 #portfolio .portfolio-item .portfolio-info .preview-link:hover, #portfolio .portfolio-item .portfolio-info .details-link:hover {
-  color: #cab89f;
+  color: #8a260d;
 }
 
 #portfolio .portfolio-item .portfolio-info .details-link {
@@ -721,13 +740,13 @@ p {
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: #fff;
+  background-color: #333;
   opacity: 1;
-  border: 1px solid #b8a07e;
+  border: 1px solid #e02d00;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #b8a07e;
+  background-color: #e02d00;
 }
 
 .portfolio-details .portfolio-info {
@@ -773,13 +792,13 @@ p {
 #journal, #journal-blog {
   height: auto;
   width: 100%;
-  background: #f7f7f7;
+  background: #333;
   padding-bottom: 60px;
   position: relative;
 }
 
 #journal-blog {
-  background: #fff;
+  background: #333;
   padding-bottom: 30px;
 }
 
@@ -813,7 +832,7 @@ p {
 }
 
 .journal-block .journal-info .journal-txt h4 a:hover {
-  color: #b8a07e;
+  color: #e02d00;
   transition: all 0.5s ease-in-out 0s;
 }
 
@@ -824,7 +843,7 @@ p {
 }
 
 /*--------------------------------------------------------------
-# Journal
+# Contact
 --------------------------------------------------------------*/
 #contact {
   height: auto;
@@ -852,7 +871,7 @@ p {
 
 .php-email-form .error-message {
   display: none;
-  color: #fff;
+  color: #333;
   background: #ed3c0d;
   text-align: left;
   padding: 15px;
@@ -866,7 +885,7 @@ p {
 
 .php-email-form .sent-message {
   display: none;
-  color: #fff;
+  color: #333;
   background: #18d26e;
   text-align: center;
   padding: 15px;
@@ -876,7 +895,7 @@ p {
 
 .php-email-form .loading {
   display: none;
-  background: #fff;
+  background: #333;
   text-align: center;
   padding: 15px;
   margin-bottom: 15px;
@@ -930,7 +949,7 @@ p {
 
 /* main content */
 .main-content {
-  background: #f7f7f7;
+  background: #333;
 }
 
 .main-content .container-main {
@@ -944,7 +963,7 @@ p {
 }
 
 .container-main .block-main .content-main {
-  background: #fff none repeat scroll 0 0;
+  background: #333 none repeat scroll 0 0;
   display: inline-block;
   width: 100%;
 }
@@ -960,7 +979,7 @@ p {
 }
 
 .journal-txt h4 a:hover {
-  color: #b8a07e;
+  color: #e02d00;
   transition: all 0.5s ease-in-out 0s;
 }
 
@@ -981,7 +1000,7 @@ p {
 
 /* Commonts */
 .comments {
-  background: #fff;
+  background: #333;
 }
 
 .entry-comments h6 {
@@ -1036,22 +1055,22 @@ p {
 
 /* Commonts form */
 .cmt {
-  background: #fff;
+  background: #333;
 }
 
 blockquote {
   padding: 40px;
-  background-color: #f2f2f2;
+  background-color: #333;
   margin: 30px 0;
   border: none;
-  border-left: 4px solid #b8a07e;
+  border-left: 4px solid #e02d00;
 }
 
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #f7f7f7;
+  background: #333;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -1083,7 +1102,7 @@ blockquote {
 }
 
 #footer .socials-media ul li a:hover {
-  color: #b8a07e;
+  color: #e02d00;
   transition: all 0.5s ease-in-out 0s;
 }
 
@@ -1456,4 +1475,16 @@ blockquote {
     display: inline-block;
     margin-right: 0;
   }
+}
+
+.video-bg {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+  z-index: -100;
+	transform: translateX(-50%) translateY(-50%);
 }
