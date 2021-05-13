@@ -9,8 +9,8 @@
 # General
 --------------------------------------------------------------*/
 body {
-  background: #292929;
-  color: #898989;
+  background: #111111;
+  color: #fff;
   font-family: 'Poppins', helvetica;
   font-size: 15px;
   font-weight: 300;
@@ -27,18 +27,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  color: #292929;
+  color: #fff;
   font-weight: 600;
 }
 
 h4 {
-  color: #292929;
+  color: #fff;
   font-size: 14px;
   font-weight: 600;
 }
 
 a {
-  color: #292929;
+  color: #fff;
   text-decoration: none !important;
   transition: all 0.5s ease-in-out 0s;
 }
@@ -51,7 +51,7 @@ p {
   margin: 25px 0;
   padding: 0;
   font-size: 15px;
-  color: #999999;
+  color: #fff;
   line-height: 28px;
 }
 
@@ -66,7 +66,7 @@ p {
 }
 
 .btn {
-  background: #333;
+  background: #e02d00;
   border: medium none;
   border-radius: 0;
   color: #fff;
@@ -78,7 +78,11 @@ p {
 }
 
 .btn:hover, .btn:focus {
-  color: #fff;
+  color: #333;
+}
+
+.btn:active {
+  transform: translateY(4px);
 }
 
 .padDiv {
@@ -97,9 +101,9 @@ p {
 
 .form-control {
   background-color: transparent;
-  border: 1px solid #999;
+  border: 1px solid #e02d00;
   border-radius: 0;
-  color: #999999;
+  color: #fff;
   font-size: 12px;
   font-weight: 500;
   height: 50px;
@@ -126,7 +130,7 @@ p {
 }
 
 .hvr-shutter-in-horizontal::before {
-  background: #333;
+  background: #111111;
 }
 
 .hvr-shutter-in-horizontal:hover {
@@ -148,7 +152,7 @@ p {
   position: fixed;
   visibility: hidden;
   opacity: 0;
-  right: 15px;
+  left: 15px;
   bottom: 15px;
   z-index: 996;
   background: #e02d00;
@@ -165,7 +169,7 @@ p {
 }
 
 .back-to-top:hover {
-  background: #551505;
+  background: #8a260d;
   color: #fff;
 }
 
@@ -181,7 +185,7 @@ p {
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
-  background-color: #333;
+  background-color: #111111;
   top: -100%;
   box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.08);
 }
@@ -202,7 +206,7 @@ p {
 }
 
 #header .logo a {
-  color: #898989;
+  color: #fff;
 }
 
 #header .logo img {
@@ -245,7 +249,7 @@ p {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 500;
-  color: #7e7d7d;
+  color: #fff;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -270,7 +274,7 @@ p {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #333;
+  background: #111111;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
 }
@@ -324,7 +328,7 @@ p {
 * Mobile Navigation
 */
 .mobile-nav-toggle {
-  color: #4b4a4a;
+  color: #fff;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -333,7 +337,7 @@ p {
 }
 
 .mobile-nav-toggle.bi-x {
-  color: #333;
+  color: #fff;
 }
 
 @media (max-width: 991px) {
@@ -371,7 +375,7 @@ p {
   left: 15px;
   padding: 10px 0;
   border-radius: 10px;
-  background-color: #333;
+  background-color: #111111;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -379,11 +383,11 @@ p {
 .navbar-mobile a {
   padding: 10px 20px;
   font-size: 15px;
-  color: #4b4a4a;
+  color: #e02d00;
 }
 
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #e02d00;
+  color: #8a260d;
 }
 
 .navbar-mobile .getstarted {
@@ -398,7 +402,7 @@ p {
   z-index: 99;
   opacity: 1;
   visibility: visible;
-  background: #333;
+  background: #111111;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
@@ -512,7 +516,7 @@ p {
 .breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
-  color: #6c757d;
+  color: #fff;
   content: "/";
 }
 
@@ -534,13 +538,13 @@ p {
 #about {
   width: 100%;
   height: auto;
-  background: #333;
+  background: #111111;
   padding-top: 120px;
 }
 
 #about .div-img-bg {
   padding-bottom: 30px;
-  border: 20px solid #e02d00;
+  border: 20px solid #333;
 }
 
 #about .div-img-bg .about-img img {
@@ -569,7 +573,7 @@ p {
 # Services
 --------------------------------------------------------------*/
 #services {
-  background: #333;
+  background: #111111;
   position: relative;
   padding-bottom: 80px;
 }
@@ -578,7 +582,7 @@ p {
   margin: 10px 0;
   position: relative;
   font-size: 13px;
-  color: #292929;
+  color: #fff;
   letter-spacing: 0.1em;
   font-weight: 500;
   text-transform: uppercase;
@@ -605,9 +609,9 @@ p {
 .services-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: #333;
+  background-color: #111111;
   opacity: 1;
-  border: 1px solid #b8a07e;
+  border: 1px solid #fff;
 }
 
 .services-slider .swiper-pagination .swiper-pagination-bullet-active {
@@ -619,6 +623,7 @@ p {
 --------------------------------------------------------------*/
 #skills .container {
   width: 100vw;
+  margin: 0 auto;
 }
 
 #skills .container .row {
@@ -628,9 +633,64 @@ p {
 }
 
 #skills .container .row figure {
-  width: calc(100vw / 4);
+  width: calc(100vw / 5);
 }
 
+#skills .container .row figure picture {
+  display: flex;
+  justify-content: center;
+}
+
+#skills .container .row figure  {
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  transition-duration: 0.4s;
+  overflow: hidden;
+}
+
+#skills .container .row figure:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: 1;
+}
+
+#skills .container .row figure:active {
+  box-shadow: 0 5px darkgrey;
+  transform: translateY(4px);
+}
+
+#skills .container .row figure:after {
+  content: '';
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+#skills .container .row figure:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
 
 /*--------------------------------------------------------------
 # Portfolio
@@ -657,13 +717,13 @@ p {
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #999999;
+  color: #fff;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
 
 #portfolio #portfolio-flters li:hover, #portfolio #portfolio-flters li.filter-active {
-  color: #b8a07e;
+  color: #e02d00;
 }
 
 #portfolio #portfolio-flters li:last-child {
@@ -682,29 +742,33 @@ p {
   bottom: 0;
   z-index: 3;
   transition: all ease-in-out 0.3s;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(0, 0, 0, 0.9);
   padding: 15px;
 }
 
 #portfolio .portfolio-item .portfolio-info h4 {
   font-size: 18px;
-  color: #666;
+  color: #e02d00;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
 #portfolio .portfolio-item .portfolio-info p {
-  color: #999;
+  color: #fff;
   font-size: 14px;
   margin: 0;
   padding: 0;
+}
+
+.portfolio-heading {
+  display: flex;
 }
 
 #portfolio .portfolio-item .portfolio-info .preview-link, #portfolio .portfolio-item .portfolio-info .details-link {
   position: absolute;
   right: 40px;
   font-size: 24px;
-  top: calc(50% - 18px);
+  /*top: calc(50% - 18px);*/
   color: #e02d00;
 }
 
@@ -740,7 +804,7 @@ p {
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: #333;
+  background-color: #111111;
   opacity: 1;
   border: 1px solid #e02d00;
 }
@@ -792,13 +856,13 @@ p {
 #journal, #journal-blog {
   height: auto;
   width: 100%;
-  background: #333;
+  background: #111111;
   padding-bottom: 60px;
   position: relative;
 }
 
 #journal-blog {
-  background: #333;
+  background: #111111;
   padding-bottom: 30px;
 }
 
@@ -827,7 +891,7 @@ p {
   line-height: 24px;
   margin: 0 0 13px 0;
   font-weight: 500;
-  color: #292929;
+  color: #fff;
   transition: all 0.5s ease-in-out 0s;
 }
 
@@ -871,7 +935,7 @@ p {
 
 .php-email-form .error-message {
   display: none;
-  color: #333;
+  color: #fff;
   background: #ed3c0d;
   text-align: left;
   padding: 15px;
@@ -885,7 +949,7 @@ p {
 
 .php-email-form .sent-message {
   display: none;
-  color: #333;
+  color: #fff;
   background: #18d26e;
   text-align: center;
   padding: 15px;
@@ -895,7 +959,7 @@ p {
 
 .php-email-form .loading {
   display: none;
-  background: #333;
+  background: #e02d00;
   text-align: center;
   padding: 15px;
   margin-bottom: 15px;
@@ -949,7 +1013,7 @@ p {
 
 /* main content */
 .main-content {
-  background: #333;
+  background: #111111;
 }
 
 .main-content .container-main {
@@ -963,7 +1027,7 @@ p {
 }
 
 .container-main .block-main .content-main {
-  background: #333 none repeat scroll 0 0;
+  background: #111111 none repeat scroll 0 0;
   display: inline-block;
   width: 100%;
 }
@@ -974,12 +1038,12 @@ p {
   line-height: 24px;
   margin: 0 0 13px 0;
   font-weight: 500;
-  color: #292929;
+  color: #e02d00;
   transition: all 0.5s ease-in-out 0s;
 }
 
 .journal-txt h4 a:hover {
-  color: #e02d00;
+  color: #8a260d;
   transition: all 0.5s ease-in-out 0s;
 }
 
@@ -994,13 +1058,13 @@ p {
 }
 
 .content-main .post-meta a {
-  color: #a2a2a2;
+  color: #fff;
   margin-left: 5px;
 }
 
-/* Commonts */
+/* Comments */
 .comments {
-  background: #333;
+  background: #111111;
 }
 
 .entry-comments h6 {
@@ -1031,14 +1095,14 @@ p {
 .entry-comments-author {
   margin-right: 10px;
   font-size: 13px;
-  color: #292929;
+  color: #fff;
   letter-spacing: 0.1em;
   font-weight: 500;
 }
 
 .rep {
   font-size: 13px;
-  color: #292929;
+  color: #fff;
   letter-spacing: 0.1em;
   font-weight: 500;
   text-transform: capitalize;
@@ -1046,7 +1110,7 @@ p {
 
 .entry-comments span a {
   font-size: 13px;
-  color: #999;
+  color: #fff;
 }
 
 .entry-comments-reply {
@@ -1055,12 +1119,12 @@ p {
 
 /* Commonts form */
 .cmt {
-  background: #333;
+  background: #111111;
 }
 
 blockquote {
   padding: 40px;
-  background-color: #333;
+  background-color: #111111;
   margin: 30px 0;
   border: none;
   border-left: 4px solid #e02d00;
@@ -1070,7 +1134,7 @@ blockquote {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #333;
+  background: #111111;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -1093,7 +1157,7 @@ blockquote {
 
 #footer .socials-media ul li a {
   font-size: 24px;
-  color: #999;
+  color: #e02d00;
   letter-spacing: 0.1em;
   font-weight: 500;
   background: transparent;
@@ -1102,7 +1166,7 @@ blockquote {
 }
 
 #footer .socials-media ul li a:hover {
-  color: #e02d00;
+  color: #8a260d;
   transition: all 0.5s ease-in-out 0s;
 }
 
