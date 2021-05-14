@@ -94,6 +94,7 @@ p {
 }
 
 .section-title h2 {
+  padding-top: 10px;
   font-size: 25px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -185,10 +186,9 @@ p {
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
-  background-color: #333;
+  background-color: #000;
   top: -100%;
   box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.08);
-  border-bottom: 1px double #e02d00;
 }
 
 #header.header-scrolled, #header.header-inner-pages {
@@ -472,16 +472,6 @@ p {
 .hero-content .list-social li i {
   color: #fff;
   font-size: 15px;
-}
-
-#quote {
-  font-size: 1rem;
-}
-
-#quote blockquote {
-  border-left: 1px solid #e02d00;
-  border-right: 1px solid #e02d00;
-
 }
 
 /*--------------------------------------------------------------
@@ -1127,7 +1117,7 @@ p {
   padding-left: 10%;
 }
 
-/* Commonts form */
+/* Comments form */
 .cmt {
   background: #111111;
 }
