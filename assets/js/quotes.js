@@ -7,21 +7,21 @@ class Quotes {
 
   getQuotes() {
     $.ajax({
-      url: "http://quotes.stormconsultancy.co.uk/random.json",
+      url: "https://quotes.stormconsultancy.co.uk/random.json",
       method: "GET",
       success: this.handleGetQuotesSuccess,
       error: this.handleGetQuotesError
     })
   }
 
-  handleGetQuotesError(error) {
+  handleGetQuotesError(error) {df
     console.error(error);
   }
 
   handleGetQuotesSuccess(data) {
     let quote = document.createElement('blockquote');
     quote.classList.add('text-white');
-    quote.innerHTML = `"${data.quote}" <br /><em>-${data.author}</em>`;
+    quote.innerHTML = `<strong>Random CS Quote:</strong><br /><br />"${data.quote}" <br /><em>-${data.author}</em>`;
     $('#quote').append(quote);
   }
 }
