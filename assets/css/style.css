@@ -185,9 +185,10 @@ p {
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
-  background-color: #111111;
+  background-color: #333;
   top: -100%;
   box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.08);
+  border-bottom: 1px double #e02d00;
 }
 
 #header.header-scrolled, #header.header-inner-pages {
@@ -473,6 +474,16 @@ p {
   font-size: 15px;
 }
 
+#quote {
+  font-size: 1rem;
+}
+
+#quote blockquote {
+  border-left: 1px solid #e02d00;
+  border-right: 1px solid #e02d00;
+
+}
+
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -558,7 +569,6 @@ p {
 }
 
 #about .about-descr .p-heading {
-  font-family: 'Playfair Display', serif;
   font-size: 28px;
   text-align: left;
 }
@@ -1127,7 +1137,7 @@ blockquote {
   background-color: #111111;
   margin: 30px 0;
   border: none;
-  border-left: 4px solid #e02d00;
+  border-right: 4px solid #e02d00;
 }
 
 /*--------------------------------------------------------------

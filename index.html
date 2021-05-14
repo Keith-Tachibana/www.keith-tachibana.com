@@ -41,6 +41,7 @@
     <link rel="preload" href="/assets/vendor/typed.js/typed.min.js" as="script" />
     <!-- Preload Template Main JavaScript File -->
     <link rel="preload" href="/assets/js/main.js" as="script" />
+    <link rel="preload" href="/assets/js/quotes.js" as="script" />
     <!-- Google Fonts -->
     <link
       rel="stylesheet"
@@ -56,29 +57,22 @@
     <link rel="stylesheet" href="/assets/vendor/swiper/swiper-bundle.min.css" type="text/css" />
     <!-- Main Stylesheet File -->
     <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
   <!-- Start Header Section -->
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-between">
       <a href="/index.html" class="logo"><img src="/assets/images/logo.webp" alt="My logo" class="img-fluid"></a>
-      <!-- <h1 class="logo"><a href="./index.html">Folio</a></h1> -->
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">CS Courses</a></li>
+          <li><a class="nav-link scrollto" href="#skills">Skills</a></li>
           <li class="dropdown"><a href="#"><span>Portfolio</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="https://ezfit.keith-tachibana.com/">EZ-FIT</a></li>
-              <!--li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li-->
               <li><a href="/portfolio/flashCards/dist/index.html">Flash Cards</a></li>
               <li><a href="/portfolio/memoryMatch/index.html">Memory Matching</a></li>
               <li><a href="https://metalink.keith-tachibana.com/">Metalink</a></li>
@@ -88,9 +82,9 @@
           </li>
           <li class="dropdown"><a href="#"><span>Journal</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="/personal.html">My Personal Side</a></li>
+              <li><a href="/personal.html">My Personal Story</a></li>
               <li><a href="/developer.html">My Developer's Story</a></li>
-              <li><a href="/technology.html">My Toys</a></li>
+              <li><a href="/technology.html">My Hardware</a></li>
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
@@ -105,9 +99,9 @@
     <div class="container">
       <div class="hero-content">
         <h1>I'm <span class="typed" data-typed-items="Keith Tachibana, A Full-Stack Developer, A Tech Enthusiast, A Master's Graduate"></span></h1>
-        <p>Web Developer, Software Engineer, CS Graduate, IT Technician</p>
+        <p style="color:#cc2936;">Web Developer, Software Engineer, CS Graduate, IT Technician</p>
         <ul class="list-unstyled list-social">
-          <li><a href="mailto: Keith.Tachibana@gmail.com" target="_blank" rel="noreferrer" title="E-mail Keith"><i class="bi bi-envelope"></i></a></li>
+          <li><a href="mailto: Keith.Tachibana@gmail.com" target="_blank" rel="noreferrer" title="Send Keith an e-mail"><i class="bi bi-envelope"></i></a></li>
           <li><a href="https://www.facebook.com/keith.tachibana/" target="_blank" rel="noreferrer" title="Connect with Keith on Facebook"><i class="bi bi-facebook"></i></a></li>
           <li><a href="https://github.com/Keith-Tachibana/" target="_blank" rel="noreferrer" title="Connect with Keith on GitHub"><i class="bi bi-github"></i></a></li>
           <li><a href="https://www.instagram.com/keithjf1/" target="_blank" rel="noreferrer" title="Connect with Keith on Instagram"><i class="bi bi-instagram"></i></a></li>
@@ -122,10 +116,11 @@
     </video>
   </div>
   <!-- End Hero -->
-  <main id="main">
   <!-- Start About Section -->
+  <main id="main">
     <div id="about" class="paddsection">
       <div class="container">
+        <div id="quote"></div>
         <div class="row justify-content-between">
           <div class="col-lg-4 ">
             <div class="div-img-bg">
@@ -140,9 +135,13 @@
           </div>
           <div class="col-lg-7">
             <div class="about-descr">
-              <p class="p-heading">I'm a web developer who can do front-end and back-end work, with a Master's in Computer Science, and work experience as an Information Technology (IT) technician.</p>
-              <i class="bi bi-cloud-download" style="color: #cc2936; font-size: 1.25rem;"><a href="/assets/pdf/Keith_Tachibana_Resume.pdf" download="Keith_Tachibana_Resume" target="_blank"> Click here to download my curriculum vitae (C.V.)</a></i>
-              <p class="separator">I first started off working in the IT departments of various companies, building my skills in troubleshooting a myriad of issues, both hardware and software. I also worked on networking problems and administered servers on various platforms, including Linux and Microsoft Windows Server. After a while, I decided I wanted a fresh challenge and took up computer programming at the University of California, Irvine, where I earned a Master's degree. But I didn't stop there. I wanted to specialize in web development, and that led me to a coding boot camp called Learning Fuze where I developed the required skills to create full-stack web applications.</p>
+              <div class="section-title text-center">
+                <h2>About Me</h2>
+              </div>
+              <p class="p-heading" style="font-size: 1rem; line-height: 1.75rem;">I'm a disciplined, yet flexible software engineer who enjoys learning and implementing new tech stacks and collaborating with other bright minds to get the job done.</p>
+              <i class="bi bi-cloud-download" style="color: #cc2936; font-size: 1.15rem;"><a href="/assets/pdf/Keith_Tachibana_Resume.pdf" download="Keith_Tachibana_Resume" target="_blank"> Click here to download my curriculum vitae (C.V.)</a></i>
+              <p class="separator">Hi there! Thanks for taking the time to read this in order to learn more about me as a person, as well as a professional. I will try my best to describe the lessons I have learned from the past that have had the greatest impact on me today as a software developer.</p>
+              <p class="separator">I know and understand much of the Agile/SCRUM methodologies many companies utilize in order to meet deadlines and release production-ready code, since one of my Computer Science graduate courses was taught by a certified SCRUM Master who made us feel as if we were in an actual work environment. It was at this same institution that I developed my own set of best practices, based on lectures I attended and from group collaborations. This included frequent unit testing, utilizing testing suites such as Jest.js in JavaScript upon completion of a user story (i.e. application feature) or component. Moreover, learning to use source control software such as Git to combine everyone's contributions into the eventual master branch was an invaluable experience, without question.</p>
             </div>
           </div>
         </div>
@@ -152,6 +151,9 @@
     <!-- Start Services Section -->
     <div id="services">
       <div class="container">
+        <div class="section-title text-center">
+          <h2>CS Courses Taken</h2>
+        </div>
         <div class="services-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -253,7 +255,7 @@
     <div id="skills" style="background-color: #111111">
       <div class="container">
         <div class="section-title text-center">
-          <h2>tech skills</h2>
+          <h2>Tech Skills</h2>
         </div>
         <div class="row">
           <figure class="mr-4 mb-4">
@@ -774,5 +776,8 @@
     <script src="/assets/vendor/typed.js/typed.min.js"></script>
     <!-- Template Main JavaScript File -->
     <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/quotes.js"></script>
+    <script src="/assets/js/app.js"></script>
+    <script src="/assets/js/start.js"></script>
   </body>
 </html>

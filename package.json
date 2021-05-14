@@ -24,5 +24,6 @@
   "bugs": {
     "url": "https://github.com/Keith-Tachibana/www.keith-tachibana.com/issues"
   },
-  "homepage": "https://github.com/Keith-Tachibana/www.keith-tachibana.com#readme"
+  "homepage": "https://github.com/Keith-Tachibana/www.keith-tachibana.com#readme",
+  "dependencies": {}
 }
