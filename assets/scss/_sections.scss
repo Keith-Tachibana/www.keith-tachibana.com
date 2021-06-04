@@ -130,7 +130,7 @@
   .swiper-pagination {
     margin-top: 30px;
     position: relative;
-  
+
     .swiper-pagination-bullet {
       width: 12px;
       height: 12px;
@@ -138,7 +138,7 @@
       opacity: 1;
       border: 1px solid $primary;
     }
-  
+
     .swiper-pagination-bullet-active {
       background-color: $primary;
     }
@@ -186,6 +186,7 @@
 
   .portfolio-item {
     margin-bottom: 30px;
+    position: relative;
 
     .portfolio-info {
       opacity: 0;
@@ -194,6 +195,7 @@
       right: 30px;
       bottom: 0;
       z-index: 3;
+      transform: translate(-50%, -50%);
       transition: all ease-in-out 0.3s;
       background: rgba(#fff, .9);
       padding: 15px;
@@ -226,7 +228,7 @@
       .details-link {
         right: 10px;
       }
-      
+
     }
 
     &:hover {
@@ -289,12 +291,12 @@
         margin-top: 10px;
       }
     }
-    
+
   }
 
   .portfolio-description {
     padding-top: 30px;
-    
+
     h2 {
       font-size: 26px;
       font-weight: 700;
@@ -415,7 +417,7 @@
       margin-top: 25px;
     }
   }
-  
+
   .sent-message {
     display: none;
     color: #fff;
