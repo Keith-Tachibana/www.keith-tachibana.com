@@ -1118,6 +1118,11 @@ p {
 /** Width between 1200x to 0
  *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
+@media (max-width: 1200px) {
+  #skills .container .row figure {
+    width: calc(100vw / 10);
+  }
+}
 /** Width between 992px to 1199px
  *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
@@ -1175,6 +1180,10 @@ p {
     float: none;
     margin: 20px;
     display: inline-block;
+  }
+  /* Skills */
+  #skills .container .row figure {
+    font-size: 0.7rem;
   }
   /* Journal */
   #journal .journal-block .journal-info {
@@ -1246,6 +1255,10 @@ p {
     margin: 20px;
     display: inline-block;
   }
+  /* Skills */
+  #skills .container .row figure {
+    font-size: 0.55rem;
+  }
   /* Journal */
   #journal .journal-block .journal-info {
     margin-bottom: 30px;
@@ -1312,7 +1325,7 @@ p {
   }
   /* Skills */
   #skills .container .row figure figcaption {
-    font-size: 0.75rem;
+    font-size: 0.4rem;
   }
   /* Portfolio */
   #portfolio .portfolio-list .nav li {
@@ -1386,7 +1399,7 @@ p {
   }
   /* Skills */
   #skills .container .row figure figcaption {
-    font-size: 0.5rem;
+    font-size: 0.3rem;
   }
   /* Portfolio */
   #portfolio .portfolio-list .nav li {
