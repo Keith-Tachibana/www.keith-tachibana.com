@@ -596,7 +596,7 @@ p {
 }
 
 #skills .container .row figure:active {
-  box-shadow: 0 5px darkgrey;
+  box-shadow: 0 5px #333;
   transform: translateY(4px);
 }
 
@@ -617,6 +617,10 @@ p {
   margin: 0;
   opacity: 1;
   transition: 0s;
+}
+
+#skills .container .row figure figcaption:first-child:active {
+  color: #e02d00;
 }
 
 @keyframes shake {
@@ -1472,7 +1476,7 @@ p {
   }
   /* Skills */
   #skills .container .row figure figcaption {
-    font-size: 0.35rem;
+    font-size: 0.25rem;
   }
   /* Portfolio */
   #portfolio .portfolio-list .nav li {
