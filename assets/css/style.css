@@ -1067,6 +1067,13 @@ p {
   background: #111111;
 }
 
+/* Technology Page */
+.list-items li a:first-child {
+  text-decoration-line: underline !important;
+  text-decoration-style: double !important;
+  text-decoration-color: #e02d00 !important;
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
