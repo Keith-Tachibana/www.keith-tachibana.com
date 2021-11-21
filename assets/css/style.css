@@ -482,7 +482,7 @@ p {
 
 #selfie {
   grid-column: 1 / 2;
-  grid-row: 1 /2;
+  grid-row: 1 / 2;
 }
 
 #stats {
@@ -1212,7 +1212,7 @@ p {
     margin: 20px;
     display: inline-block;
   }
-  /* Skills 
+  /* Skills
   #skills .container .row figure {
     font-size: 0.7rem;
   }*/
@@ -1286,7 +1286,7 @@ p {
     margin: 20px;
     display: inline-block;
   }
-  /* Skills 
+  /* Skills
   #skills .container .row figure {
     font-size: 0.55rem;
   }*/
@@ -1354,7 +1354,7 @@ p {
     max-width: 100%;
     margin-bottom: 0;
   }
-  /* Skills 
+  /* Skills
   #skills .container .row figure figcaption {
     font-size: 0.4rem;
   } */
@@ -1428,7 +1428,7 @@ p {
     max-width: 100%;
     margin-bottom: 0;
   }
-  /* Skills 
+  /* Skills
   #skills .container .row figure figcaption {
     font-size: 0.3rem;
   } */
@@ -1501,7 +1501,7 @@ p {
     max-width: 100%;
     margin-bottom: 0;
   }
-  /* Skills 
+  /* Skills
   #skills .container .row figure figcaption {
     font-size: 0.25rem;
   } */
