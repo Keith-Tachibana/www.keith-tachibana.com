@@ -483,6 +483,7 @@ p {
 #selfie {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
+  margin-right: 20px;
 }
 
 #stats {
@@ -497,6 +498,10 @@ p {
   grid-row: 3 / 4;
   justify-self: center;
   align-self: center;
+}
+
+#langs img {
+  width: 100%;
 }
 
 #about1 {
@@ -530,7 +535,7 @@ p {
   height: 400px;
   -o-object-fit: cover;
   object-fit: cover;
-  padding-right: 15px;
+  padding-right: 25px;
 }
 
 #about .about-descr .p-heading {
@@ -667,7 +672,6 @@ p {
 }
 
 #portfolio #portfolio-flters {
-  padding: 0;
   margin: 0 auto 35px auto;
   list-style: none;
   text-align: center;
@@ -1270,9 +1274,15 @@ p {
   #about .div-img-bg {
     padding: 0;
   }
+
+  #about .container {
+	display: inline-block;
+  }
+
   #about .div-img-bg .about-img img {
     margin-top: 0%;
     margin-left: calc(0% - 0px);
+		max-width: 100%;
   }
   #about .about-descr .p-heading {
     font-size: 20px;
@@ -1341,12 +1351,16 @@ p {
   .head-info .header-content h1 {
     font-size: 32px;
   }
+  #about .container {
+	display: inline-block;
+	}
   #about .div-img-bg {
     padding: 0;
   }
   #about .div-img-bg .about-img img {
     margin-top: 0%;
     margin-left: calc(0% - 0px);
+		max-width: 100%;
   }
   #about .about-descr .p-heading {
     font-size: 20px;
@@ -1415,12 +1429,16 @@ p {
   .head-info .header-content h1 {
     font-size: 32px;
   }
+  #about .container {
+	display: inline-block;
+  }
   #about .div-img-bg {
     padding: 0;
   }
   #about .div-img-bg .about-img img {
     margin-top: 0%;
     margin-left: calc(0% - 0px);
+		max-width: 100%;
   }
   #about .about-descr .p-heading {
     font-size: 20px;
@@ -1488,12 +1506,16 @@ p {
   .head-info .header-content h1 {
     font-size: 32px;
   }
+  #about .container {
+	display: inline-block;
+  }
   #about .div-img-bg {
     padding: 0;
   }
   #about .div-img-bg .about-img img {
     margin-top: 0%;
     margin-left: calc(0% - 0px);
+		max-width: 100%;
   }
   #about .about-descr .p-heading {
     font-size: 20px;
@@ -1541,6 +1563,6 @@ p {
 	min-height: 100%;
 	width: auto;
 	height: auto;
-  z-index: -100;
+    z-index: -100;
 	transform: translateX(-50%) translateY(-50%);
 }
