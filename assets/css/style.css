@@ -1170,11 +1170,11 @@ p {
   nav {
     padding: 10px 15px;
   }
-  .nav-menu {
+  .nav-mobile {
     margin-top: 40px;
     display: none;
     float: none;
-    width: 100%;
+    width: min-content;
   }
   .nav-menu li {
     float: none;
