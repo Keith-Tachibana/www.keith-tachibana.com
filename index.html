@@ -8,7 +8,7 @@
     <meta name="msapplication-TileColor" content="#DA532C" />
     <meta name="theme-color" content="#FFFFFF" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Keith Tachibana: Welcome To My Portfolio!</title>
+    <title>Keith Tachibana: Welcome!</title>
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" sizes="32x32" href="/favicon-32x32.png" type="image/png" />
@@ -18,7 +18,7 @@
     <!-- Prefetch Google Fonts -->
     <link
       rel="prefetch"
-      href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i"
+      href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i,900,900i"
       as="font"
       type="font/woff2"
     />
@@ -30,8 +30,6 @@
     <link rel="preload" href="/assets/vendor/swiper/swiper-bundle.min.css" as="style" type="text/css" />
     <!-- Preload Main Stylesheet File -->
     <link rel="preload" href="/assets/css/style.css" as="style" type="text/css" />
-    <!-- Prefetch Google Spam Protection -->
-    <link rel="prefetch" href="https://www.google.com/recaptcha/api.js?render=6LeKMdIaAAAAANzd8fehAprJVqEv94nVAQhPVDtK" as="script" type="text/javascript" />
     <!-- Preload JavaScript Libraries -->
     <link rel="preload" href="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" as="script" />
     <link rel="preload" href="/assets/vendor/glightbox/js/glightbox.min.js" as="script" />
@@ -39,6 +37,10 @@
     <link rel="preload" href="/assets/vendor/php-email-form/validate.js" as="script" />
     <link rel="preload" href="/assets/vendor/swiper/swiper-bundle.min.js" as="script" />
     <link rel="preload" href="/assets/vendor/typed.js/typed.min.js" as="script" />
+    <!-- Prefetch Google Recaptcha -->
+    <link rel="prefetch" href="https://www.google.com/recaptcha/api.js" as="script" type="text/javascript" />
+    <link rel="preload" href="/assets/js/validator.js" as="script" type="text/javascript" />
+    <link rel="preload" href="/assets/js/contact.js" as="script" type="text/javascript" />
     <!-- Preload Template Main JavaScript File -->
     <link rel="preload" href="/assets/js/main.js" as="script" />
     <!-- Google Fonts -->
@@ -108,10 +110,6 @@
           </ul>
         </div>
       </div>
-      <video autoplay muted loop class="video-bg">
-        <source src="/assets/videos/lines.mp4" />
-        Your browser doesn't support HTML5 video playback.
-      </video>
     </div>
     <!-- End Hero -->
     <!-- Start About Section -->
@@ -120,12 +118,13 @@
         <div class="about-descr">
           <div class="section-title text-center">
             <h2>About Me</h2>
-            <p class="p-heading text-center">I'm a software engineer with experience in full-stack web development.</p>
+            <p class="p-heading text-center">I have a software engineering background. I have full-stack web development experience. I have also been known to dabble in DevOps, i.e. containers, CI/CD, load testing, etc.</p>
             <i class="bi bi-cloud-download" style="color: #cc2936; font-size: 1.15rem;"><a href="/assets/pdf/Keith_Tachibana_Resume.pdf" download="Keith_Tachibana_Resume" target="_blank">
-              Click here to download my curriculum vitae (C.V.)</a></i>
+              Click here to download my most recent resum&eacute;.</a></i>
+            <!--div class="badge-base LI-profile-badge" data-iscreate data-locale="en_US" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="keithtachibana" data-version="v1" data-glimmer data-rendered="true" data-uid="89795"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/keithtachibana?trk=profile-badge">Keith Tachibana</a></div-->
           </div>
         </div>
-        <div class="row d-flex justify-content-between">
+        <div class="row justify-content-between">
           <div class="col-lg-5 d-flex justify-content-center align-items-center">
             <div class="div-img-bg">
               <div class="about-img">
@@ -140,327 +139,335 @@
           <div class="col-lg-6">
             <p class="separator about-p">I grew up in sunny Southern California where my obsession with computers and technology started. Like others, I was completely self-taught and took it upon myself to learn as much as I could. My interest progressed steadily from building PC's to creating virtual networks and running various Linux distribution servers at home. This experience paid off when I started looking for a job after I had graduated from New York Univeristy with a Bachelor's degree in Economics and Spanish. Companies I interviewed for were willing to take a chance and hire me as a member of their Information Technology (IT) department. I was a natural fit and easily assimilated.</p>
             <p class="separator about-p">I did that for a number of years, first for a Search Engine Optimization (SEO) company and, more recently, a private airline company called JetSuite. It was at the latter when I was asked one day if I could help another department expedite a task they were doing. I did my research and in a couple hours came up with a Windows batch script that ended up saving them hours daily. While they were thrilled with the results, I was left in a cathartic state, realizing that software development was what I wanted to do.</p>
-            <p class="separator about-p">To accomplish this career change, I knew I had to start with a strong foundation, so I looked at the classes that CS undergraduates would typically take, and enrolled in them through the Extensions program at the University of California, Irvine (UCI) which allowed post-graduates to take college undergraduate courses. Eventually I had taken enough of these courses to meet the pre-requisites for the Master of Computer Science (MCS) program at UCI, where I spent 5 quarters honing my programming skills. The culimination of the program was an entire quarter spent on a final Capstone project of our choice, which myself and 2 other graduate students had to present in an auditorium with representatives from over a hundred tech companies, including Google. We ended up developing a web application for FitBit users that enabled them to sync their fitness data, which we fed into a <em>k</em>-means clustering machine learning algorithm, in order to generate a weekly workout schedule. Our app also featured a one-of-a-kind injury tracking system, which our algorithm also took into consideration. This allowed users to make sure their custom workout schedule didn't include workouts for any injured areas of their body. Overall, it was a great experience and we received a lot of positive feedback from all the tech representatives who attended.</p>
+            <p class="separator about-p">To accomplish this career change, I knew I had to start with a strong foundation, so I looked at the classes that CS undergraduates would typically take, and enrolled in them through the Extensions program at the University of California, Irvine (UCI) which allowed post-graduates to take college undergraduate courses. Eventually I had taken enough of these courses to meet the pre-requisites for the Master of Computer Science (MCS) program at UCI, where I spent 5 quarters honing my programming skills. The culimination of the program was an entire quarter spent on a final Capstone project of our choice, which myself and 2 other graduate students had to present in an auditorium with representatives from over a hundred tech companies, including Google. We ended up developing a web application for FitBit users that enabled them to sync their fitness data, which we fed into a <em>k</em>-means clustering machine learning algorithm, in order to generate a weekly workout schedule. Our app also featured a one-of-a-kind injury tracking system, which our algorithm also took into consideration. This allowed users to make sure their custom workout schedule didn't include workouts for any injured areas of their body. We received a lot of positive feedback from all the tech representatives who attended.</p>
+          </div>
+          <div id="about1">
+            <p class="separator about-p">I grew up in sunny Southern California where my obsession with computers and technology started. Like others, I was completely self-taught and took it upon myself to learn as much as I could. My interest progressed steadily from building PC's to creating virtual networks and running various Linux distribution servers at home. This experience paid off when I started looking for a job after I had graduated from New York Univeristy with a Bachelor's degree in Economics and Spanish. Companies I interviewed for were willing to take a chance and hire me as a member of their Information Technology (IT) department. I was a natural fit and easily assimilated.
+            </p>
+          </div>
+          <div id="about2">
+            <p class="separator about-p">I did that for a number of years, first for a Search Engine Optimization (SEO) company and, more recently, a private airline company called JetSuite. It was at the latter when I was asked one day if I could help another department expedite a task they were doing. I did my research and in a couple hours came up with a Windows batch script that ended up saving them hours daily. While they were thrilled with the results, I was left in a cathartic state, realizing that software development was what I wanted to do.
+            </p>
+          </div>
+          <div id="about3">
+            <p class="separator about-p">To accomplish this career change, I knew I had to start with a strong foundation, so I looked at the classes that CS undergraduates would typically take, and enrolled in them through the Extensions program at the University of California, Irvine (UCI) which allowed post-graduates to take college undergraduate courses. Eventually I had taken enough of these courses to meet the pre-requisites for the Master of Computer Science (MCS) program at UCI, where I spent 5 quarters honing my programming skills. The culimination of the program was an entire quarter spent on a final Capstone project of our choice, which myself and 2 other graduate students had to present in an auditorium with representatives from over a hundred tech companies, including Google. We ended up developing a web application for FitBit users that enabled them to sync their fitness data, which we fed into a <em>k</em>-means clustering machine learning algorithm, in order to generate a weekly workout schedule. Our app also featured a one-of-a-kind injury tracking system, which our algorithm also took into consideration. This allowed users to make sure their custom workout schedule didn't include workouts for any injured areas of their body. We received a lot of positive feedback from all the tech representatives who attended.
+            </p>
           </div>
         </div>
       </div>
       <!-- End About -->
       <!-- Start Services Section -->
-      <div id="services">
-        <div class="container">
-          <div class="section-title text-center">
-            <h2>CS Courses Taken</h2>
-          </div>
-          <div class="services-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="services-block">
-                  <i class="bi bi-question-square"></i>
-                  <span>Boolean Algebra &amp; Logic</span>
-                  <p class="separator">Relations and their properties; Boolean algebra, formal languages; finite automata</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="services-block">
-                  <i class="bi bi-lock"></i>
-                  <span>Computer Security</span>
-                  <p class="separator">Authorization, authentication, data integrity, malware, operating systems security, network security, web security, and basic cryptography</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="services-block">
-                  <i class="bi bi-cpu"></i>
-                  <span>Computer Systems Architecture</span>
-                  <p class="separator">Study of architectural issues and their relation to technology and software: design of processor, interconnections, and memory hierarchies</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="services-block">
-                  <i class="bi bi-wifi"></i>
-                  <span>Computer and Communication Networks</span>
-                  <p class="separator">Internet architecture, protocols, and services; advanced concepts of IP and TCP, including addressing, internetworking, forwarding, routing, and implementations of flow and congestion control</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="services-block">
-                  <i class="bi bi-table"></i>
-                  <span>Data Structures with Applications</span>
-                  <p class="separator">Data structures and their associated management algorithms, including their application and analysis</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="services-block">
-                  <i class="bi bi-sort-numeric-up"></i>
-                  <span>Fundamentals of Algorithms</span>
-                  <p class="separator">Fundamental concepts in the design and analysis of algorithms, including greedy algorithms, deterministic and randomized graph algorithms, models of network flow, and NP-completeness</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="services-block">
-                  <i class="bi bi-person-bounding-box"></i>
-                  <span>Intro to Artificial Intelligence</span>
-                  <p class="separator">The study of theories and computational models for systems which behave and act in an intelligent manner, including knowledge representation, search, deduction, planning, and probabilistic reasoning</p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="services-block">
-                  <i class="bi bi-layers"></i>
-                  <span>Intro to Linear Algebra</span>
-                  <p class="separator">Systems of linear equations, matrix operations, determinants, eigenvalues and eigenvectors, vector spaces, subspaces, and dimension
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="services-block">
-                  <i class="bi bi-broadcast"></i>
-                  <span>Intro to the Internet of Things (IoT)</span>
-                  <p class="separator">A comprehensive understanding of the hardware and software technology, the communication protocols, and the security and privacy requirements underlying the IoT ecosystem
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="services-block">
-                  <i class="bi bi-diagram-3"></i>
-                  <span>Machine Learning and Data Mining</span>
-                  <p class="separator">Learning algorithms for classifications, regression, and clustering, with emphasis on discriminative classification methods such as decision trees, rules, nearest neighbor, linear models, and naive Bayes
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="services-block">
-                  <i class="bi bi-hdd-network"></i>
-                  <span>Principles of Data Management</span>
-                  <p class="separator">Fundamental principles underlying data management systems, including storage management, buffer management, record-oriented file systems, access methods, query optimizations, and query processing
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="services-block">
-                  <i class="bi bi-graph-up"></i>
-                  <span>Scientific Computing</span>
-                  <p class="separator">Overview of widely used principles and methods of numerical and scientific computing, including methods in floating-point, linear algebra, optimization, simulation, modeling, and probability&#47;statistics
-                  </p>
-                </div>
-              </div>
+      <div id="services" class="container">
+        <div class="section-title text-center">
+          <h2>CS Courses Taken</h2>
+        </div>
+        <div class="services-slider swiper" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+            <div class="services-block">
+                <i class="bi bi-question-square"></i>
+                <span>Boolean Algebra &amp; Logic</span>
+                <p class="separator">Relations and their properties; Boolean algebra, formal languages; finite automata</p>
             </div>
-            <div class="swiper-pagination"></div>
-          </div>
+            </div>
+            <div class="swiper-slide">
+            <div class="services-block">
+                <i class="bi bi-lock"></i>
+                <span>Computer Security</span>
+                <p class="separator">Authorization, authentication, data integrity, malware, operating systems security, network security, web security, and basic cryptography</p>
+            </div>
+            </div>
+            <div class="swiper-slide">
+            <div class="services-block">
+                <i class="bi bi-cpu"></i>
+                <span>Computer Systems Architecture</span>
+                <p class="separator">Study of architectural issues and their relation to technology and software: design of processor, interconnections, and memory hierarchies</p>
+            </div>
+            </div>
+            <div class="swiper-slide">
+            <div class="services-block">
+                <i class="bi bi-wifi"></i>
+                <span>Computer and Communication Networks</span>
+                <p class="separator">Internet architecture, protocols, and services; advanced concepts of IP and TCP, including addressing, internetworking, forwarding, routing, and implementations of flow and congestion control</p>
+            </div>
+            </div>
+            <div class="swiper-slide">
+            <div class="services-block">
+                <i class="bi bi-table"></i>
+                <span>Data Structures with Applications</span>
+                <p class="separator">Data structures and their associated management algorithms, including their application and analysis</p>
+            </div>
+            </div>
+            <div class="swiper-slide">
+            <div class="services-block">
+                <i class="bi bi-sort-numeric-up"></i>
+                <span>Fundamentals of Algorithms</span>
+                <p class="separator">Fundamental concepts in the design and analysis of algorithms, including greedy algorithms, deterministic and randomized graph algorithms, models of network flow, and NP-completeness</p>
+            </div>
+            </div>
+            <div class="swiper-slide">
+            <div class="services-block">
+                <i class="bi bi-person-bounding-box"></i>
+                <span>Intro to Artificial Intelligence</span>
+                <p class="separator">The study of theories and computational models for systems which behave and act in an intelligent manner, including knowledge representation, search, deduction, planning, and probabilistic reasoning</p>
+            </div>
+            </div>
+            <div class="swiper-slide">
+            <div class="services-block">
+                <i class="bi bi-layers"></i>
+                <span>Intro to Linear Algebra</span>
+                <p class="separator">Systems of linear equations, matrix operations, determinants, eigenvalues and eigenvectors, vector spaces, subspaces, and dimension
+                </p>
+            </div>
+            </div>
+            <div class="swiper-slide">
+            <div class="services-block">
+                <i class="bi bi-broadcast"></i>
+                <span>Intro to the Internet of Things (IoT)</span>
+                <p class="separator">A comprehensive understanding of the hardware and software technology, the communication protocols, and the security and privacy requirements underlying the IoT ecosystem
+                </p>
+            </div>
+            </div>
+            <div class="swiper-slide">
+            <div class="services-block">
+                <i class="bi bi-diagram-3"></i>
+                <span>Machine Learning and Data Mining</span>
+                <p class="separator">Learning algorithms for classifications, regression, and clustering, with emphasis on discriminative classification methods such as decision trees, rules, nearest neighbor, linear models, and naive Bayes
+                </p>
+            </div>
+            </div>
+            <div class="swiper-slide">
+            <div class="services-block">
+                <i class="bi bi-hdd-network"></i>
+                <span>Principles of Data Management</span>
+                <p class="separator">Fundamental principles underlying data management systems, including storage management, buffer management, record-oriented file systems, access methods, query optimizations, and query processing
+                </p>
+            </div>
+            </div>
+            <div class="swiper-slide">
+            <div class="services-block">
+                <i class="bi bi-graph-up"></i>
+                <span>Scientific Computing</span>
+                <p class="separator">Overview of widely used principles and methods of numerical and scientific computing, including methods in floating-point, linear algebra, optimization, simulation, modeling, and probability&#47;statistics
+                </p>
+            </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
         </div>
       </div>
       <!-- End Services -->
       <!-- Start Skills Section -->
-      <div id="skills" style="background-color: #111111">
-        <div class="container">
-          <div class="section-title text-center">
-            <h2>Tech Skills</h2>
-          </div>
-          <div class="row">
-            <figure class="mr-4 mb-4">
-              <picture>
-                <source
-                  srcset="/assets/images/skills/bootstrap-small.webp 1x, /assets/images/skills/bootstrap-medium.webp 2x, /assets/images/skills/bootstrap-large.webp 3x"
-                  type="image/webp" />
-                <source srcset="/assets/images/skills/bootstrap.png" type="image/png" />
-                <img src="/assets/images/skills/bootstrap.png" alt="Bootstrap" class="img-fluid" height="128" width="128" />
-              </picture>
-              <figcaption class="text-white text-center mt-2">Bootstrap</figcaption>
-            </figure>
-            <figure class="mr-4 mb-4">
-              <picture>
-                <source
-                  srcset="/assets/images/skills/cpp-small.webp 1x, /assets/images/skills/cpp-medium.webp 2x, /assets/images/skills/cpp-large.webp 3x"
-                  type="image/webp" />
-                <source srcset="/assets/images/skills/cpp.png" type="image/png" />
-                <img src="/assets/images/skills/cpp.png" alt="C++" class="img-fluid" height="128" width="128" />
-              </picture>
-              <figcaption class="text-white text-center mt-2">C++</figcaption>
-            </figure>
-            <figure class="mr-4 mb-4">
-              <picture>
-                <source
-                  srcset="/assets/images/skills/css-small.webp 1x, /assets/images/skills/css-medium.webp 2x, /assets/images/skills/css-large.webp 3x"
-                  type="image/webp" />
-                <source srcset="/assets/images/skills/css.png" type="image/png" />
-                <img src="/assets/images/skills/css.png" alt="CSS" class="img-fluid" height="128" width="128" />
-              </picture>
-              <figcaption class="text-white text-center mt-2">CSS</figcaption>
-            </figure>
-            <figure class="mr-4 mb-4">
-              <picture>
-                <source
-                  srcset="/assets/images/skills/express-small.webp 1x, /assets/images/skills/express-medium.webp 2x, /assets/images/skills/express-large.webp 3x"
-                  type="image/webp" />
-                <source srcset="/assets/images/skills/express.png" type="image/png" />
-                <img src="/assets/images/skills/express.png" alt="Express.js" class="img-fluid" height="128" width="128" />
-              </picture>
-              <figcaption class="text-white text-center mt-2">Express.js</figcaption>
-            </figure>
-            <figure class="mr-4 mb-4">
-              <picture>
-                <source
-                  srcset="/assets/images/skills/git-small.webp 1x, /assets/images/skills/git-medium.webp 2x, /assets/images/skills/git-large.webp 3x"
-                  type="image/webp" />
-                <source srcset="/assets/images/skills/git.png" type="image/png" />
-                <img src="/assets/images/skills/git.png" alt="Git" class="img-fluid" height="128" width="128" />
-              </picture>
-              <figcaption class="text-white text-center mt-2">Git</figcaption>
-            </figure>
-            <figure class="mr-4 mb-4">
-              <picture>
-                <source
-                  srcset="/assets/images/skills/github-small.webp 1x, /assets/images/skills/github-medium.webp 2x, /assets/images/skills/github-large.webp 3x"
-                  type="image/webp" />
-                <source srcset="/assets/images/skills/github.png" type="image/png" />
-                <img src="/assets/images/skills/github.png" alt="GitHub" class="img-fluid" height="128" width="128" />
-              </picture>
-              <figcaption class="text-white text-center mt-2">GitHub</figcaption>
-            </figure>
-            <figure class="mr-4 mb-4">
-              <picture>
-                <source
-                  srcset="/assets/images/skills/heroku-small.webp 1x, /assets/images/skills/heroku-medium.webp 2x, /assets/images/skills/heroku-large.webp 3x"
-                  type="image/webp" />
-                <source srcset="/assets/images/skills/heroku.png" type="image/png" />
-                <img src="/assets/images/skills/heroku.png" alt="Heroku" class="img-fluid" height="128" width="128" />
-              </picture>
-              <figcaption class="text-white text-center mt-2">Heroku</figcaption>
-            </figure>
-            <figure class="mr-4 mb-4">
-              <picture>
-                <source
-                  srcset="/assets/images/skills/html-small.webp 1x, /assets/images/skills/html-medium.webp 2x, /assets/images/skills/html-large.webp 3x"
-                  type="image/webp" />
-                <source srcset="/assets/images/skills/html.png" type="image/png" />
-                <img src="/assets/images/skills/html.png" alt="HTML" class="img-fluid" height="128" width="128" />
-              </picture>
-              <figcaption class="text-white text-center mt-2">HTML</figcaption>
-            </figure>
-            <figure class="mr-4 mb-4">
-              <picture>
-                <source
-                  srcset="/assets/images/skills/javascript-small.webp 1x, /assets/images/skills/javascript-medium.webp 2x, /assets/images/skills/javascript-large.webp 3x"
-                  type="image/webp" />
-                <source srcset="/assets/images/skills/javascript.png" type="image/png" />
-                <img src="/assets/images/skills/javascript.png" alt="JavaScript" class="img-fluid" height="128" width="128" />
-              </picture>
-              <figcaption class="text-white text-center mt-2">JavaScript</figcaption>
-            </figure>
-            <figure class="mr-4 mb-4">
-              <picture>
-                <source
-                  srcset="/assets/images/skills/jquery-small.webp 1x, /assets/images/skills/jquery-medium.webp 2x, /assets/images/skills/jquery-large.webp 3x"
-                  type="image/webp" />
-                <source srcset="/assets/images/skills/jquery.png" type="image/png" />
-                <img src="/assets/images/skills/jquery.png" alt="jQuery" class="img-fluid" height="128" width="128" />
-              </picture>
-              <figcaption class="text-white text-center mt-2">jQuery</figcaption>
-            </figure>
-            <figure class="mr-4 mb-4">
-              <picture>
-                <source
-                  srcset="/assets/images/skills/jupyter-small.webp 1x, /assets/images/skills/jupyter-medium.webp 2x, /assets/images/skills/jupyter-large.webp 3x"
-                  type="image/webp" />
-                <source srcset="/assets/images/skills/jupyter.png" type="image/png" />
-                <img src="/assets/images/skills/jupyter.png" alt="Jupyter Notebook" class="img-fluid" height="128" width="128" />
-              </picture>
-              <figcaption class="text-white text-center mt-2">Jupyter Notebook</figcaption>
-            </figure>
-            <figure class="mr-4 mb-4">
-              <picture>
-                <source
-                  srcset="/assets/images/skills/linux-small.webp 1x, /assets/images/skills/linux-medium.webp 2x, /assets/images/skills/linux-large.webp 3x"
-                  type="image/webp" />
-                <source srcset="/assets/images/skills/linux.png" type="image/png" />
-                <img src="/assets/images/skills/linux.png" alt="Linux" class="img-fluid" height="128" width="128" />
-              </picture>
-              <figcaption class="text-white text-center mt-2">Linux</figcaption>
-            </figure>
-            <figure class="mr-4 mb-4">
-              <picture>
-                <source
-                  srcset="/assets/images/skills/mongodb-small.webp 1x, /assets/images/skills/mongodb-medium.webp 2x, /assets/images/skills/mongodb-large.webp 3x"
-                  type="image/webp" />
-                <source srcset="/assets/images/skills/mongodb.png" type="image/png" />
-                <img src="/assets/images/skills/mongodb.png" alt="MongoDB" class="img-fluid" height="128" width="128" />
-              </picture>
-              <figcaption class="text-white text-center mt-2">MongoDB</figcaption>
-            </figure>
-            <figure class="mr-4 mb-4">
-              <picture>
-                <source
-                  srcset="/assets/images/skills/nginx-small.webp 1x, /assets/images/skills/nginx-medium.webp 2x, /assets/images/skills/nginx-large.webp 3x"
-                  type="image/webp" />
-                <source srcset="/assets/images/skills/nginx.png" type="image/png" />
-                <img src="/assets/images/skills/nginx.png" alt="Nginx" class="img-fluid" height="128" width="128" />
-              </picture>
-              <figcaption class="text-white text-center mt-2">Nginx</figcaption>
-            </figure>
-            <figure class="mr-4 mb-4">
-              <picture>
-                <source
-                  srcset="/assets/images/skills/node-small.webp 1x, /assets/images/skills/node-medium.webp 2x, /assets/images/skills/node-large.webp 3x"
-                  type="image/webp" />
-                <source srcset="/assets/images/skills/node.png" type="image/png" />
-                <img src="/assets/images/skills/node.png" alt="Node.js" class="img-fluid" height="128" width="128" />
-              </picture>
-              <figcaption class="text-white text-center mt-2">Node.js</figcaption>
-            </figure>
-            <figure class="mr-4 mb-4">
-              <picture>
-                <source
-                  srcset="/assets/images/skills/npm-small.webp 1x, /assets/images/skills/npm-medium.webp 2x, /assets/images/skills/npm-large.webp 3x"
-                  type="image/webp" />
-                <source srcset="/assets/images/skills/npm.png" type="image/png" />
-                <img src="/assets/images/skills/npm.png" alt="NPM" class="img-fluid" height="128" width="128" />
-              </picture>
-              <figcaption class="text-white text-center mt-2">NPM</figcaption>
-            </figure>
-            <figure class="mr-4 mb-4">
-              <picture>
-                <source
-                  srcset="/assets/images/skills/postgresql-small.webp 1x, /assets/images/skills/postgresql-medium.webp 2x, /assets/images/skills/postgresql-large.webp 3x"
-                  type="image/webp" />
-                <source srcset="/assets/images/skills/postgresql.png" type="image/png" />
-                <img src="/assets/images/skills/postgresql.png" alt="PostgreSQL" class="img-fluid" height="128" width="128" />
-              </picture>
-              <figcaption class="text-white text-center mt-2">PostgreSQL</figcaption>
-            </figure>
-            <figure class="mr-4 mb-4">
-              <picture>
-                <source
-                  srcset="/assets/images/skills/python-small.webp 1x, /assets/images/skills/python-medium.webp 2x, /assets/images/skills/python-large.webp 3x"
-                  type="image/webp" />
-                <source srcset="/assets/images/skills/python.png" type="image/png" />
-                <img src="/assets/images/skills/python.png" alt="Python" class="img-fluid" height="128" width="128" />
-              </picture>
-              <figcaption class="text-white text-center mt-2">Python</figcaption>
-            </figure>
-            <figure class="mr-4 mb-4">
-              <picture>
-                <source
-                  srcset="/assets/images/skills/react-small.webp 1x, /assets/images/skills/react-medium.webp 2x, /assets/images/skills/react-large.webp 3x"
-                  type="image/webp" />
-                <source srcset="/assets/images/skills/react.png" type="image/png" />
-                <img src="/assets/images/skills/react.png" alt="React.js" class="img-fluid" height="128" width="128" />
-              </picture>
-              <figcaption class="text-white text-center mt-2">React.js</figcaption>
-            </figure>
-            <figure class="mr-4 mb-4">
-              <picture>
-                <source
-                  srcset="/assets/images/skills/vue-small.webp 1x, /assets/images/skills/vue-medium.webp 2x, /assets/images/skills/vue-large.webp 3x"
-                  type="image/webp" />
-                <source srcset="/assets/images/skills/vue.png" type="image/png" />
-                <img src="/assets/images/skills/vue.png" alt="Vue.js" class="img-fluid" height="128" width="128" />
-              </picture>
-              <figcaption class="text-white text-center mt-2">Vue.js</figcaption>
-            </figure>
-          </div>
+      <div id="skills" class="container" style="background-color: #111111">
+        <div class="section-title text-center">
+          <h2>Tech Skills</h2>
+        </div>
+        <div class="row">
+          <figure class="mr-4 mb-4">
+            <picture>
+            <source
+                srcset="/assets/images/skills/bootstrap-small.webp 1x, /assets/images/skills/bootstrap-medium.webp 2x, /assets/images/skills/bootstrap-large.webp 3x"
+                type="image/webp" />
+            <source srcset="/assets/images/skills/bootstrap.png" type="image/png" />
+            <img src="/assets/images/skills/bootstrap.png" alt="Bootstrap" class="img-fluid" height="128" width="128" />
+            </picture>
+            <figcaption class="text-center mt-2">Bootstrap</figcaption>
+          </figure>
+          <figure class="mr-4 mb-4">
+            <picture>
+            <source
+                srcset="/assets/images/skills/cpp-small.webp 1x, /assets/images/skills/cpp-medium.webp 2x, /assets/images/skills/cpp-large.webp 3x"
+                type="image/webp" />
+            <source srcset="/assets/images/skills/cpp.png" type="image/png" />
+            <img src="/assets/images/skills/cpp.png" alt="C++" class="img-fluid" height="128" width="128" />
+            </picture>
+            <figcaption class="text-center mt-2">C++</figcaption>
+          </figure>
+          <figure class="mr-4 mb-4">
+            <picture>
+            <source
+                srcset="/assets/images/skills/css-small.webp 1x, /assets/images/skills/css-medium.webp 2x, /assets/images/skills/css-large.webp 3x"
+                type="image/webp" />
+            <source srcset="/assets/images/skills/css.png" type="image/png" />
+            <img src="/assets/images/skills/css.png" alt="CSS" class="img-fluid" height="128" width="128" />
+            </picture>
+            <figcaption class="text-center mt-2">CSS</figcaption>
+          </figure>
+          <figure class="mr-4 mb-4">
+            <picture>
+            <source
+                srcset="/assets/images/skills/express-small.webp 1x, /assets/images/skills/express-medium.webp 2x, /assets/images/skills/express-large.webp 3x"
+                type="image/webp" />
+            <source srcset="/assets/images/skills/express.png" type="image/png" />
+            <img src="/assets/images/skills/express.png" alt="Express.js" class="img-fluid" height="128" width="128" />
+            </picture>
+            <figcaption class="text-center mt-2">Express.js</figcaption>
+          </figure>
+          <figure class="mr-4 mb-4">
+            <picture>
+            <source
+                srcset="/assets/images/skills/git-small.webp 1x, /assets/images/skills/git-medium.webp 2x, /assets/images/skills/git-large.webp 3x"
+                type="image/webp" />
+            <source srcset="/assets/images/skills/git.png" type="image/png" />
+            <img src="/assets/images/skills/git.png" alt="Git" class="img-fluid" height="128" width="128" />
+            </picture>
+            <figcaption class="text-center mt-2">Git</figcaption>
+          </figure>
+          <figure class="mr-4 mb-4">
+            <picture>
+            <source
+                srcset="/assets/images/skills/github-small.webp 1x, /assets/images/skills/github-medium.webp 2x, /assets/images/skills/github-large.webp 3x"
+                type="image/webp" />
+            <source srcset="/assets/images/skills/github.png" type="image/png" />
+            <img src="/assets/images/skills/github.png" alt="GitHub" class="img-fluid" height="128" width="128" />
+            </picture>
+            <figcaption class="text-center mt-2">GitHub</figcaption>
+          </figure>
+          <figure class="mr-4 mb-4">
+            <picture>
+            <source
+                srcset="/assets/images/skills/heroku-small.webp 1x, /assets/images/skills/heroku-medium.webp 2x, /assets/images/skills/heroku-large.webp 3x"
+                type="image/webp" />
+            <source srcset="/assets/images/skills/heroku.png" type="image/png" />
+            <img src="/assets/images/skills/heroku.png" alt="Heroku" class="img-fluid" height="128" width="128" />
+            </picture>
+            <figcaption class="text-center mt-2">Heroku</figcaption>
+          </figure>
+          <figure class="mr-4 mb-4">
+            <picture>
+            <source
+                srcset="/assets/images/skills/html-small.webp 1x, /assets/images/skills/html-medium.webp 2x, /assets/images/skills/html-large.webp 3x"
+                type="image/webp" />
+            <source srcset="/assets/images/skills/html.png" type="image/png" />
+            <img src="/assets/images/skills/html.png" alt="HTML" class="img-fluid" height="128" width="128" />
+            </picture>
+            <figcaption class="text-center mt-2">HTML</figcaption>
+          </figure>
+          <figure class="mr-4 mb-4">
+            <picture>
+            <source
+                srcset="/assets/images/skills/javascript-small.webp 1x, /assets/images/skills/javascript-medium.webp 2x, /assets/images/skills/javascript-large.webp 3x"
+                type="image/webp" />
+            <source srcset="/assets/images/skills/javascript.png" type="image/png" />
+            <img src="/assets/images/skills/javascript.png" alt="JavaScript" class="img-fluid" height="128" width="128" />
+            </picture>
+            <figcaption class="text-center mt-2">JavaScript</figcaption>
+          </figure>
+          <figure class="mr-4 mb-4">
+            <picture>
+            <source
+                srcset="/assets/images/skills/jquery-small.webp 1x, /assets/images/skills/jquery-medium.webp 2x, /assets/images/skills/jquery-large.webp 3x"
+                type="image/webp" />
+            <source srcset="/assets/images/skills/jquery.png" type="image/png" />
+            <img src="/assets/images/skills/jquery.png" alt="jQuery" class="img-fluid" height="128" width="128" />
+            </picture>
+            <figcaption class="text-center mt-2">jQuery</figcaption>
+          </figure>
+          <figure class="mr-4 mb-4">
+            <picture>
+            <source
+                srcset="/assets/images/skills/jupyter-small.webp 1x, /assets/images/skills/jupyter-medium.webp 2x, /assets/images/skills/jupyter-large.webp 3x"
+                type="image/webp" />
+            <source srcset="/assets/images/skills/jupyter.png" type="image/png" />
+            <img src="/assets/images/skills/jupyter.png" alt="Jupyter Notebook" class="img-fluid" height="128" width="128" />
+            </picture>
+            <figcaption class="text-center mt-2">Jupyter Notebook</figcaption>
+          </figure>
+          <figure class="mr-4 mb-4">
+            <picture>
+            <source
+                srcset="/assets/images/skills/linux-small.webp 1x, /assets/images/skills/linux-medium.webp 2x, /assets/images/skills/linux-large.webp 3x"
+                type="image/webp" />
+            <source srcset="/assets/images/skills/linux.png" type="image/png" />
+            <img src="/assets/images/skills/linux.png" alt="Linux" class="img-fluid" height="128" width="128" />
+            </picture>
+            <figcaption class="text-center mt-2">Linux</figcaption>
+          </figure>
+          <figure class="mr-4 mb-4">
+            <picture>
+            <source
+                srcset="/assets/images/skills/mongodb-small.webp 1x, /assets/images/skills/mongodb-medium.webp 2x, /assets/images/skills/mongodb-large.webp 3x"
+                type="image/webp" />
+            <source srcset="/assets/images/skills/mongodb.png" type="image/png" />
+            <img src="/assets/images/skills/mongodb.png" alt="MongoDB" class="img-fluid" height="128" width="128" />
+            </picture>
+            <figcaption class="text-center mt-2">MongoDB</figcaption>
+          </figure>
+          <figure class="mr-4 mb-4">
+            <picture>
+            <source
+                srcset="/assets/images/skills/nginx-small.webp 1x, /assets/images/skills/nginx-medium.webp 2x, /assets/images/skills/nginx-large.webp 3x"
+                type="image/webp" />
+            <source srcset="/assets/images/skills/nginx.png" type="image/png" />
+            <img src="/assets/images/skills/nginx.png" alt="Nginx" class="img-fluid" height="128" width="128" />
+            </picture>
+            <figcaption class="text-center mt-2">Nginx</figcaption>
+          </figure>
+          <figure class="mr-4 mb-4">
+            <picture>
+            <source
+                srcset="/assets/images/skills/node-small.webp 1x, /assets/images/skills/node-medium.webp 2x, /assets/images/skills/node-large.webp 3x"
+                type="image/webp" />
+            <source srcset="/assets/images/skills/node.png" type="image/png" />
+            <img src="/assets/images/skills/node.png" alt="Node.js" class="img-fluid" height="128" width="128" />
+            </picture>
+            <figcaption class="text-center mt-2">Node.js</figcaption>
+          </figure>
+          <figure class="mr-4 mb-4">
+            <picture>
+            <source
+                srcset="/assets/images/skills/npm-small.webp 1x, /assets/images/skills/npm-medium.webp 2x, /assets/images/skills/npm-large.webp 3x"
+                type="image/webp" />
+            <source srcset="/assets/images/skills/npm.png" type="image/png" />
+            <img src="/assets/images/skills/npm.png" alt="NPM" class="img-fluid" height="128" width="128" />
+            </picture>
+            <figcaption class="text-center mt-2">NPM</figcaption>
+          </figure>
+          <figure class="mr-4 mb-4">
+            <picture>
+            <source
+                srcset="/assets/images/skills/postgresql-small.webp 1x, /assets/images/skills/postgresql-medium.webp 2x, /assets/images/skills/postgresql-large.webp 3x"
+                type="image/webp" />
+            <source srcset="/assets/images/skills/postgresql.png" type="image/png" />
+            <img src="/assets/images/skills/postgresql.png" alt="PostgreSQL" class="img-fluid" height="128" width="128" />
+            </picture>
+            <figcaption class="text-center mt-2">PostgreSQL</figcaption>
+          </figure>
+          <figure class="mr-4 mb-4">
+            <picture>
+            <source
+                srcset="/assets/images/skills/python-small.webp 1x, /assets/images/skills/python-medium.webp 2x, /assets/images/skills/python-large.webp 3x"
+                type="image/webp" />
+            <source srcset="/assets/images/skills/python.png" type="image/png" />
+            <img src="/assets/images/skills/python.png" alt="Python" class="img-fluid" height="128" width="128" />
+            </picture>
+            <figcaption class="text-center mt-2">Python</figcaption>
+          </figure>
+          <figure class="mr-4 mb-4">
+            <picture>
+            <source
+                srcset="/assets/images/skills/react-small.webp 1x, /assets/images/skills/react-medium.webp 2x, /assets/images/skills/react-large.webp 3x"
+                type="image/webp" />
+            <source srcset="/assets/images/skills/react.png" type="image/png" />
+            <img src="/assets/images/skills/react.png" alt="React.js" class="img-fluid" height="128" width="128" />
+            </picture>
+            <figcaption class="text-center mt-2">React.js</figcaption>
+          </figure>
+          <figure class="mr-4 mb-4">
+            <picture>
+            <source
+                srcset="/assets/images/skills/vue-small.webp 1x, /assets/images/skills/vue-medium.webp 2x, /assets/images/skills/vue-large.webp 3x"
+                type="image/webp" />
+            <source srcset="/assets/images/skills/vue.png" type="image/png" />
+            <img src="/assets/images/skills/vue.png" alt="Vue.js" class="img-fluid" height="128" width="128" />
+            </picture>
+            <figcaption class="text-center mt-2">Vue.js</figcaption>
+          </figure>
         </div>
       </div>
       <!-- End Skills -->
       <!-- Start Portfolio Section -->
-      <div id="portfolio" class="paddsection" style="background-color: #111111;">
+      <div id="portfolio" class="paddsection container" style="background-color: #333333;">
         <div class="container">
           <div class="section-title text-center">
             <h2>My Portfolio</h2>
@@ -473,10 +480,10 @@
                 <li data-filter="*" class="filter-active">All</li>
                 <li data-filter=".filter-static">Static Web Apps</li>
                 <li data-filter=".filter-full">Full-Stack Web Apps</li>
-                <li data-filter=".filter-react">React.js Front-End</li>
-                <li data-filter=".filter-express">Node.js/Express.js Back-End</li>
+                <li data-filter=".filter-react">React.js Front-End Apps</li>
+                <li data-filter=".filter-express">Node.js/Express.js Back-End Apps</li>
                 <li data-filter=".filter-sql">RDBMS (SQL) Apps</li>
-                <li data-filter=".filter-nosql">NoSQL Document Store Apps</li>
+                <li data-filter=".filter-nosql">No-SQL Document Store Apps</li>
               </ul>
             </div>
           </div>
@@ -503,7 +510,7 @@
                       <a href="https://github.com/Keith-Tachibana/EZ-FIT" class="details-link" title="View source code"><i class="bx bx-code-alt"></i></a>
                     </div>
                   </div>
-                  <p><em><a href="https://ezfit.keith-tachibana.com/" target="_blank" rel="noreferrer">(click to demo)</a></em></p>
+                  <p><em><a href="https://ezfit2.herokuapp.com/" target="_blank" rel="noreferrer">(host currently down)</a></em></p>
                   <hr />
                 </div>
                 <p>
@@ -621,7 +628,7 @@
                 <h6>Student Grading</h6>
                 <div class="portfolio-icons-container">
                   <a href="/assets/images/portfolio/studentGradeTable.png" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Screenshot of Student Grading"><i class="bx bxs-image-add"></i></a>
-                  <a href="https://github.com/Keith-Tachibana/sgt-portfolio" class="details-link" title="More Details"><i class="bx bx-code-alt"></i></a>
+                  <a href="https://github.com/Keith-Tachibana/Student_Grade_Table" class="details-link" title="View source code"><i class="bx bx-code-alt"></i></a>
                 </div>
               </div>
                   <p><em><a href="https://grades.keith-tachibana.com/" target="_blank" rel="noreferrer">(click to demo)</a></em></p>
@@ -637,79 +644,84 @@
       </div>
       <!-- End Portfolio -->
       <!-- Start Journal Section -->
-      <div id="journal" class="text-left paddsection">
+      <div id="journal" class="text-left paddsection container">
         <div class="container">
           <div class="section-title text-center">
-            <h2>about me</h2>
+            <h2>quick bio</h2>
           </div>
         </div>
         <div class="container">
-          <div class="journal-block">
+            <div class="journal-block">
             <div class="row">
-              <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6">
                 <div class="journal-info">
-                  <a href="/personal.html">
+                    <a href="/personal.html">
                     <picture>
-                      <source
+                        <source
                         srcset="/assets/images/journal/personal-small.webp 1x, /assets/images/journal/personal-medium.webp 2x, /assets/images/journal/personal-large.webp 3x" type="image/webp" />
-                      <source srcset="/assets/images/journal/personal.png" type="image/png" />
-                      <img src="/assets/images/journal/personal.png" alt="My Personal Story" class="img-fluid" />
+                        <source srcset="/assets/images/journal/personal.png" type="image/png" />
+                        <img src="/assets/images/journal/personal.png" alt="My Personal Story" class="img-fluid" />
                     </picture>
-                  </a>
-                  <div class="journal-txt">
+                    </a>
+                    <div class="journal-txt">
                     <h4><a href="/personal.html">My Life Outside Of Programming</a></h4>
                     <p class="separator">Written like a mini-biography, but with far less words, I describe some of the most influential and life-changing events that have shaped who I am today.
                     </p>
-                  </div>
+                    </div>
                 </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
+                </div>
+                <div class="col-lg-4 col-md-6">
                 <div class="journal-info">
-                  <a href="/developer.html">
+                    <a href="/developer.html">
                     <picture>
-                      <source
+                        <source
                         srcset="/assets/images/journal/developer-small.webp 1x, /assets/images/journal/developer-medium.webp 2x, /assets/images/journal/developer-large.webp 3x" type="image/webp" />
-                      <source srcset="/assets/images/journal/developer.png" type="image/png" />
-                      <img src="/assets/images/journal/developer.png" alt="My Developer Story" class="img-fluid" />
+                        <source srcset="/assets/images/journal/developer.png" type="image/png" />
+                        <img src="/assets/images/journal/developer.png" alt="My Developer Story" class="img-fluid" />
                     </picture>
-                  </a>
-                  <div class="journal-txt">
+                    </a>
+                    <div class="journal-txt">
                     <h4><a href="/developer.html">My Development Into A Developer</a></h4>
                     <p class="separator">How and why i made the decision to go from IT to CS, and why having an IT background has helped me as a programmer.
                     </p>
-                  </div>
+                    </div>
                 </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
+                </div>
+                <div class="col-lg-4 col-md-6">
                 <div class="journal-info">
-                  <a href="/technology.html">
+                    <a href="/technology.html">
                     <picture>
-                      <source
+                        <source
                         srcset="/assets/images/journal/tech-small.webp 1x, /assets/images/journal/tech-medium.webp 2x, /assets/images/journal/tech-large.webp 3x" type="image/webp" />
-                      <source srcset="/assets/images/journal/tech.png" type="image/png" />
-                      <img src="/assets/images/journal/tech.png" alt="My Technology" class="img-fluid" />
+                        <source srcset="/assets/images/journal/tech.png" type="image/png" />
+                        <img src="/assets/images/journal/tech.png" alt="My Technology" class="img-fluid" />
                     </picture>
-                  </a>
-                  <div class="journal-txt">
-                    <h4><a href="/technology.html">My Tech Arsenal</a></h4>
+                    </a>
+                    <div class="journal-txt">
+                    <h4><a href="/technology.html">My Hardware</a></h4>
                     <p class="separator">A list of all the parts I used for my latest water cooled system, along with descriptions of all the other servers and networking equipment on my local area network.
                     </p>
-                  </div>
+                    </div>
                 </div>
-              </div>
+                <div class="journal-info d-flex justify-content-center align-items-center">
+                  <video width="1920" height="1080" controls>
+                    <source src="assets/videos/car_chase.mp4" type="video/mp4">
+                  </video>
+                </div>
+                </div>
             </div>
-          </div>
         </div>
       </div>
+    </div>
       <!-- End Journal -->
       <!-- Start Contact Section -->
-      <div id="contact" class="paddsection" style="background-color: #111111;">
+      <div id="contact" class="paddsection container" style="background-color: #333333;">
         <div class="container">
           <div class="contact-block1">
             <div class="row">
               <div class="col-lg-6">
                 <div class="contact-contact">
-                  <h2 class="mb-30">GET IN TOUCH</h2>
+                  <h2 class="mb-30">LET'S CONNECT</h2>
                   <ul class="contact-details">
                     <li><span>Keith Tachibana</span></li>
                     <li><span>Irvine, California, United States</span></li>
@@ -719,26 +731,33 @@
                 </div>
               </div>
               <div class="col-lg-6">
-                <form action="forms/contact.php" method="post" role="form" class="php-email-form" data-recaptcha-site-key="6LdIy9EaAAAAADUalzIZ-2XwNIQ-MYCsJmux3uii">
+                <form action="/forms/contact.php" method="post" role="form" class="php-email-form" data-recaptcha-site-key="6LeKMdIaAAAAANzd8fehAprJVqEv94nVAQhPVDtK">
                   <div class="row gy-3">
                     <div class="col-lg-6">
                       <div class="form-group contact-block1">
-                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required data-error="Name is required." />
+                        <div class="help-block with-errors"></div>
                       </div>
                     </div>
                     <div class="col-lg-6">
                       <div class="form-group">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required data-error="Email is required."/>
+                        <div class="help-block with-errors"></div>
                       </div>
                     </div>
                     <div class="col-lg-12">
                       <div class="form-group">
-                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required data-error="Subject is required." />
+                        <div class="help-block with-errors"></div>
                       </div>
                     </div>
                     <div class="col-lg-12">
                       <div class="form-group">
                         <textarea class="form-control" name="message" placeholder="Message" required></textarea>
+                      </div>
+                      <div class="form-group d-none">
+                        <input type="text" class="form-control" name="first_name">
+                        <div class="validate"></div>
                       </div>
                     </div>
                     <div class="col-lg-12">
@@ -746,10 +765,18 @@
                       <div class="error-message"></div>
                       <div class="sent-message">Your message has been sent. Thank you!</div>
                     </div>
+
+                    <div class="col-lg-12">
+                      <div class="g-recaptcha" data-sitekey="6LdIy9EaAAAAADUalzIZ-2XwNIQ-MYCsJmux3uii" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+                      <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha." />
+                      <div class="help-block with-errors"></div>
+                    </div>
+
                     <div class="mt-0">
                       <input type="submit" class="btn btn-defeault btn-send" value="Send message">
                     </div>
                   </div>
+                 </div>
                 </form>
               </div>
             </div>
@@ -759,7 +786,7 @@
     </main>
     <!-- End Contact -->
     <!-- Start Footer Section -->
-    <div id="footer" class="text-center">
+    <div id="footer" class="text-center container">
       <div class="container">
         <div class="socials-media text-center">
           <ul class="list-unstyled">
@@ -783,7 +810,7 @@
     <!-- End Footer -->
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
     <!-- Google Spam Protection -->
-    <script src="https://www.google.com/recaptcha/api.js?render=6LdIy9EaAAAAADUalzIZ-2XwNIQ-MYCsJmux3uii"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LeKMdIaAAAAANzd8fehAprJVqEv94nVAQhPVDtK"></script>
     <!-- JavaScript Libraries -->
     <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
@@ -791,6 +818,9 @@
     <script src="/assets/vendor/php-email-form/validate.js"></script>
     <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="/assets/vendor/typed.js/typed.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="/assets/js/validator.js"></script>
+    <script src="/assets/js/contact.js"></script>
     <!-- Template Main JavaScript File -->
     <script src="/assets/js/main.js"></script>
   </body>

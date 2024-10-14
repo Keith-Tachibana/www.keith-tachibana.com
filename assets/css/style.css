@@ -125,11 +125,6 @@ p {
   padding-bottom: 90px;
 }
 
-.paddsections {
-  padding-top: 90px;
-  padding-bottom: 90px !important;
-}
-
 .hvr-shutter-in-horizontal::before {
   background: #111111;
 }
@@ -431,12 +426,6 @@ p {
 # Hero
 --------------------------------------------------------------*/
 
-/*#hero {
-  background: url("../images/home-bg.webp") repeat scroll center center/cover;
-  height: 100vh;
-  width: 100%;
-}*/
-
 #hero .hero-content {
   height: 100vh;
   text-align: left;
@@ -484,6 +473,55 @@ p {
   padding-top: 120px;
 }
 
+#about .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  column-gap: 20px;
+}
+
+#selfie {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  margin-right: 20px;
+}
+
+#stats {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  justify-self: center;
+  align-self: center;
+}
+
+#langs {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  justify-self: center;
+  align-self: center;
+}
+
+#langs img {
+  width: 100%;
+}
+
+#about1 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  text-align: justify;
+}
+
+#about2 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  text-align: justify;
+}
+
+#about3 {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  text-align: justify;
+}
+
 #about .div-img-bg {
   padding-bottom: 30px;
   border: 20px solid #333;
@@ -497,6 +535,7 @@ p {
   height: 400px;
   -o-object-fit: cover;
   object-fit: cover;
+  padding-right: 25px;
 }
 
 #about .about-descr .p-heading {
@@ -514,7 +553,7 @@ p {
 # Services
 --------------------------------------------------------------*/
 #services {
-  background: #111111;
+  background: #333333;
   position: relative;
   padding-bottom: 80px;
 }
@@ -562,27 +601,18 @@ p {
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
-#skills .container {
+#skills[class='container'] {
   width: 100vw;
   margin: 0 auto;
 }
 
-#skills .container .row {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+#skills .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
 }
 
-#skills .container .row figure {
-  width: calc(100vw / 5);
-}
-
-#skills .container .row figure picture {
-  display: flex;
-  justify-content: center;
-}
-
-#skills .container .row figure  {
+#skills .row figure  {
   outline: none;
   cursor: pointer;
   position: relative;
@@ -590,17 +620,17 @@ p {
   overflow: hidden;
 }
 
-#skills .container .row figure:hover {
+#skills .row figure:hover {
   animation: shake 0.5s;
   animation-iteration-count: 1;
 }
 
-#skills .container .row figure:active {
-  box-shadow: 0 5px darkgrey;
+#skills .row figure:active {
+  box-shadow: 0 5px #333;
   transform: translateY(4px);
 }
 
-#skills .container .row figure:after {
+#skills .row figure:after {
   content: '';
   display: block;
   position: absolute;
@@ -612,7 +642,7 @@ p {
   transition: all 0.8s;
 }
 
-#skills .container .row figure:active:after {
+#skills .row figure:active:after {
   padding: 0;
   margin: 0;
   opacity: 1;
@@ -642,7 +672,6 @@ p {
 }
 
 #portfolio #portfolio-flters {
-  padding: 0;
   margin: 0 auto 35px auto;
   list-style: none;
   text-align: center;
@@ -1063,6 +1092,13 @@ p {
   background: #111111;
 }
 
+/* Technology Page */
+.list-items li a:first-child {
+  text-decoration-line: underline !important;
+  text-decoration-style: double !important;
+  text-decoration-color: #e02d00 !important;
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -1134,11 +1170,11 @@ p {
   nav {
     padding: 10px 15px;
   }
-  .nav-menu {
+  .nav-mobile {
     margin-top: 40px;
     display: none;
     float: none;
-    width: 100%;
+    width: min-content;
   }
   .nav-menu li {
     float: none;
@@ -1181,10 +1217,10 @@ p {
     margin: 20px;
     display: inline-block;
   }
-  /* Skills */
+  /* Skills
   #skills .container .row figure {
     font-size: 0.7rem;
-  }
+  }*/
   /* Journal */
   #journal .journal-block .journal-info {
     margin-bottom: 30px;
@@ -1238,9 +1274,15 @@ p {
   #about .div-img-bg {
     padding: 0;
   }
+
+  #about .container {
+	display: inline-block;
+  }
+
   #about .div-img-bg .about-img img {
     margin-top: 0%;
     margin-left: calc(0% - 0px);
+		max-width: 100%;
   }
   #about .about-descr .p-heading {
     font-size: 20px;
@@ -1255,10 +1297,10 @@ p {
     margin: 20px;
     display: inline-block;
   }
-  /* Skills */
+  /* Skills
   #skills .container .row figure {
     font-size: 0.55rem;
-  }
+  }*/
   /* Journal */
   #journal .journal-block .journal-info {
     margin-bottom: 30px;
@@ -1309,12 +1351,16 @@ p {
   .head-info .header-content h1 {
     font-size: 32px;
   }
+  #about .container {
+	display: inline-block;
+	}
   #about .div-img-bg {
     padding: 0;
   }
   #about .div-img-bg .about-img img {
     margin-top: 0%;
     margin-left: calc(0% - 0px);
+		max-width: 100%;
   }
   #about .about-descr .p-heading {
     font-size: 20px;
@@ -1323,10 +1369,10 @@ p {
     max-width: 100%;
     margin-bottom: 0;
   }
-  /* Skills */
+  /* Skills
   #skills .container .row figure figcaption {
     font-size: 0.4rem;
-  }
+  } */
   /* Portfolio */
   #portfolio .portfolio-list .nav li {
     float: none;
@@ -1383,12 +1429,16 @@ p {
   .head-info .header-content h1 {
     font-size: 32px;
   }
+  #about .container {
+	display: inline-block;
+  }
   #about .div-img-bg {
     padding: 0;
   }
   #about .div-img-bg .about-img img {
     margin-top: 0%;
     margin-left: calc(0% - 0px);
+		max-width: 100%;
   }
   #about .about-descr .p-heading {
     font-size: 20px;
@@ -1397,10 +1447,10 @@ p {
     max-width: 100%;
     margin-bottom: 0;
   }
-  /* Skills */
+  /* Skills
   #skills .container .row figure figcaption {
     font-size: 0.3rem;
-  }
+  } */
   /* Portfolio */
   #portfolio .portfolio-list .nav li {
     float: none;
@@ -1456,12 +1506,16 @@ p {
   .head-info .header-content h1 {
     font-size: 32px;
   }
+  #about .container {
+	display: inline-block;
+  }
   #about .div-img-bg {
     padding: 0;
   }
   #about .div-img-bg .about-img img {
     margin-top: 0%;
     margin-left: calc(0% - 0px);
+		max-width: 100%;
   }
   #about .about-descr .p-heading {
     font-size: 20px;
@@ -1470,10 +1524,10 @@ p {
     max-width: 100%;
     margin-bottom: 0;
   }
-  /* Skills */
+  /* Skills
   #skills .container .row figure figcaption {
-    font-size: 0.35rem;
-  }
+    font-size: 0.25rem;
+  } */
   /* Portfolio */
   #portfolio .portfolio-list .nav li {
     float: none;
@@ -1509,6 +1563,6 @@ p {
 	min-height: 100%;
 	width: auto;
 	height: auto;
-  z-index: -100;
+    z-index: -100;
 	transform: translateX(-50%) translateY(-50%);
 }

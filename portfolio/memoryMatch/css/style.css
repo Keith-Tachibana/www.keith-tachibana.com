@@ -8,15 +8,15 @@
 }
 
 .video-bg {
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	min-width: 100%;
-	min-height: 100%;
-	width: auto;
-	height: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
   z-index: -100;
-	transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .title-text {
@@ -41,6 +41,7 @@
   text-align: center;
   height: 9%;
   width: 80%;
+  border-radius: 15px;
   border: 2px groove #000;
   display: flex;
   justify-content: center;
@@ -54,7 +55,10 @@
   bottom: 15%;
 }
 
-.games-score, .matches-score, .attempts-score, .accuracy-score {
+.games-score,
+.matches-score,
+.attempts-score,
+.accuracy-score {
   color: #00FF00;
 }
 
@@ -77,7 +81,7 @@
 .start:hover {
   background-color: #6D5A1F;
   animation: shake 0.5s;
-  animation-iteration-count: 1;
+  animation-iteration-count: infinite;
 }
 
 .start:active {
@@ -94,6 +98,7 @@
   height: 10%;
   background-color: #EEC643;
   border-width: 0;
+  border-radius: 15px;
   font-weight: bold;
   font-style: italic;
   border: 2px groove #000;
@@ -108,7 +113,7 @@
 .shuffle-button:hover {
   background-color: #6D5A1F;
   animation: shake 0.5s;
-  animation-iteration-count: 1;
+  animation-iteration-count: infinite;
   color: #EA2B1F;
 }
 
@@ -151,7 +156,8 @@
   position: relative;
 }
 
-.card-front, .card-back {
+.card-front,
+.card-back {
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -170,9 +176,9 @@
   border: 1px groove #f0f;
   transform: scale(1.1);
   box-shadow:
-    0 0 10px 5px #fff,
-    0 0 20px 10px #f0f,
-    0 0 30px 15px #0ff;
+        0 0 30px 15px #fff,
+        0 0 50px 30px #f0f,
+        0 0 70px 45px #0ff;
   z-index: 10;
   cursor: pointer;
 }
@@ -219,7 +225,7 @@
   height: auto;
   width: auto;
   z-index: 1000;
-	min-width: 100%;
+  min-width: 100%;
   min-height: 100%;
   top: 0;
   left: 0;
@@ -250,7 +256,8 @@
   color: #fff;
 }
 
-.close:hover, .close:focus {
+.close:hover,
+.close:focus {
   cursor: pointer;
   color: #aaaaaa;
   text-decoration: none;
@@ -293,7 +300,7 @@
 .reset:hover {
   background-color: #6D5A1F;
   animation: shake 0.5s;
-  animation-iteration-count: 1;
+  animation-iteration-count: infinite;
   color: #EA2B1F;
 }
 
@@ -346,13 +353,6 @@
     font-size: 0.5rem;
   }
 
-  .card-back:hover {
-    box-shadow:
-      0 0 5px 1px #fff,
-      0 0 10px 3px #f0f,
-      0 0 15px 5px #0ff;
-  }
-
   .card-item {
     height: 30%;
     width: 12%;
@@ -394,7 +394,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 50px;
+    left: 35px;
   }
 
   .aside {
@@ -403,7 +403,7 @@
     flex-direction: row;
     position: relative;
     bottom: 75px;
-    left: 40px;
+    left: 8px;
     justify-content: space-between;
   }
 
@@ -417,13 +417,6 @@
   .aside > div {
     height: 5%;
     margin: 0 1px;
-  }
-
-  .card-back:hover {
-    box-shadow:
-      0 0 5px 1px #fff,
-      0 0 10px 3px #f0f,
-      0 0 15px 5px #0ff;
   }
 
   .shuffle-button {
@@ -445,17 +438,11 @@
   #gameCards {
     display: flex;
     align-items: center;
-    min-width: 100vw;
-    min-height: 90vh;
   }
 
   .card-item {
     height: 30%;
     width: 14%;
-  }
-
-  body {
-    overflow: hidden;
   }
 
   .main {
@@ -477,8 +464,6 @@
   .modal-text {
     height: 200px;
     width: 350px;
-    position: relative;
-    right: 15px;
   }
 
   .reset {
@@ -517,13 +502,6 @@
     font-size: 0.9rem;
   }
 
-  .card-back:hover {
-    box-shadow:
-      0 0 5px 1px #fff,
-      0 0 10px 3px #f0f,
-      0 0 15px 5px #0ff;
-  }
-
   .card-item {
     height: 30%;
     width: 15%;
@@ -552,11 +530,9 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 767px) {
   .title-text {
-    font-size: 2rem;
+    font-size: 4rem;
     letter-spacing: 5px;
     text-align: center;
-    height: 10vh;
-    width: 100vw;
   }
 
   .title-container {
@@ -566,16 +542,10 @@
 
   .aside {
     font-size: 1rem;
-    justify-content: initial;
-    position: relative;
-    top: -125px;
   }
 
   .aside > div {
     align-items: flex-start;
-    font-size: 0.75rem;
-    height: 27px;
-    margin: 1px;
   }
 
   .games-text,
@@ -587,19 +557,11 @@
   .accuracy-text,
   .accuracy-score {
     position: relative;
-    top: -10px;
-  }
-
-  .card-back:hover {
-    box-shadow:
-      0 0 5px 1px #fff,
-      0 0 10px 3px #f0f,
-      0 0 15px 5px #0ff;
+    top: 5px;
   }
 
   .shuffle-button {
-    font-size: 0.75rem;
-    height: 35px;
+    font-size: 1rem;
   }
 
   .card-item {
@@ -607,22 +569,9 @@
     width: 15%;
   }
 
-  #gameCards {
-    position: relative;
-    top: -125px;
-    height: 275px;
-    width: 400px;
-  }
-
-  body {
-    overflow: hidden;
-  }
-
   .modal-text {
     height: 250px;
     width: 500px;
-    position: relative;
-    right: 11px;
   }
 
   .modal-text h3 {
@@ -637,6 +586,12 @@
 
   .close {
     font-size: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 638px) and (orientation: landscape) {
+  body {
+    background-size: 125% 125%;
   }
 }
 
@@ -655,8 +610,6 @@
 
   .aside {
     font-size: 1.25rem;
-    position: relative;
-    top: -25px;
   }
 
   .aside > div {
@@ -665,11 +618,6 @@
 
   .shuffle-button {
     font-size: 1.25rem;
-  }
-
-  #gameCards {
-    position: relative;
-    top: -20px;
   }
 
   .games-text,
@@ -684,25 +632,18 @@
     top: 4px;
   }
 
-  .card-back:hover {
-    box-shadow:
-      0 0 5px 1px #fff,
-      0 0 10px 3px #f0f,
-      0 0 15px 5px #0ff;
-  }
-
   .card-item {
     height: 30%;
     width: 15%;
   }
 
-  .modal-text {
-    position: relative;
-    right: 20px;
+  .modal {
+    height: 300px;
+    width: 700px;
   }
 
   .modal-text h3 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 
   .reset {
@@ -722,35 +663,18 @@
     font-size: 4rem;
     letter-spacing: 5px;
     width: 100%;
-    position: relative;
-    top: -40px;
   }
 
   .aside {
-    font-size: 1rem;
-    position: relative;
-    top: -100px;
-    justify-content: initial;
+    font-size: 1.25rem;
   }
 
   .aside > div {
     align-items: flex-start;
-    height: 60px;
-    margin: 2px;
   }
 
   .shuffle-button {
     font-size: 1.5rem;
-  }
-
-  body {
-    overflow: hidden;
-  }
-
-  #gameCards {
-    height: 80%;
-    position: relative;
-    top: -115px;
   }
 
   .games-text,
@@ -776,7 +700,7 @@
   }
 
   .modal-text h3 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .reset {
