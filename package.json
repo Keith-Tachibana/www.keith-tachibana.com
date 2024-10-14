@@ -25,5 +25,7 @@
     "url": "https://github.com/Keith-Tachibana/www.keith-tachibana.com/issues"
   },
   "homepage": "https://github.com/Keith-Tachibana/www.keith-tachibana.com#readme",
-  "dependencies": {}
+  "devDependencies": {
+    "eslint": "^9.12.0"
+  }
 }
