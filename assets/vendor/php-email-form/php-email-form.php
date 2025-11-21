@@ -1,7 +1,7 @@
 <?php
 /**
  * PHP Email Form
- * Version: 3.9
+ * Version: 3.10
  * Website: https://bootstrapmade.com/php-email-form/
  * Copyright: BootstrapMade.com
  */
@@ -141,10 +141,10 @@ class PHP_Email_Form {
       if( !isset( $this->smtp['host'] ) )
         $this->error .= 'SMTP host is empty!' . '<br>';
 
-      if( !isset( $this->smtp['username'] ) && ( $this->smtp['auth'] ?? true) ) {
-        $this->error .= 'SMTP username is empty!' . '<br>';
-      }
-      if( !isset( $this->smtp['password'] ) && ( $this->smtp['auth'] ?? true) )
+      if( !isset( $this->smtp['username'] ) && ( isset($this->smtp['auth']) ? $this->smtp['auth'] : true) )
+        $this->error .= 'SMTP username is empty!' . '<br>'; 
+      
+      if( !isset( $this->smtp['password'] ) && ( isset($this->smtp['auth']) ? $this->smtp['auth'] : true) )
         $this->error .= 'SMTP password is empty!' . '<br>';
     
       if( !isset( $this->smtp['port'] ) )
@@ -583,7 +583,7 @@ class PHPMailer
     public $AuthType = '';
 
     /**
-     * SMTP SMTPXClient command attibutes
+     * SMTP SMTPXClient command attributes
      *
      * @var array
      */

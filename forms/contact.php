@@ -1,35 +1,43 @@
 <?php
-// require ReCaptcha class
-require('recaptcha-master/src/autoload.php');
+  /**
+  * Requires the "PHP Email Form" library
+  * The "PHP Email Form" library is available only in the pro version of the template
+  * The library should be uploaded to: vendor/php-email-form/php-email-form.php
+  * For more info and help: https://bootstrapmade.com/php-email-form/
+  */
 
   // Replace contact@example.com with your real receiving email address
   $receiving_email_address = 'Keith.Tachibana@outlook.com';
 
-        if (!$response->isSuccess()) {
-            throw new \Exception('ReCaptcha was not validated.');
-        }
-        
-        // everything went well, we can compose the message, as usually
-        
-        $emailText = "You have a new message from your contact form\n=============================\n";
+  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
+    include( $php_email_form );
+  } else {
+    die( 'Unable to load the "PHP Email Form" Library!');
+  }
+
+  $contact = new PHP_Email_Form;
+  $contact->ajax = true;
+  
+  $contact->to = $receiving_email_address;
+  $contact->from_name = $_POST['name'];
+  $contact->from_email = $_POST['email'];
+  $contact->subject = $_POST['subject'];
 
   // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-
+  /*
   $contact->smtp = array(
-    'host' => 'smtp.gmail.com',
-    'username' => 'Keith.Tachibana@gmail.com',
-    'password' => 'bawoxqaxqtjpwair',
+    'host' => 'smtp-mail.outlook.com',
+    'username' => 'KeithNP@hotmail.com',
+    'password' => 'pdpoiwktfecqhvpm',
     'port' => '587'
   );
+  */
 
-
-if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
-    $encoded = json_encode($responseArray);
-
+  $contact->add_message( $_POST['name'], 'From');
+  $contact->add_message( $_POST['email'], 'Email');
+  $contact->add_message( $_POST['message'], 'Message', 10);
   $contact->honeypot = $_POST['first_name'];
-  $contact->recaptcha_secret_key = '6LeKMdIaAAAAADHaDB1toMMJt_YGcG5wTJO3yDcX';
+  $contact->recaptcha_secret_key = '6LdIy9EaAAAAAPQJlef78IKYWqowox1AQ5FVeLkb';
 
-    echo $encoded;
-} else {
-    echo $responseArray['message'];
-}
+  echo $contact->send();
+?>
